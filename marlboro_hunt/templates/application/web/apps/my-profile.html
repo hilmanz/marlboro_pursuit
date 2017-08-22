@@ -1,0 +1,27 @@
+<div class="section profilePage">
+    <ul class="columns-content page-content clearfix">
+        <li class="col-sidebar">
+           {$profie_box}
+           {$my_circle}
+		   {$side_banner}
+        </li> <!-- END .col-sidebar -->
+        <li class="col-main">
+			{$wallpaper}
+			{$myGallery}
+            <div class="profileActivity" id="tabs" >
+            	<div class="Activity_menu">
+                    <ul class="nav clearfix">
+                        <li><a href="#activity-list">My Activity</a></li>
+                        <li><a href="#favorite-list">My Favorite</a></li>
+                        <li><a href="#play-list">My Playlist</a></li>
+                        <li><a href="#contest-submission-list">My Content Submission</a></li>
+                    </ul>
+                </div><!--END .Activity_menu-->
+			   {$my_activity}
+			   {$my_favorite}
+			   {$my_playlist}
+			   {$my_contest_submission}
+            </div><!-- END .profileActivity -->
+		</li><!-- END .col-main -->
+    </ul><!-- END .page-content -->
+</div><!-- END .section -->

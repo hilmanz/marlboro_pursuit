@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/marlboro-hunt-2013/!svn/ver/119/trunk/marlboro_hunt/templates/application/admin/weeklyDecisionManagement
+END
+weeklyDecisionManagement_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/marlboro-hunt-2013/!svn/ver/119/trunk/marlboro_hunt/templates/application/admin/weeklyDecisionManagement/weeklyDecisionManagement_edit.html
+END
+weeklyDecisionManagement_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/marlboro-hunt-2013/!svn/ver/119/trunk/marlboro_hunt/templates/application/admin/weeklyDecisionManagement/weeklyDecisionManagement_new.html
+END
+weeklyDecisionManagement_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/marlboro-hunt-2013/!svn/ver/119/trunk/marlboro_hunt/templates/application/admin/weeklyDecisionManagement/weeklyDecisionManagement_list.html
+END

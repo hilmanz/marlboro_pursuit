@@ -1,0 +1,80 @@
+
+<div class="theContent">
+    <div class="theTitle">
+        <h2>arcLight Outbound List</h2>
+       
+        <a href="index.php?s={$folder}&act=generate" class="btn btn_pencil"><span>Generate Outbound Data</span></a>
+    </div><!--contenttitle-->
+    <div class="tableoptions">        
+    <form>
+        <input type="text" name="search" value="{$search}">
+        <input type="hidden" name="s" value="{$folder}" />
+        <input type="hidden" name="cari" value="cari" />
+     
+       
+        <select name="article_type">
+            <option value=""> - Type - </option>
+            {section name=i loop=$typelist}
+            {if $typelist[i].id == $article_type}<option value="{$typelist[i].id}" selected>{$typelist[i].content_name}</option>
+            {else}<option value="{$typelist[i].id}">{$typelist[i].content_name}</option>
+            {/if}
+            {/section}
+        </select>
+       <span>Date Range</span>
+        <input type="text" name="startdate" value="{$startdate}" class="datepicker radius3" />
+       <span>s/d</span>
+        <input type="text" name="enddate" value="{$enddate}" class="datepicker radius3" />
+        <input type="submit" value="cari" class="stdbtn btn_orange" />
+    </form>
+    </div><!--tableoptions-->	
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <colgroup>
+            <col class="con0" style="width: 4%" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+        </colgroup>
+        <thead>
+			<tr>
+					<th rowspan="2" class="head0">No</th>
+					<th rowspan="2" class="head0">File Name</th>
+					<td class="head0">Succes</td>
+					<td class="head0">Failed</td>
+					<th rowspan="2" class="head0">Date</th>
+					<th rowspan="2" class="head0">Status</th>
+					<th rowspan="2" class="head1">Action</th>
+					<th rowspan="2" class="head1">Notification</th>
+			</tr>
+			<tr>
+					<th colspan="2" class="head0">Total Saved Record</th>
+			</tr>
+        </thead>
+        <tbody>
+            {foreach from=$list key=k item=v}
+            <tr>
+                <td width="10">{$v.no}&nbsp;</td>
+                <td>{$v.name}</td>
+                <td>{$v.nickname}</td>
+			    <td>{$v.StreetName}</td>
+				<td>{$v.birthday}</td>
+				<td>{$v.verified}</td>
+				<td>
+                    <nobr>
+                        <a href="index.php?s={$folder}&act=sendMail&id={$v.id}" class="red" >Saved to DB</a>
+                    </nobr>
+                </td>
+                <td>
+                    <nobr>
+                        <a href="index.php?s={$folder}&act=sendMail&id={$v.id}" class="red" >Send Email</a>
+                    </nobr>
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    <div class="paging">
+    	{$paging}
+    </div>
+</div><!--theContent-->

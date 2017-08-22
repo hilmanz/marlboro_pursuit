@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/marlboro-hunt-2013/!svn/ver/83/trunk/marlboro_hunt/templates/application/admin/cityManagement
+END
+cityManagement_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/marlboro-hunt-2013/!svn/ver/83/trunk/marlboro_hunt/templates/application/admin/cityManagement/cityManagement_new.html
+END
+cityManagement_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/marlboro-hunt-2013/!svn/ver/83/trunk/marlboro_hunt/templates/application/admin/cityManagement/cityManagement_list.html
+END
+cityManagement_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/marlboro-hunt-2013/!svn/ver/83/trunk/marlboro_hunt/templates/application/admin/cityManagement/cityManagement_edit.html
+END

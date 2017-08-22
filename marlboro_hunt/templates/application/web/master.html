@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html dir="ltr" lang="en-US" class="ie6"> <![endif]-->
+<!--[if IE 7]>    <html dir="ltr" lang="en-US" class="ie7"> <![endif]-->
+<!--[if IE 8]>    <html dir="ltr" lang="en-US" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html dir="ltr" lang="en-US" > 
+<!--<![endif]-->
+<head>
+{$meta}
+</head>
+
+<body id="{if $pages =='dyo'}dyoshirtPage{/if}{if $pages =='register'}registerPage{/if}{if $pages =='account'}myaccountPage{/if}{if $pages =='home' || $pages==''}landingHome{/if}">
+{if $pages =='dyo'}<img src="{$basedomain}assets/images/bg3.jpg" id="bg" alt=""/>{/if}
+{if $pages =='account'}<img src="{$basedomain}assets/images/bg2.jpg" id="bg" alt=""/>{/if}
+{if $pages =='home' || $pages==''}<img src="{$basedomain}assets/images/bg_landing.jpg" id="bg" alt=""/>{/if}
+{if $pages =='login'}<img src="{$basedomain}assets/images/bg.jpg" id="bg" alt=""/>{/if}
+
+<div id="body" class="wrapper">
+            {$header}
+            {$mainContent}
+</div><!-- END .wrapper -->
+        {$footer}
+		
+{include file="application/web/widgets/popup-privacy.html"}
+{include file="application/web/widgets/popup-tnc.html"}
+{include file="application/web/widgets/popup-contact.html"}
+{include file="application/web/widgets/popup-global.html"}
+{include file="application/web/widgets/popup-game.html"}
+{include file="application/web/widgets/popup-full-mechanics.html"}
+
+ <a href="#popup-trigun" class="showPopup trigun" style="display:none" ></a>
+ {literal}
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26876401-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ {/literal}
+</body>
+</html>

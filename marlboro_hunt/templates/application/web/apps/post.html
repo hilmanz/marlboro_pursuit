@@ -1,0 +1,69 @@
+
+        	<div id="post-upload" class="row">
+                <select name="jenis_info" id="jenis-info" class="styled">
+                    <option value="" >SELECT CATEGORY</option>
+                    {section name=i loop=$jenis_type}
+                    <option value="{$jenis_type[i].id}">{$jenis_type[i].type|upper}</option>
+                    {/section}
+                </select>
+            </div>
+            <div id="music" class="row">
+                <select name="upload-as" id="upload-as" class="styled">
+                    <option value="" selected="selected">SELECT UPLOAD AS</option>
+                    <option value="3">BAND</option>
+                    <option value="15">DJ</option>
+                </select>
+            </div>
+			<br>
+			<div class="msg_page"></div>
+			
+            <div id="upload-image" class="row">
+                <ul id="main-menu" class="fl">
+                    <li onclick="pilih_upload_image()"><a href="#" >IMAGE</a></li>	
+                    <li onclick="pilih_upload_video()"><a href="#" >VIDEO</a></li>	
+                </ul>
+            </div>
+			
+            <div id="pilih-image" class="row">
+                <form method="post" action="{$basedomain}{$pages}/upload" enctype="multipart/form-data">
+                    <input type="hidden" class="valjenis" value="" name="type"/>
+                    {$upload_pages_image}
+                    <input type="hidden" name="upload" value="image" />	
+                </form>
+            </div>
+			
+            <div id="upload-music">	
+                <ul id="main-menu" class="fl">
+                    <li onclick="pilih_upload_mp3()"><a href="#" >MP3</a></li>	
+                    <li onclick="pilih_upload_video()"><a href="#" >VIDEO</a></li>	
+                </ul>
+            </div>
+            <div id="pilih-mp3" class="row">
+                <form method="post" action="{$basedomain}{$pages}/upload" enctype="multipart/form-data">
+                    <input type="hidden" class="typemusic" value="" name="typemusic"/>
+                    {$upload_pages_music}
+                    <input type="hidden" name="upload" value="music" />	
+                </form>
+            </div>
+            
+            <div id="upload-video">	
+                <ul id="main-menu" class="fl">
+                   <li onclick="pilih_upload_video()"><a href="#" >Video</a></li>
+                </ul>
+            </div>
+            <div id="pilih-video" class="row">
+                <form method="post" action="{$basedomain}{$pages}/upload" enctype="multipart/form-data">
+                    <input type="hidden" class="valjenis" value="" name="type"/>
+                    {$upload_pages_video}
+                    <input type="hidden" name="upload" value="video" />	
+                </form>
+            </div>
+            
+            <div id="create-band" class="row">
+                {include file="application/web/widgets/create-band.html"}
+            </div>
+            
+            <div id="create-dj" class="row">
+                {include file="application/web/widgets/create-dj.html"}
+            </div>
+ 

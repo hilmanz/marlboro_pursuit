@@ -1,0 +1,37 @@
+<div class="theContent">
+    <div class="theTitle">
+        <h2>Edit Page Content</h2>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>
+            <form name="cal" method="" action="" enctype="multipart/form-data" onsubmit="javascript: return validator();">
+                <tr class="head">
+					<td><strong>Page Name</strong></td>
+					<td><input type="text" name="pagename" style="width:400px;" value="{$pagename}"/></td>
+				</tr>
+                <tr class="head">
+					<td><strong>Page Title</strong></td>
+					<td><input type="text" name="pagetitle" style="width:400px;" value="{$pagetitle}"/></td>
+				</tr>
+                <tr class="head">
+					<td><strong>Status</strong></td>
+                    <td colspan="2">
+                        <select name="n_status" style="width:200px;">
+                            <option value="0" {if $status==0} selected="selected" {/if}>Unpublish</option>
+                            <option value="1" {if $status==1} selected="selected" {/if}>Publish</option>
+                        </select>
+                    </td>
+				</tr>
+                <tr>
+                    <td colspan="2">
+                    <input type="submit" value=" Save " class="stdbtn btn_orange"/>&nbsp;&nbsp; 
+                    <input type="button" value="Cancel" class="stdbtn btn_yellow" onclick="javascript: window.location.href='index.php?s=master&act=list_page' ;" />
+                    </td>
+                </tr>
+                <input type="hidden" name="s" value="master" />
+                <input type="hidden" name="act" value="edit_page_news" />
+                <input type="hidden" name="id" value="{$id_page}" />
+            </form>
+    	</tbody>
+	</table>
+</div><!--theContent-->

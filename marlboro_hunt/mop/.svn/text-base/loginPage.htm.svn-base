@@ -1,0 +1,165 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML>
+	<HEAD>
+		<title>A MILD
+</title>
+<link href="css/amildmop.css" rel="stylesheet" type="text/css" />
+
+
+		
+			<script language="javascript">
+			function validateCheck()
+			{		 
+				var name	= '';
+				var siteID	= '159';		
+				var UserName   = document.getElementById('txtUserName');
+				var Password   = document.getElementById('txtPassword');
+				var errchk	   = document.getElementById("hdnErrorMsgs");
+				var error	   = document.getElementById('lblError');
+				error.innerHTML ='';
+				if(UserName.value == '')
+				{
+					name =  '::Error_Message::Not_all_mandatory_fields_are_completed'; 				
+					pageTracker._trackEvent('Error','Submit',name);	
+					error.innerHTML = errchk.value;
+					UserName.focus();
+					return false;
+				}
+				error.innerHTML ='';
+				if(Password.value == '')
+				{
+					name =  '::Error_Message::Not_all_mandatory_fields_are_completed'; 			
+					pageTracker._trackEvent('Error','Submit',name);	
+					error.innerHTML = errchk.value;
+					Password.focus();
+					return false;
+				}
+				return true;
+			}
+			function CheckKey(e)
+			{
+				var key;
+		        if(window.event)
+					key = window.event.keyCode;     //IE
+				else
+					key = e.which;     //firefox
+				if (key == 13)
+				{
+					if(validateCheck())
+					{
+						if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) 
+						{
+							var frm = document.Form2;
+						}
+						else 
+						{
+							var frm = document.forms["Form2"];
+						}
+						__doPostBack('lnkBtnSubmit','');
+						return false;
+					}
+					else
+						return false;
+				}
+			}
+			</script>
+			<body class="landingPage" onkeydown="CheckKey(event);">
+	</HEAD>
+	<body class="landingPage" onkeydown="CheckKey(event);" onload="function SetFocus(){document.Form2['txtUserName'].focus();}">
+		<form name="Form2" method="post" action="LandingPage.aspx" id="Form2">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjkyNTQ0NDQ4D2QWCmYPZBYCZg8WAh4EVGV4dAUGQSBNSUxEZAIBD2QWAmYPFgIfAAWIATxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly93d3cuYW1pbGQuY29tL2Ftbi9odG1sL2Nzcy9hbWlsZF9tb3AuY3NzIiBtZWRpYT0ic2NyZWVuLHNjcmVlbiIgdHlwZT0idGV4dC9jc3MiIHRpdGxlPSJkZWZhdWx0Ii8+DQpkAgIPFgIfAAU3PGJvZHkgY2xhc3M9ImxhbmRpbmdQYWdlIiBvbmtleWRvd249IkNoZWNrS2V5KGV2ZW50KTsiPmQCAw9kFggCAw8WAh8ABSM8UD48Rk9OVCBjb2xvcj0jZjVmNWRjPjwvRk9OVD4gPC9QPmQCBQ9kFhACAQ8WAh8ABQg8UD4gPC9QPmQCAw8WAh8ABQdVc2VyIElEZAIFDw8WAh4JTWF4TGVuZ3RoAjxkZAIHDxYCHwAFCFBhc3N3b3JkZAIJDw8WAh8BAgxkZAILDw8WAh8ABQVNYXN1axYCHgdPbkNsaWNrBRdyZXR1cm4gdmFsaWRhdGVDaGVjaygpO2QCDg8PFgIfAGVkZAIQDw8WAh8ABRdMdXBhIFBhc3N3b3JkL1VzZXJuYW1lP2RkAgcPZBYEAgEPFgIfAAUIPFA+IDwvUD5kAgMPDxYCHwAFBkRhZnRhchYCHwIFLHBhZ2VUcmFja2VyLl90cmFja0V2ZW50KCdSZWdpc3RlcicsICdDbGljaycpZAIJD2QWAmYPFgIfAAWFBjxESVYgY2xhc3M9Zm9vdGVyPg0KPERJViBjbGFzcz0idGV4dCBzdHlsZTEiPkluZm9ybWFzaSBkYWxhbSB3ZWJzaXRlIGluaSBkaSB0dWp1a2FuIHVudHVrIHBlcm9rb2sgYmVydXNpYSAxOCB0YWh1biBhdGF1IGxlYmloIGRhbiB0aW5nZ2FsIGRpIHdpbGF5YWggSW5kb25lc2lhPC9ESVY+DQo8RElWIGNsYXNzPW5hdmlnYXRpb24+DQo8VUw+DQo8TEkgPjxBIGhyZWY9Ii9UZW1wbGF0ZXMvTGFuZGluZ1BhZ2UuYXNweCI+SGFsYW1hbiBVdGFtYTwvQT4gDQo8TEkgPjxBIGhyZWY9Ii9UZW1wbGF0ZXMvVGVybXNhbmRjb25kaXRpb25zLmFzcHgiIHRhcmdldD1fQmxhbms+U3lhcmF0IGRhbiBrZXRlbnR1YW48L0E+IA0KPExJID48QSBocmVmPSIvVGVtcGxhdGVzL1JlbW92ZU1lLmFzcHgiPkhhcHVzIFNheWE8L0E+DQo8TEkgc3R5bGU9ImRpc3BsYXk6bm9uZSI+PEEgaHJlZj0iL2RlbW9QYWdlcy9QTUlTaXRlLmh0bSIgdGFyZ2V0PV9CbGFuaz5QTUkgQ29ycG9yYXRlPC9BPg0KPExJID48QSBocmVmPSIvVGVtcGxhdGVzL0ZBUS5hc3B4IiB0YXJnZXQ9X0JsYW5rPkRhZnRhciBQZXJ0YW55YWFuPC9BPiANCjxMSSA+PEEgaHJlZj0iL1RlbXBsYXRlcy9Db250YWN0dXMuYXNweCIgdGFyZ2V0PV9CbGFuaz5Lb250YWsgS2FtaTwvQT4gDQo8TEkgY2xhc3M9bGFzdCBpZD1oZWFsdGggPjxBIGhyZWY9Imh0dHA6Ly93d3cucG1pLmNvbS9pZC9zbW9raW5nYW5kaGVhbHRoIiB0YXJnZXQ9X0JsYW5rPlBlcmloYWwgTWVyb2tvazwvQT48L0xJPjwvVUw+PC9ESVY+PC9ESVY+ZAIED2QWAmYPFgQfAAXgAw0KCTxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4NCg0KDQoJdmFyIGdhSnNIb3N0ID0gKCgiaHR0cHM6IiA9PSBkb2N1bWVudC5sb2NhdGlvbi5wcm90b2NvbCkgPyAiaHR0cF9nYS5qcyIgOiAic3NsX2dhLmpzIik7DQoNCglkb2N1bWVudC53cml0ZSh1bmVzY2FwZSgiJTNDc2NyaXB0IHNyYz0nL0dvb2dsZUFuYWx5dGljcy8iK2dhSnNIb3N0ICsiJyAgdHlwZT0ndGV4dC9qYXZhc2NyaXB0JyUzRSUzQy9zY3JpcHQlM0UiKSk7CQ0KDQoNCjwvc2NyaXB0Pg0KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPg0KDQp0cnkgew0KdmFyIHBhZ2VUcmFja2VyID0gX2dhdC5fZ2V0VHJhY2tlcih0cmFja2VyY29kZSk7DQoNCnBhZ2VUcmFja2VyLl90cmFja1BhZ2V2aWV3KCk7DQoNCn0gY2F0Y2goZXJyKSB7fTwvc2NyaXB0Pg0KPHNjcmlwdCBzcmM9Ii9nYUFkZG9ucy5qcyIgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij48L3NjcmlwdD4NCh4HVmlzaWJsZWdkZCqYn6Vo71klWX7UsmqiMHM7/XWC" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form2'];
+if (!theForm) {
+    theForm = document.Form2;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script language='JavaScript'>
+<!--
+function SetFocus()
+{
+	document.Form2['txtUserName'].focus();
+}
+window.onload = SetFocus;
+// -->
+</script>
+			<div class="mainPage">
+				<div class="headerLandingPage"></div> <!-- close header -->
+				<input name="hdnErrorMsgs" type="hidden" id="hdnErrorMsgs" value="Bagian-bagian dengan tanda bintang (‘*’) wajib diisi. " />
+				<div class="content">
+					<div id="mainPanel"><P><FONT color=#f5f5dc></FONT> </P><!-- Placeholder in CMS to add any content required --></div>
+					<div class="formLanding">
+						<div id="divLoginBox" class="loginBox">
+							<div class="loginBoxTitle"><P></P>
+							</div>
+							<div class="row">
+								<label for="txtUserName">
+									User ID
+								</label>
+								<input name="txtUserName" type="text" maxlength="60" id="txtUserName" class="lpInput" /></div>
+							<div class="row">
+								<label for="txtPassword">
+									Password
+								</label><input name="txtPassword" type="password" maxlength="12" id="txtPassword" class="lpInput" /></div>
+							<div class="smSubmit"><a onclick="return validateCheck();" id="lnkBtnSubmit" href="javascript:__doPostBack('lnkBtnSubmit','')">Masuk</a></div>
+							<p class="error"><span id="lblError"></span></p>
+							<div class="forgottenpassword"><a id="lnkBtnForgotPwd" href="javascript:__doPostBack('lnkBtnForgotPwd','')">Lupa Password/Username?</a></div>
+							<div class="loginBoxClose"></div>
+						</div>
+						<div id="divRegisterBox" class="registerBox">
+							<div class="registerBoxTitle"><P> </P></div>
+							<div class="smSubmit"><a onclick="pageTracker._trackEvent('Register', 'Click');" id="lnkBtnRegister" href="javascript:__doPostBack('lnkBtnRegister','')">Belum terdaftar? Register Sekarang</a></div>
+							<div class="registerBoxClose"></div>
+						</div>
+						<div class="formLandingClose"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<DIV class=footer>
+<DIV class="text style1">Informasi dalam website ini di tujukan untuk perokok berusia 18 tahun atau lebih dan tinggal di wilayah Indonesia</DIV>
+<DIV class="text style2">Jika Anda sudah terdaftar dan diverifikasi untuk situs merek lain dibawah PT H.M. Sampoerna dan Philip Morris Indonesia.<br />
+Anda dapat menggunakan detail login Anda untuk mengakses situs ini.<br />
+Untuk pertanyaan dan menghubungi kami, Anda dapat mengirimkan email ke <a href="mailto:register@amild.com">register@amild.com</a></DIV>
+
+<DIV class=navigation>
+<UL>
+<LI ><A href="/Templates/LandingPage.aspx">Halaman Utama</A> 
+<LI ><A href="/Templates/Termsandconditions.aspx" target=_Blank>Syarat dan ketentuan</A> 
+<LI ><A href="/Templates/RemoveMe.aspx">Hapus Saya</A>
+<LI style="display:none"><A href="/demoPages/PMISite.htm" target=_Blank>PMI Corporate</A>
+<LI ><A href="/Templates/FAQ.aspx" target=_Blank>Daftar Pertanyaan</A> 
+<LI ><A href="/Templates/Contactus.aspx" target=_Blank>Kontak Kami</A> 
+<LI class=last id=health ><A href="http://www.pmi.com/id/smokingandhealth" target=_Blank>Perihal Merokok</A></LI></UL></DIV></DIV>
+
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</form>	
+	</body>
+</HTML>

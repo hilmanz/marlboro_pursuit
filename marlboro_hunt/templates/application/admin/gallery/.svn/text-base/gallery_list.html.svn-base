@@ -1,0 +1,89 @@
+
+<div class="theContent">
+    <div class="theTitle">
+        <h2>{$folder} List {if $contentid!=0} of Content {$list[0].title}{/if}</h2>       
+        {if $contentid!=0}<a href="index.php?s={$folder}" class="btn btn_orange"><span>Back To {$folder} List</span></a>{/if}
+        <a href="index.php?s={$folder}&act=add{if $contentid}&contentid={$contentid}{/if}" class="btn btn_pencil"><span>Add {$folder}</span></a>
+    </div><!--contenttitle-->
+    <div class="tableoptions">        
+    <form>
+        <input type="text" name="search" value="{$search}">
+        <input type="hidden" name="s" value="{$folder}" />
+        <input type="hidden" name="cari" value="cari" />
+        <input type="hidden" name="contentid" value="{$contentid}" />
+     
+       
+        <select name="article_type">
+            <option value=""> - Type - </option>
+            {section name=i loop=$typelist}
+            {if $typelist[i].id == $article_type}<option value="{$typelist[i].id}" selected>{$typelist[i].content_name}</option>
+            {else}<option value="{$typelist[i].id}">{$typelist[i].content_name}</option>
+            {/if}
+            {/section}
+        </select>
+       <span>Date Range</span>
+        <input type="text" name="startdate" value="{$startdate}" class="datepicker radius3" />
+       <span>s/d</span>
+        <input type="text" name="enddate" value="{$enddate}" class="datepicker radius3" />
+        <input type="submit" value="cari" class="stdbtn btn_orange" />
+    </form>
+    </div><!--tableoptions-->	
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <colgroup>
+            <col class="con0" style="width: 4%" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="head0">No</th>
+                <th class="head0">Title</th>
+
+                <th class="head1">Published Date</th>
+                <th class="head0">{if $contentid!=0}Files{else}Gallery List{/if}</th>
+                
+               {if $contentid!=0} <th class="head0">Status</th>{/if}
+                <th class="head1">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {foreach from=$list key=k item=v}
+            <tr>
+                <td width="10">{$v.no}&nbsp;</td>
+              
+                <td>{if $contentid!=0}{$v.repotitle}{else}{$v.title}{/if}</td>
+              
+                <td><nobr>{if $contentid!=0}{$v.repocreateddate}{else}{$v.posted_date}{/if}</nobr></td>
+                <td><nobr>
+				{if $contentid!=0}
+					<img src="{if $v.typealbum==1}{$baseurl}public_assets/gallery/tiny_{$v.repofile}{else}{$baseurl}public_assets/gallery/tiny_{$v.repofile}{/if}" /></nobr>
+				{else}    
+					<a href="index.php?s=gallery&contentid={$v.id}" class="orange" >See Gallery</a>
+				{/if}
+				</td>
+              {if $contentid!=0}  <td align="center">
+                    {if $v.n_status==0} <span class="orange">Unpublish</span>
+                    {elseif $v.n_status==1} <span class="green">Publish</span>
+                    {elseif $v.n_status==2} <span class="red">Inactive</span>
+                    {else}
+                    {/if}
+                </td>
+                {/if}
+                <td>
+                    <nobr>
+                   
+							<a href="index.php?s={$folder}&act=hapus&id={$v.repoid}" class="red" onclick="return confirm('Are you sure you want to delete this?')">delete</a>
+                      
+                    </nobr>
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    <div class="paging">
+    	{$paging}
+    </div>
+</div><!--theContent-->

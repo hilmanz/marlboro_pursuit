@@ -1,0 +1,223 @@
+2013-04-01 10:59:22 SELECT * FROM social_member WHERE username='ovan' LIMIT 1
+2013-04-01 10:59:22 can login
+2013-04-01 10:59:25 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-01 10:59:25 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 10:59:25 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-01 10:59:25 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-01 10:59:25 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 10:59:25 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-01 10:59:32 INSERT INTO tbl_mail (mail_id, mail_address, mail_invite_by) VALUES (null, '',1)
+2013-04-01 10:59:32 error mail setting
+2013-04-01 11:07:07 INSERT INTO tbl_mail (mail_id, mail_address, mail_invite_by) VALUES (null, '',1)
+2013-04-01 11:07:07 error mail setting
+2013-04-01 13:31:59 SELECT * FROM social_member WHERE username='ovan' LIMIT 1
+2013-04-01 13:31:59 can login
+2013-04-01 13:32:02 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-01 13:32:02 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 13:32:02 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-01 13:32:02 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-01 13:32:02 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 13:32:02 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-01 13:40:09 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-01 13:40:09 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 13:40:09 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-01 13:40:09 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-01 13:40:09 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 13:40:09 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-01 13:41:22 SELECT * FROM marlborohunt_city_reference WHERE provinceid <> 0 AND city <> '(NOT SPECIFIED)'    ORDER BY city
+2013-04-01 13:41:22 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-01 13:41:22 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='side_banner' AND n_status=1 LIMIT 1 
+2013-04-01 13:41:22 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'event' AND n_status = 1 LIMIT 1
+2013-04-01 13:41:22 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%12%' AND type IN (3) AND n_status IN (1) 
+2013-04-01 13:41:22 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-01 13:41:44 SELECT * FROM marlborohunt_city_reference WHERE provinceid <> 0 AND city <> '(NOT SPECIFIED)'    ORDER BY city
+2013-04-01 13:41:44 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-01 13:41:44 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='side_banner' AND n_status=1 LIMIT 1 
+2013-04-01 13:41:44 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'event' AND n_status = 1 LIMIT 1
+2013-04-01 13:41:44 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%12%' AND type IN (3) AND n_status IN (1) 
+2013-04-01 13:41:44 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-01 13:41:59 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-01 13:41:59 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 13:41:59 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-01 13:41:59 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-01 13:41:59 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 13:41:59 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-01 13:42:49 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-01 13:42:49 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 13:42:49 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-01 13:42:50 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-01 13:42:50 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 13:42:50 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-01 13:50:28 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-01 13:50:28 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 13:50:28 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-01 13:50:28 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-01 13:50:28 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 13:50:28 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-01 13:50:33 SELECT * FROM marlborohunt_city_reference WHERE provinceid <> 0 AND city <> '(NOT SPECIFIED)'    ORDER BY city
+2013-04-01 13:50:33 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-01 13:50:33 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='side_banner' AND n_status=1 LIMIT 1 
+2013-04-01 13:50:33 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'event' AND n_status = 1 LIMIT 1
+2013-04-01 13:50:33 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%12%' AND type IN (3) AND n_status IN (1) 
+2013-04-01 13:50:33 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-01 14:02:28 SELECT * FROM social_member WHERE username='ovan' LIMIT 1
+2013-04-01 14:02:28 cannot login, password or username not exists 
+2013-04-01 14:02:54 can not register
+2013-04-01 14:03:03 can register
+2013-04-01 14:03:03 do register
+2013-04-01 14:03:03 
+			INSERT INTO social_member (password,email,register_date,salt,n_status,name,nickname,username) 
+			VALUES ('3dc529b433989eed3a1e57b0f2efd08a9d232f16','ovan@kana.co.id',NOW(),'12345678',1,'ovan','ovan','ovan')
+		
+2013-04-01 14:03:11 SELECT * FROM social_member WHERE username='ovan' LIMIT 1
+2013-04-01 14:03:11 can login
+2013-04-01 14:03:14 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-01 14:03:14 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 14:03:14 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-01 14:03:14 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-01 14:03:14 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-01 14:03:14 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 14:03:14 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-01 14:03:14 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-01 14:09:02 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-01 14:09:02 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 14:09:02 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-01 14:09:02 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-01 14:09:02 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-01 14:09:02 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 14:09:02 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-01 14:09:02 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-01 15:11:39 SELECT * FROM social_member WHERE username='ovan' LIMIT 1
+2013-04-01 15:11:39 can login
+2013-04-01 15:11:41 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-01 15:11:41 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 15:11:41 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-01 15:11:41 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-01 15:11:41 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-01 15:11:41 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 15:11:41 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-01 15:11:41 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-01 15:11:49 SELECT * FROM marlborohunt_city_reference WHERE provinceid <> 0 AND city <> '(NOT SPECIFIED)'    ORDER BY city
+2013-04-01 15:11:49 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1386) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-01 15:11:49 have attending
+2013-04-01 15:11:49 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1387,1449,1444,1443,1442,1399,1393,1392,1391,1390) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-01 15:11:49 have attending
+2013-04-01 15:11:49 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='side_banner' AND n_status=1 LIMIT 1 
+2013-04-01 15:11:49 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'event' AND n_status = 1 LIMIT 1
+2013-04-01 15:11:49 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%12%' AND type IN (3) AND n_status IN (1) 
+2013-04-01 15:11:49 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1409) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-01 15:11:49 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1386) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-01 15:11:49 have attending
+2013-04-01 15:11:49 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1387,1449,1444,1443,1442,1399,1393,1392,1391,1390) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-01 15:11:49 have attending
+2013-04-01 15:11:50 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-01 15:11:50 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 15:11:50 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-01 15:11:50 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-01 15:11:50 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-01 15:11:50 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-01 15:11:50 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-01 15:11:50 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		

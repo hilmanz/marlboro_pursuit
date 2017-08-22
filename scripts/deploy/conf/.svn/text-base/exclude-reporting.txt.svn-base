@@ -1,0 +1,43 @@
+## Exclude Public Assets
+
+- public_html
+- public_html/
+- public_html.default/
+- templates/application/web/footer.html
+- templates/application/web/landing.html
+- tmp/
+- logs/
+- config/config.inc.php
+- config/config.inc.php.amild
+- .svn/
+- .DS_Store
+
+- public_ftp/incoming/
+- public_ftp/
+- perl5/
+- mail/
+- etc/
+- cgi-bin/
+- backup/
+- .trash/
+- .htpasswds/
+- .cpanel/
+- www
+- cpbackup-exclude.conf
+- access-logs
+- .viminfo
+- .lastlogin
+- .emacs
+- .dns
+- .contactemail
+- .bashrc
+- .bash_profile
+- .bash_logout
+- .bash_history
+- public_html/cgi-bin/
+- public_html/.htaccess
+- dashboard_html/.htaccess
+- tools/list_svn.txt
+- tools/delete_svn.sh
+- tools/sync_production.sh
+- tools/conf/exclude-production.txt

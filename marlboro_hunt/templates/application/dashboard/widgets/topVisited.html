@@ -1,0 +1,147 @@
+<div id="top-visited">
+    <div class="the-title fl">
+        <h2>Top 10 Visited Page </h2>
+    </div>
+    <div class="select_op rt">
+        <div class="shorter">
+            <form method="GET" action="{$basedomain}activities" >
+			<select class="styled weeks" name="week">
+              <option value="7" {if $week == 1}selected="selected"{/if}>Week 1</option>
+              <option value="14" {if $week == 2}selected="selected"{/if}>Week 2</option>
+              <option value="21" {if $week == 3}selected="selected"{/if}>Week 3</option>
+              <option value="28" {if $week == 4}selected="selected"{/if}>Week 4</option>
+            </select>
+			</form>
+        </div>
+     </div>
+    <div class="section_table">
+        <table class="gridtable">
+            <tr class="page_list">
+                <th>Page</th>
+                <th>Subculture</th>
+                <th>Visit</th>
+            </tr>
+			{foreach from=$topTenVisitedPage   key=k item=v }
+            <tr>
+                <td>https://www.amild.com/{$v.page}</td>
+                <td>{$v.page}</td>
+                <td>{$v.num}</td>
+            </tr>
+           {/foreach}
+        </table>
+    </div><!--end.section_table-->
+   <div class="the-title fl">
+            <h2>Top 3 Visited Page (from each subculture)</h2>
+        </div>
+       <div class="select_op rt">
+        <div class="shorter">
+            <form method="GET" action="{$basedomain}activities">
+			<select class="styled weeks" name="week">
+              <option value="7" {if $week == 1}selected="selected"{/if}>Week 1</option>
+              <option value="14" {if $week == 2}selected="selected"{/if}>Week 2</option>
+              <option value="21" {if $week == 3}selected="selected"{/if}>Week 3</option>
+              <option value="28" {if $week == 4}selected="selected"{/if}>Week 4</option>
+            </select>
+			</form>
+        </div>
+     </div>
+        <div class="accordion">                           
+            <h3 class=""><span>Music</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide" href="#">Hide</a> 
+            </h3>
+            <div class="acc_section">
+                <table class="gridtable">
+                    <tr class="page_list">
+                        <th>Page</th>
+                        <th>Visit</th>
+                    </tr>
+					{foreach from=$topThreeVisitMusic   key=k item=v }
+                    <tr>
+                         <td>https://www.amild.com/{$v.type}/{$v.page}</td>
+						<td>{$v.num}</td>
+                    </tr>
+					 {/foreach}
+                </table>
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Dj</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide" href="#">Hide</a> 
+            </h3>
+            <div class="acc_section">
+                <table class="gridtable">
+                    <tr class="page_list">
+                        <th>Page</th>
+                        <th>Visit</th>
+                    </tr>
+                    {foreach from=$topThreeVisitDJ   key=k item=v }
+                    <tr>
+                         <td>https://www.amild.com/{$v.type}/{$v.page}</td>
+						<td>{$v.num}</td>
+                    </tr>
+					 {/foreach}
+                </table>
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Visual Art</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide" href="#">Hide</a>  
+            </h3>
+            <div class="acc_section">
+                <table class="gridtable">
+                    <tr class="page_list">
+                        <th>Page</th>
+                        <th>Visit</th>
+                    </tr>
+                     {foreach from=$topThreeVisitVisualart   key=k item=v }
+                    <tr>
+                         <td>https://www.amild.com/{$v.type}/{$v.page}</td>
+						<td>{$v.num}</td>
+                    </tr>
+					 {/foreach}
+                </table>
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Style</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide" href="#">Hide</a>  
+            </h3>
+            <div class="acc_section">
+               <table class="gridtable">
+                    <tr class="page_list">
+                        <th>Page</th>
+                        <th>Visit</th>
+                    </tr>
+                     {foreach from=$topThreeVisitFashion   key=k item=v }
+                    <tr>
+                         <td>https://www.amild.com/{$v.type}/{$v.page}</td>
+						<td>{$v.num}</td>
+                    </tr>
+					 {/foreach}
+                </table>
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Photography</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide" href="#">Hide</a> 
+            </h3>
+            <div class="acc_section">
+                <table class="gridtable">
+                    <tr class="page_list">
+                        <th>Page</th>
+                        <th>Visit</th>
+                    </tr>
+                     {foreach from=$topThreeVisitPhotography   key=k item=v }
+                    <tr>
+                         <td>https://www.amild.com/{$v.type}/{$v.page}</td>
+						<td>{$v.num}</td>
+                    </tr>
+					 {/foreach}
+                </table>
+            </div><!--end.acc_section-->
+        </div><!---end.accodrion-->
+</div><!--end#top-visited-->
+{literal}
+<script>	
+	$(document).on('change','.weeks',function(){    
+			$(this).parent().submit();               
+	});
+</script>
+{/literal}

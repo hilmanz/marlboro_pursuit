@@ -1,0 +1,169 @@
+<script>
+
+	
+	var province = {$provinces|json_encode};
+	var provinceid = {if $provinceid}{$provinceid}{else}0{/if};
+	var cityid = {if $cityid}{$cityid}{else}0{/if};
+	{literal}
+	$(document).ready(function(){
+		getProvinceCity(provinceid);
+	});
+	
+	$(document).on('change','#province',function(){
+		var provinceid = $(this).val();
+		getProvinceCity(provinceid);
+	});
+	
+	function getProvinceCity(provinceid){
+	
+		$.post(basedomain+"admin/index.php?s=userManagement&act=getCity" ,{id:provinceid}, function(data){
+			var html ="<option value='-'> - </option>";
+			var idCity = cityid;
+		
+			if(data){
+				$.each(data,function(i,e){
+					if (e.id == idCity){
+						html+="<option value='"+e.id+"' selected=\"selected\">"+e.city+"</option>";
+					}else{
+						html+="<option value='"+e.id+"'>"+e.city+"</option>";
+					}
+					
+				});
+			}
+			$("#city").html(html);
+			
+		},"JSON");
+	}
+	
+	
+
+	$(document).on('change','#status',function(){
+		var userid = $(this).attr('userid');
+		var statusid = $(this).val();
+	
+	
+		$.post(basedomain+"admin/index.php?s=userManagement&act=ajax" ,{status:statusid, id:userid}, function(dataGiid){
+			//alert(dataGiid);
+			var status = dataGiid.status;
+			//alert(status);
+			if (status == true || status == 'true'){
+				alert('Validate Success');
+				
+			}else{
+				alert('Validate Failed');
+			}
+			
+		},"JSON");
+	});
+	
+	$(document).on('click','.sendmailresetpass',function(){
+	
+		var userid = $(this).attr('userid');
+	
+		$.post(basedomain+"admin/index.php?s=userManagement&act=resetpassajax" ,{user_id:userid}, function(data){
+			//alert(dataGiid);
+			var status = data.status;
+			//alert(status);
+			if (status == true || status == 'true'){
+				alert('Success reset password');
+				
+			}else{
+				alert('Cannot reset the password');
+			}
+			
+		},"JSON");
+	});
+		{/literal}
+</script>
+
+<div class="theContent">
+
+    <div class="theTitle">
+        <h2>User Profile</h2>
+    </div><!--contenttitle-->
+	<form name="cal" method="post" action="" enctype="multipart/form-data" onsubmit="javascript: return validator(); ">
+	<table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+          
+        <tbody>
+			<tr><td>GIID Image </td><td><img src="{$baseurl}public_assets/user/gid/{$img}" style="height:500px; width:800px; auto;" />&nbsp </td></tr>
+            <tr><td>GIID Number</td><td>{$giid_number}&nbsp </td></tr>
+            <tr><td>GIID Type</td><td>{$giidType} &nbsp </td></tr>
+			<tr><td>Register Date</td><td>{$register_date}</td></tr>
+            <!--<tr><td>Register ID</td><td>{$registerid}<input type="hidden" id="user_id_{$registerid}" value="{$id}" />&nbsp</td></tr>-->
+            <tr><td>Name</td><td>{$name} &nbsp </td></tr>
+			<tr><td>Middle Name</td><td>{$middle_name} &nbsp </td></tr>
+			<tr><td>Last Name</td><td>{$last_name} &nbsp </td></tr>
+            <tr><td>Nickname</td><td>{$nickname} &nbsp </td></tr>
+            <tr><td>Email</td><td>{$email}</td></tr>
+			<tr><td>House and Street</td><td><input type="text" id="StreetName" name="StreetName" value="{$StreetName}" /></td></tr>
+			<tr><td>District</td><td><input type="text" id="barangay" name="barangay" value="{$barangay}" /></td></tr>
+			<tr>
+				<td>Province</td>
+				<td>
+					<!--
+					{section name=i loop=$SMP}
+						<input type="text" id="Province" name="Province" value="{$SMP[i].Province}" />
+					{/section}
+					-->
+					<select name='province' class="styled" id="province">
+					 <option value="0">-</option>
+					 {section name=i loop=$provinces}
+						{if $provinces[i].id==$provinceid}	<option value='{$provinces[i].id}' selected >{$provinces[i].province}</option>
+						{else}<option value='{$provinces[i].id}'  >{$provinces[i].province}</option>
+						{/if}
+					 {/section}
+					</select>
+					
+				</td>
+			</tr>
+			<tr><td>City</td>
+				<td>
+					<select name="city" style="width:200px;" id="city" >
+						<option value="city" >-</option>
+						
+					</select>
+				</td>
+			</tr>
+			<tr><td>Zip Code</td><td><input type="text" id="zipcode" name="zipcode" value="{$zipcode}" /></td></tr>
+			<tr><td>Sex </td>
+				<td>
+					<input type="radio" name="sex" value="Male" {if $sex|lower =='male'}checked="checked"{/if}>Male &nbsp 	
+					<input type="radio" name="sex" value="Female" {if $sex|lower =='female'}checked="checked"{/if}>Female
+				</td>
+			</tr>
+            <tr><td>Birthday</td><td>{$birthday} &nbsp </td></tr>         
+            <tr><td>Username</td><td>{$username} &nbsp </td></tr>
+			<!--<tr><td>Refered By</td><td><input type="text" id="refered_by" name="refered_by" value="{$refered_by}" /></td></tr>-->
+			<tr><td>Phone Number</td><td><input type="text" id="phone_number" name="phone_number" value="{$phone_number}" /></td></tr>
+            <!-- <tr><td>Landline Number</td><td><input type="text" id="landline_number" name="landline_number" value="{$landline_number}" /></td></tr> -->
+            <!--<tr><td>Description</td><td><input type="text" id="description" name="description" value="{$description}" /></td></tr>-->
+			<tr><td>Approval</td>
+				<td align="center">
+					<select id="status"  userid="{$id}">
+						<option value="" class="green" > - </option>
+						<!--<option value="1" class="green" {if $n_status == 1} selected="selected"{/if}>Archlight Approval</option>-->
+						<!-- <option value="0" class="red" {if $n_status == 0} selected="selected"{/if}>Pending GIID Upload</option> -->
+						<option value="2" class="blue" {if $n_status == 2} selected="selected"{/if}><!-- Pending GIID Verification -->Verify</option>
+						<!-- <option value="2" class="green" {if $n_status == 2} selected="selected"{/if}>CSR Approved </option>
+						<option value="3" class="red" {if $n_status == 3} selected="selected"{/if}>Unupload GIID</option> -->
+						<option value="4" class="red" {if $n_status == 4} selected="selected"{/if}><!-- Data Not Valid -->Reject</option>
+						<!-- <option value="6" class="red" {if $n_status == 6} selected="selected"{/if}>Deactived</option> -->
+						<option value="7" class="red" {if $n_status == 7} selected="selected"{/if}><!-- Blocked -->Block</option>
+					</select>
+				</td>
+			</tr>
+			<tr><td>Reset Password</td><td><input type="button" value=" Send to Email " class="stdbtn btn_orange sendmailresetpass" userid="{$id}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>*Automatically Send Random Password to Email</i></td></tr>
+			<tr>
+			<td></td>
+				<input type="hidden" name="simpan" value="true" />
+				<input type="hidden" name="currentauthorid" value="{$authorid}" class="currentauthorid" />
+				<input type="hidden" name="id" value="{$id}" />
+                <td align="right"><input type="submit" value=" Save " class="stdbtn btn_orange">&nbsp;&nbsp; <input type="button" class="stdbtn btn_yellow" value="Cancel" onclick="javascript: window.location.href='index.php?s={$folder}' ;" /></td>
+            </tr>
+        </tbody>
+    </table>
+	</form>
+	<div class="paging">
+    	{$paging}
+    </div>
+</div>

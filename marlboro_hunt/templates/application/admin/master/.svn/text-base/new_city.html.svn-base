@@ -1,0 +1,33 @@
+<div class="theContent">
+    {if $msg}<div class="notibar msgalert"><p>{$msg}</p></div>{/if}
+    <div class="theTitle">
+        <h2>Add City</h2>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>   
+            <form>
+                <tr class="head">
+					<td width="200"><strong>Province Name</strong></td>
+					<td>
+						<select name="provinceid" style="width:200px;" >
+							<option value=""> - Pilih - </option>
+							{section name=i loop=$province}
+							<option value="{$province[i].id}">{$province[i].province}</option>
+							{/section}
+						</select>
+					</td>
+				</tr>
+                <tr class="head">
+					<td><strong>City</strong></td>
+					<td><input type="text" name="city" style="width:300px;"/></td>
+				</tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value=" Save " class="stdbtn btn_orange">&nbsp;&nbsp; <input class="stdbtn btn_yellow" type="button" value="Cancel" onclick="javascript: window.location.href='index.php?s=master&act=list_city' ;" /></td>
+                </tr>
+                <input type="hidden" name="cmd" value="add" />
+                <input type="hidden" name="s" value="master" />
+                <input type="hidden" name="act" value="add_city" />
+            </form>
+    	</tbody>
+	</table>
+</div><!--theContent-->

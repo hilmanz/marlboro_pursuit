@@ -1,0 +1,58 @@
+
+<div id="registration2" class="registration">
+	<div class="head">
+    	
+    </div><!-- END .head -->
+    <div class="section">
+    	<form id="reg3" action="{$basedomain}account/giid" class="theForm" method="POST">
+        	
+<h3>To complete the profile update process, please confirm the following</h3>
+		<h2>After completing and signing this survey form, I declare that:</h2>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="top">a)</td>
+            <td valign="top">the foregoing information is accurate,</td>
+          </tr>
+          <tr>
+            <td valign="top">b)</td>
+            <td valign="top">I am an adult smoker 18 years or older;</td>
+          </tr>
+          <tr>
+            <td valign="top">c)</td>
+            <td valign="top">the contact number/s and email address stated above are used personally and exclusively by me and cannot be accessed or shared by other persons.</td>
+          </tr>
+        </table>
+        <h2>Toward this end, I hereby grant my consent to PMFTC Inc. to</h2>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="top">a)</td>
+            <td valign="top">store and use this personal information to allow PMFTC Inc. and its affiliates and duly-authorized representatives to verify age and other 
+	     	compliance with internal policies, and/or contact me;</td>
+          </tr>
+          <tr>
+            <td valign="top">b)</td>
+            <td valign="top">to the extent permitted under the applicable laws, provide me, using mail, email, SMS, telephone, etc., with communications related to tobacco 
+		products, including but not limited to information and material on brand launches, packaging changes, events, marketing activities, regulation 
+		of tobacco products and political topics that may be of relevance to tobacco products; to process my information in countries other than the 
+		country in which I live (for example, Locating the database in one country and accessing the database remotely from another), and</td>
+          </tr>
+          <tr>
+            <td valign="top">c)</td>
+            <td valign="top">disclose my personal information to service providers for the above purposes, to PMFTC In. affiliates to do the above for their own purposes, 
+		and (if required by law) to relevant authorities. PMFTC Inc. may not disclose my personal information to third parties for other purposes, 
+		without my prior consent.</td>
+          </tr>
+        </table>
+        <div class="row rowSubmit">
+        	<input type="hidden" value="1" name="token"/>
+        	<input type="hidden" value="{$email_token}" name="email_token"/>
+        	<input type="submit" value="CONFIRM" class="button btnRed" name="submit"/>
+        </div><!-- END .rowSubmit -->
+        </form>
+        <div class="step">
+        	<a class="page1 btnStep fl" href="{$basedomain}account/edit">Page 1</a>
+        	<a class="page2 btnStep" href="{$basedomain}account/brands">Page 2</a>
+        	<a class="page3 btnStep fr current">Page 3</a>
+        </div><!-- END .step -->
+    </div><!-- END .section -->
+</div><!-- END .registration -->

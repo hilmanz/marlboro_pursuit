@@ -1,0 +1,105 @@
+<div class="section profilePage">
+    <ul class="columns-content page-content clearfix">
+        <li class="col-sidebar">
+           {$profie_box}
+           {$my_circle}
+		   {$side_banner}
+        </li> <!-- END .col-sidebar -->
+       <li class="col-main">
+            <div class="blog-title clearfix">
+                <div class="fl">
+                    <a><h3>FRIENDS</h3></a> <h3 class="total-my-friends" total="{$total}">{$total}</h3> 
+                </div>
+				<div class="searchTop fl" id="searchFriendsTop" style="padding-left:10px">
+					<input class="keywords-search-friends" type="text" value="Search Friends..."  onBlur="if(this.value=='')this.value='Search Friends...';" onFocus="if(this.value=='Search Friends...')this.value='';"/>
+                  				               
+                </div>
+                <div id="menu_friendlist" class="fr">
+                    <ul>
+                        <li>
+                            <div class="toggle">
+               					<div class="title">
+                                <a href="#" class="toggle">Group</a>
+                                </div>
+                                <div class="inner">
+                                    {foreach from=$group key=k item=v}
+										{if $friendid}<a href="{$basedomain}friends/offriends/{$friendid}/{$k}">{$v}</a>
+										{else}<a href="{$basedomain}my/friends/list/{$user->id}/{$k}">{$v}</a>
+										{/if}
+									{/foreach}
+									{if $friendid}<a href="{$basedomain}friends/offriends/{$friendid}" >SEE ALL</a>
+									{else}<a href="{$basedomain}my/friends" >SEE ALL</a>
+									{/if}
+                                    {if !$friendid}<a href="#popup-addGroup" class="showPopup addGroup">Create/Edit Group</a>{/if}
+                                </div>
+                            </div>
+            			</li>
+                        <li><a href="{$basedomain}{$pages}">Back</a></li>
+                    </ul>
+                </div><!-- END #left_menu -->
+            </div> <!-- END .blog-title -->
+        	<ul class="columns-2 friends-box">            						
+				{foreach from=$usercircle key=kCircle item=vCircle}
+					{foreach from=$vCircle key=kGroup item=vGroup}
+						{foreach from=$vGroup key=kUser item=vUser}
+							{if $vUser.frienddetail.id}
+								{if $user->id!=$vUser.frienddetail.id||$friendid}
+								<li class="col2 friendslist_{$vUser.frienddetail.id}">
+									 <div class="whiteBox">
+										<a class="thumb100" href="{$basedomain}friends/{$vUser.frienddetail.id}"><img src="{$basedomain}public_assets/user/photo/{if $vUser.frienddetail.img}{$vUser.frienddetail.img}{else}default.jpg{/if}"></a>
+										<div class="entry-friends">
+											<div class="name_friends">
+												<h3>{$vUser.frienddetail.name|upper} {$vUser.frienddetail.last_name|upper}</h3>
+											 </div>	
+											<div class="content_action">
+												<a href="{$basedomain}friends/{$vUser.frienddetail.id}" class="icon_view fl">Lihat Profile</a>
+											{if !$friendid}	
+												<a href="javascript:void(0)" friendid="{$vUser.frienddetail.id}" class="icon_trash fr unfriends">&nbsp;</a>
+											{/if}
+											{if !$friendid}
+											<div class="toggle fr">
+												<div class="title">
+												<a href="#" class="toggle icon_group fr"></a>
+												</div>
+												<div class="inner">
+													{foreach from=$group key=k item=v}
+														{if in_array($k,$vUser.frienddetail.groups)}<label><input type="checkbox" class="unchangegroupoffriend" groupid="{$k}" friendid="{$vUser.frienddetail.id}" checked /><span>{$v}</span></label>
+														{else}<label><input type="checkbox" class="changegroupoffriend" groupid="{$k}" friendid="{$vUser.frienddetail.id}" /><span>{$v}</span></label>
+														{/if}
+													{/foreach}
+													
+												</div>
+											</div>
+											{/if}
+											</div><!--END .content_action-->
+										</div><!--END .entry-friends-->
+									</div>
+								 </li><!-- END .col2-->  
+								{/if}
+							{else}
+								<p>{$locale.donthavefriend}</p>
+							{/if}
+                    	{/foreach}
+					{/foreach}
+				{/foreach}
+               
+            </ul><!-- END .columns-2--> 
+             <div class="paging" id="pagingID">
+                
+            </div> <!-- END .paging -->
+		</li><!-- END .col-main -->    
+    </ul><!-- END .page-content -->
+</div><!-- END .section -->
+	
+{literal}
+
+<script>
+		$(document).on('click','#fancybox-overlay,#fancybox-close', function(){
+			location.reload();
+		});
+	</script>
+{/literal}
+{include file="application/web/widgets/popup-add-group.html"}  
+<script>
+	getpaging(0,{$total},"pagingID","paging_ajax_friends",16);
+</script>

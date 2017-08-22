@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples
+END
+MultipleSetAndGet.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/MultipleSetAndGet.php
+END
+PipelineContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/PipelineContext.php
+END
+MultiExecTransactionsWithCAS.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/MultiExecTransactionsWithCAS.php
+END
+SimpleDebuggableConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/SimpleDebuggableConnection.php
+END
+MonitorContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/MonitorContext.php
+END
+CustomDistributionStrategy.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/CustomDistributionStrategy.php
+END
+KeyPrefixes.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/KeyPrefixes.php
+END
+ServerSideScripting.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/ServerSideScripting.php
+END
+DispatcherLoop.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/DispatcherLoop.php
+END
+MasterSlaveReplication.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/MasterSlaveReplication.php
+END
+SharedConfigurations.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/SharedConfigurations.php
+END
+PubSubContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/PubSubContext.php
+END
+MasterSlaveReplicationComplex.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/MasterSlaveReplicationComplex.php
+END
+SimpleSetAndGet.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/examples/SimpleSetAndGet.php
+END

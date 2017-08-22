@@ -1,0 +1,145 @@
+<div id="user-activities">    
+    <div class="section_tabs">
+        <div class="the-title fl">
+            <h2>Top 10 User Activities</h2>
+         </div>
+         <div class="select_op rt">
+            <div class="shorter">
+				<form action="{$basedomain}activities#userActivities" method="GET"  >
+                <select class="styled weeks" name="week" >
+                  <option value="7" {if $week == 1}selected="selected"{/if}>Week 1</option>
+				  <option value="14" {if $week == 2}selected="selected"{/if}>Week 2</option>
+				  <option value="21" {if $week == 3}selected="selected"{/if}>Week 3</option>
+				  <option value="28" {if $week == 4}selected="selected"{/if}>Week 4</option>
+                </select>
+				</form>
+            </div>
+		
+        </div>
+          <div class="section_table">
+            <table class="gridtable">		          			
+           <tr>
+			{foreach from=$top10UserActivity key=k item=userActivity}
+				<th>{$k}</th>
+			{/foreach}
+				
+             </tr>	
+			<tr>			 
+			 {foreach from=$top10UserActivity key=k item=userActivity}
+				<td valign="top" style="padding:0">
+					<table  style="width:100%;margin:0;border-collapse:collapse" cellpadding="0" cellspacing="0" border="0">
+					{foreach from=$userActivity key=keyaja item=v}
+						<tr><td>{$v.activityName}</td><td>{$v.num}</td></tr>
+					{/foreach}	
+					</table>
+				</td>
+			{/foreach}
+			</tr>
+            </table>
+        
+          </div>
+        </div><!--end.section_tabs-->
+        <div class="the-title fl">
+            <h2>Top 10 (per user activity)</h2>
+        </div>
+        <div class="select_op rt">
+            <div class="shorter">
+               <form action="{$basedomain}activities" method="GET"  >
+                <select class="styled weeks" name="week" >
+                  <option value="7" {if $week == 1}selected="selected"{/if}>Week 1</option>
+				  <option value="14" {if $week == 2}selected="selected"{/if}>Week 2</option>
+				  <option value="21" {if $week == 3}selected="selected"{/if}>Week 3</option>
+				  <option value="28" {if $week == 4}selected="selected"{/if}>Week 4</option>
+                </select>
+				</form>
+            </div>
+        </div>
+        <div class="accordion">                           
+            <h3 class=""><span>Favorite</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide2" href="#">Hide</a> 
+            </h3>
+            <div class="acc_section">
+                <table class="gridtable">
+					<tr class="user_list">
+					{section name=i loop=$topUserActLike}	
+					    <th>{$topUserActLike[i].name}</th>
+                    {/section}
+					</tr>
+                    <tr class="icon_list">
+                    {section name=i loop=$topUserActLike}    				
+						<td><img src='{$basedomainpath}public_assets/user/photo/tiny_{$topUserActLike[i].img}'  /></td>
+                    {/section}
+					</tr>
+				</table>
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Upload</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide2" href="#">Hide</a>  
+            </h3>
+            <div class="acc_section">
+                <table class="gridtable">
+                    <tr class="user_list">
+					{section name=i loop=$topUserActUpload}	
+					    <th>{$topUserActUpload[i].name}</th>
+                    {/section}
+					</tr>
+                    <tr class="icon_list">
+                    {section name=i loop=$topUserActUpload}    
+						<td><img src='
+						{$basedomainpath}public_assets/user/photo/tiny_{$topUserActUpload[i].img}
+						' /></td>
+                    {/section}
+					</tr>
+                </table>
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Download</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide2" href="#">Hide</a>  
+            </h3>
+            <div class="acc_section">
+                <table class="gridtable">				
+                    <tr class="user_list">
+					{section name=i loop=$topUserActDownload}	
+					    <th>{$topUserActDownload[i].name}</th>
+                    {/section}
+					</tr>
+                    <tr class="icon_list">
+                    {section name=i loop=$topUserActDownload}    
+						<td><img src='
+					{$basedomainpath}public_assets/user/photo/tiny_{$topUserActDownload[i].img}
+						' /></td>
+                    {/section}
+					</tr>
+                </table>
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Comment</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide2" href="#">Hide</a> 
+            </h3>
+            <div class="acc_section">
+                <table class="gridtable">
+                    <tr class="user_list">
+					{section name=i loop=$topUserActComment}	
+					    <th>{$topUserActComment[i].name}</th>
+                    {/section}
+					</tr>
+                    <tr class="icon_list">
+                    {section name=i loop=$topUserActComment}    
+						<td><img src='
+						{$basedomainpath}public_assets/user/photo/tiny_{$topUserActComment[i].img}
+						' /></td>
+                    {/section}
+					</tr>
+                </table>
+            </div><!--end.acc_section-->
+        </div><!---end.accodrion-->
+</div>
+
+<script>	
+{literal}
+	$(document).on('change','.weeks',function(){    
+			$(this).parent().submit();            
+	});
+</script>
+{/literal}

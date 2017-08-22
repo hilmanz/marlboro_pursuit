@@ -1,0 +1,95 @@
+
+<script type="text/javascript" src="{$basedomain}assets/camera/webcam.js"></script>
+	<div class="popupContainer popup" id="popup-upload-photo-webcam">
+    	<a id="fancybox-close" class="closePopup" href="#">&nbsp;</a>
+        <div class="popupContent">
+        	<div class="popup-title">
+				<h3>upload your VALID government-issued id</h3>
+            </div><!--END .entry-title-->
+        	<div class="entry-popup">
+            
+                	<div class="row">
+                		<div id="webcamhere" style="background-color:#eee;"></div>
+                		<div id="upload_results" style="background-color:#eee;"></div>
+                    </div>
+                    <div class="row">
+						<a  href="javascript:void(0)" class="button btnRed capture">TAKE PHOTO</a>		
+						<span id="messg"></span>
+						<a  href="javascript:void(0)" class="button btnRed okbuttonclose" style="display:none" >OK</a>	                   
+                    </div>
+             
+            </div><!--END .entry-popup-->
+		</div><!-- END .popupContent -->
+    </div><!-- END .popupContainer -->
+
+	<script >
+					var basedomain = "{$basedomain}";
+					{literal}
+					$(document).ready(function(){
+						initCam();
+					});	
+					
+					/*
+					$(document).on('click','#close',function(){
+							//$.fancybox.close;
+							window.location.href=basedomain+"register/giid";
+					});
+					*/
+					$(document).on('click','.capture',function(){
+							take_snapshot();
+					});
+					
+						
+					$(document).on('click','.okbuttonclose',function(){
+							$('#fancybox-close').trigger('click');
+					});
+					
+					$(document).on('click','.captureagain',function(){
+							initCam();
+					});
+					function take_snapshot() {
+						// take snapshot and upload to server
+						$('#upload_results').html(locale.pleasewait);
+						webcam.snap();
+						$('#messg').html('');
+					}
+					
+					function my_completion_handler(msg) {
+						var data = $.parseJSON(msg);
+						
+						if(data){
+						$('#webcamhere').html('<img src="'+  basedomain +'public_assets/user/gid/'+ data.filename + '">');				
+						$('#upload_results').html('');
+						$(".capture").html( "TAKE PHOTO AGAIN" );
+						var html = "";
+						html+='<a class="orange" href="#">file attached : '+data.filename+'</a>|';
+						html+='<a id="deletegiid" href="#">delete</a>';
+						$("#filenameContainer").html(html);
+						//$('#later').parent().append('<h3><a href=\"#\" class=\"orange\">file attached : '+ data.filename +'</a> | <a href=\"#\" id=\"deletegiid\">delete</a></h3>'); 
+						$(".okbuttonclose").show();
+						$(".capture").addClass('captureagain');
+						$(".captureagain").removeClass('capture');
+						}else{
+							$('#upload_results').html(locale.browsermustsupport);
+						}
+					}
+					
+					function initCam(){
+						webcam.set_api_url( basedomain+"register/cameragiid" );
+						webcam.set_quality( 90 ); // JPEG quality (1 - 100)
+						webcam.set_swf_url( basedomain+'assets/camera/webcam.swf' ); // play shutter click sound
+						webcam.set_shutter_sound( true, basedomain+'assets/camera/shutter.mp3' ); // play shutter click sound
+						$("#webcamhere").html( webcam.get_html(550, 365, 550, 365) );	
+						$('#upload_results').html('');						
+						webcam.set_hook( 'onComplete', 'my_completion_handler' );
+						$(".captureagain").html( "TAKE PHOTO" );
+						$(".captureagain").addClass('capture');
+						$(".capture").removeClass('captureagain');
+						$(".okbuttonclose").hide();
+					}
+					
+				</script>
+				{/literal}
+	
+
+	

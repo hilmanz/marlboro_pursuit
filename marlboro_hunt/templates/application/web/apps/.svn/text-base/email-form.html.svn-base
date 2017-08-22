@@ -1,0 +1,18 @@
+	<div  style="padding-left:191px;">
+	<form method="POST" id="formLogin" action="{$basedomain}email">
+		<table>
+			<tr>
+				<td valign="top">Enter Emails </td>
+				<td><textarea name="mailto"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="check"  value="on" /> Saya setuju</td>
+			</tr>
+		</table>
+		<input type="hidden" name="invite" value="1" /> 
+		<div><input type="submit" value="Submit" /></div> 
+	</form>
+	</div>
+
+	
+

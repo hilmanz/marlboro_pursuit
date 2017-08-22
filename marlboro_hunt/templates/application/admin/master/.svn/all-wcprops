@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/marlboro-hunt-2013/!svn/ver/83/trunk/marlboro_hunt/templates/application/admin/master
+END
+list_type.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/list_type.html
+END
+edit_city.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/marlboro-hunt-2013/!svn/ver/83/trunk/marlboro_hunt/templates/application/admin/master/edit_city.html
+END
+edit_category_News.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/edit_category_News.html
+END
+list_province.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/marlboro-hunt-2013/!svn/ver/83/trunk/marlboro_hunt/templates/application/admin/master/list_province.html
+END
+new_city.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/marlboro-hunt-2013/!svn/ver/83/trunk/marlboro_hunt/templates/application/admin/master/new_city.html
+END
+edit_page.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/edit_page.html
+END
+new_category_News.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/new_category_News.html
+END
+edit_type_News.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/edit_type_News.html
+END
+default.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/default.html
+END
+new_page.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/new_page.html
+END
+new_type_News.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/new_type_News.html
+END
+list_device.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/list_device.html
+END
+edit_province.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/edit_province.html
+END
+new_province.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/marlboro-hunt-2013/!svn/ver/83/trunk/marlboro_hunt/templates/application/admin/master/new_province.html
+END
+list_city.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/marlboro-hunt-2013/!svn/ver/83/trunk/marlboro_hunt/templates/application/admin/master/list_city.html
+END
+edit_device.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/edit_device.html
+END
+list_page.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/list_page.html
+END
+new_device.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/new_device.html
+END
+list_category.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/master/list_category.html
+END

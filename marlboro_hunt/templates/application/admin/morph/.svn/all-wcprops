@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/morph
+END
+article_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/morph/article_new.html
+END
+article_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/morph/article_list.html
+END
+article_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/morph/article_edit.html
+END

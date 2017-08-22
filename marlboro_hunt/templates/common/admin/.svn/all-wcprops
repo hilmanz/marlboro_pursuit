@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/marlboro-hunt-2013/!svn/ver/374/trunk/marlboro_hunt/templates/common/admin
+END
+dashboard_config.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/dashboard_config.html
+END
+user_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/user_edit.html
+END
+message.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/message.html
+END
+exportTo.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/exportTo.html
+END
+default.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/marlboro-hunt-2013/!svn/ver/154/trunk/marlboro_hunt/templates/common/admin/default.html
+END
+user_manage.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/user_manage.html
+END
+dashboard.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/374/trunk/marlboro_hunt/templates/common/admin/dashboard.html
+END
+user_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/user_new.html
+END
+permission.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/permission.html
+END
+admin.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/marlboro-hunt-2013/!svn/ver/179/trunk/marlboro_hunt/templates/common/admin/admin.html
+END
+dialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/dialog.html
+END
+login.dummy.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/login.dummy.html
+END
+broadcast.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/broadcast.html
+END
+config.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/marlboro-hunt-2013/!svn/ver/154/trunk/marlboro_hunt/templates/common/admin/config.html
+END
+paging.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/paging.html
+END
+dashboard_panel.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/dashboard_panel.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/login.html
+END
+edit_config.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/common/admin/edit_config.html
+END

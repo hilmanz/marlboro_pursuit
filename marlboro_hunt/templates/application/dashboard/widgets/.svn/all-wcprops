@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/marlboro-hunt-2013/!svn/ver/435/trunk/marlboro_hunt/templates/application/dashboard/widgets
+END
+topContent.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/marlboro-hunt-2013/!svn/ver/435/trunk/marlboro_hunt/templates/application/dashboard/widgets/topContent.html
+END
+userActivities.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/marlboro-hunt-2013/!svn/ver/435/trunk/marlboro_hunt/templates/application/dashboard/widgets/userActivities.html
+END
+mostViewArtist.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/marlboro-hunt-2013/!svn/ver/435/trunk/marlboro_hunt/templates/application/dashboard/widgets/mostViewArtist.html
+END
+topUsers.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/marlboro-hunt-2013/!svn/ver/435/trunk/marlboro_hunt/templates/application/dashboard/widgets/topUsers.html
+END
+topVisited.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/marlboro-hunt-2013/!svn/ver/435/trunk/marlboro_hunt/templates/application/dashboard/widgets/topVisited.html
+END

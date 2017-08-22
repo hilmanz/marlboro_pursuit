@@ -1,0 +1,15 @@
+<div class="theContent">
+    <div class="theTitle">
+        <h2>List Master</h2>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>
+            <tr>
+                <td><a href="?s=master&act=list_type" class="btn btn_book"><span>Type News & Content</span></a></td>
+            </tr>
+            <tr>
+                <td><a href="?s=master&act=list_category" class="btn btn_document"><span>Category News & Content</span></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div><!--theContent-->

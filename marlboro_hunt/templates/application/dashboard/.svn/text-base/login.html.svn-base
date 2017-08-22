@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Dashboard A Exchange</title>
+<link href="{$basedomain}assets/css/amildmop.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="{$basedomain}assets/images_mop/favicon.png" type="image/x-icon" />
+		
+
+	</head>
+
+	<body class="landingPage" >
+
+		<form name="Form2" method="POST" action="{$basedomain}login/local" id="Form2">
+
+
+		<div class="mainPage">
+			<div class="headerLandingPage"></div> <!-- close header -->
+					<div class="loginpage">
+                        <div class="loginbox">
+                            <div class="loginboxinner">
+                                <div class="logo">
+                                </div><!--logo-->
+                                <div class="username">
+                                        <div class="usernameinner">
+                                            <input name="username" type="text" id="username" maxlength="20" placeholder ="username" /> 
+                                        </div>
+                                    </div>
+                                    <div class="password">
+                                        <div class="passwordinner">
+                                            <input name="password" type="password" id="password" maxlength="20" placeholder ="password" />
+                                        </div>
+                                    </div>
+                                    <div id="chaptcha">
+                                        <img src="{$basedomain}captcha.php"/>
+                                        <input type="text" class="chaptcha" name="captcha"/>
+                                    </div>
+                                    <input id="button" type="submit" name="Submit" value="LOGIN" />
+                               
+                            </div><!--loginboxinner-->
+                        </div><!--loginbox-->
+                        </div>
+    </div>
+	<input type="hidden" name="login"value="1" />
+	</form>	
+	</body>
+</html>

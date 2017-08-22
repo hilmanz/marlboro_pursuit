@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/banner
+END
+banner_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/banner/banner_new.html
+END
+banner_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/banner/banner_list.html
+END
+banner_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/banner/banner_edit.html
+END

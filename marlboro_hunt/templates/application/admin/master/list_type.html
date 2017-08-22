@@ -1,0 +1,30 @@
+<div class="theContent">
+    <div class="theTitle">
+        <h2>Master Type News Content</h2>
+        <a href="index.php?s=master&act=add_type_news" class="btn btn_pencil"><span>Add New</span></a>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <thead>
+            <tr>        
+                <th class="head0">No</th>
+                <th class="head1">ID</th>
+                <th class="head1">Type Name</th>
+                <th class="head1" colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+              {section name=i loop=$list}
+              <tr>
+                <td width="4%">{$list[i].no}&nbsp;</td>
+                <td width="10%">{$list[i].id}&nbsp;</td>
+                <td>{$list[i].type}</td>
+                <td align="center" width="4%"><a class="btn btn_pencil" href="index.php?s=master&act=edit_type_news&id={$list[i].id}"><span>Edit</span></a></td>
+                <td align="center" width="4%"><a class="btn btn_cut" href="index.php?s=master&act=delete_type_news&id={$list[i].id}" onclick="return confirm('Are you sure you want to delete this?')"><span>Delete</span></a></td>
+              </tr>
+              {/section}
+        </tbody>
+    </table>
+    <div class="paging">
+    	{$paging}
+    </div>
+</div><!--theContent-->

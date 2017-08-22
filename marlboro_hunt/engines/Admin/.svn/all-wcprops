@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Admin
+END
+PluginManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Admin/PluginManager.php
+END
+UserManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Admin/UserManager.php
+END
+DashboardManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Admin/DashboardManager.php
+END
+Admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Admin/Admin.php
+END
+activityTracker.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Admin/activityTracker.php
+END

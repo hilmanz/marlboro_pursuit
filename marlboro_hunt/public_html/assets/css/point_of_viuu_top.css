@@ -1,0 +1,115 @@
+/* Point of ViUU - CSS */
+	
+	.perspective .perspective_diap:focus { outline:none; }
+	/* Plugin container */
+	.perspective,.dyo-gallery-winner {
+		 overflow:hidden; position:relative; /* <- Do not change this line */
+/*!*/	width:640px; /* Required - Adapt to your template */
+/*!*/	height:440px; /* Required - Adapt to your template */
+		margin:0 auto;
+	}
+	
+	.dyo-gallery-winner{
+		width:100%;
+		max-width:635px;
+		height:auto;
+		padding:20px 0;
+	}
+	.dyo-gallery-winner .perspective_diap p{
+		display:block;
+	}
+	.dyo-gallery-winner .perspective_diap{
+		position:relative;
+	}
+		/* Plugin content */
+		.perspective .perspective_diap {
+			position:absolute; /* <- Do not change this line */
+/*!*/		width:635px; /* Required - Adapt to your template (Add padding if needed) */
+/*!*/		height:290px; /* Required - Adapt to your template (Add padding if needed) */
+			background:url(../images/shadow_large.png) left bottom no-repeat #000;
+			border:solid 2px #000;
+		}
+			/* Plugin content image */
+			.perspective_diap img {
+/*!*/			width:635px; /* Required - Adapt to your template */
+/*!*/			height:290px; /* Required - Adapt to your template */
+			}
+			/* All description will be in this 'p' */
+			.perspective_diap p {
+				position:absolute; display:none; /* <- Do not change this line */
+				z-index:5; /* Change if needed */
+				background:#fff;
+				padding:10px 0;
+				font-size:15px;
+				color:#fff;
+				font-family: 'maybebold';
+			}
+			.perspective_diap p.winner{
+				background:url(../images/winner.png) no-repeat;
+				top:0;
+				left:0;
+				width:165px; height:117px;
+			}
+			.perspective_diap p span{
+				padding:0 10px 0 7px;
+			}
+				/* Add class if you want different display in your description text */
+				/* Description position */
+				
+				/* Description style */
+				.perspective_diap .caption { width:100%; bottom:0; left:0; background:#000; color:#fff; }
+				.likecount{
+					color:#C00;
+				}
+				.likebtn{
+					color:#fff;
+					text-decoration:none;
+					padding:0 10px 0 0;
+				}
+				.perspective_diap p span.entry-caption{
+					padding:0 10px;
+					display:block;
+				}
+	
+	/* overlay on the images to simulate Darkening */
+	em.darkPers {
+		position:absolute; top:0; left:0; /* <- Do not change this line */
+		cursor:pointer; /* If you want a cursor pointer on your images */
+		background:none; /* <- choose your color here */
+	}
+	
+	
+	
+/* If you use Timer and/or play */
+	
+	/* Timer */
+	span.timer_rota {
+		position:absolute; overflow:hidden; /* <- Do not change this line */
+		z-index:10; /* Change if needed */
+		width:24px;
+		height:24px;
+		bottom:21px; /* Position in container */
+		right:10px; /* Position in container */
+	}
+		span.timer_rota span {
+			position:absolute; /* <- Do not change this line */
+			width:24px;
+			height:576px;
+			background:url(../images/point_of_viuu/sprite_cercle.png) no-repeat;
+		}
+	
+	/* Play - Pause */
+	span.pause_rota,
+	span.play_rota {
+		position:absolute; cursor:pointer; /* <- Do not change this line */
+		z-index:10; /* Change if needed */
+		width:24px;
+		height:24px;
+		bottom:55px; /* Position by default in container */
+		right:10px; /* Position by default in container */
+		background:url(../images/point_of_viuu/sprite_lecture.png) right top no-repeat;
+		display:none;
+		}
+		span.play_rota { background-position: right bottom; }
+		span.pause_rota:hover { background-position: left top; }
+		span.play_rota:hover { background-position: left bottom; }

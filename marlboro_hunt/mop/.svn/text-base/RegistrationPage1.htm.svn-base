@@ -1,0 +1,714 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+<title>www.mop.com</title>
+<meta name="ROBOTS" content="FOLLOW,INDEX">
+<!--
+-->
+<link href="css/amildmop.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="reg1">
+
+<form name="Form1" id="Form1">
+	<div class="mainPage">
+		<div class="header">
+			<div class="legalInfo">
+				<!-- CMS Placeholder - Content Start -->
+				<p class="legalInfo">This is a secure site.</p>
+				<p class="legalInfo">To protect your data all information is automatically 
+				encrypted.</p>
+				<!-- CMS Placeholder - Content END   --></div>
+			<div class="intro">
+				<!-- CMS Placeholder - Introduction text START -->
+				<h1>Registration</h1>
+				<p class="intro">Registering is almost easy! Enter the details below 
+				to sign up.</p>
+				<p class="intro">Fields marked &#39;*&#39; are mandatory</p>
+				<!-- CMS Placeholder - Introduction text END   --></div>
+			<div class="clear">
+			</div>
+		</div>
+		<div class="content">
+			<div class="contentIntro">
+				<!-- CMS Placeholder Content START --><span id="phContentIntro">
+				</span>
+				<!-- CMS Placeholder Content END --></div>
+			<div class="regSection1">
+				<fieldset class="personalInfo">
+				<h2>
+				<!-- CMS Placeholder Content START -->Personal Information<!-- CMS Placeholder - Content END  -->
+				</h2>
+				<div class="row">
+					<label for="txtFirstName">
+					<!-- CMS Placeholder Content START -->First Name *<!-- CMS Placeholder - Content END  -->
+					</label>
+					<input name="txtFirstName" type="text" maxlength="40" id="txtFirstName" tabindex="2" />
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  -->
+					</p>
+				</div>
+				<div class="row">
+					<label for="txtOtherName">
+					<!-- CMS Placeholder Content START -->Other Name *<!-- CMS Placeholder - Content END  -->
+					</label>
+					<input name="txtOtherName" type="text" maxlength="40" id="txtOtherName" tabindex="3" />
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  -->
+					</p>
+				</div>
+				<div class="row">
+					<label for="txtLastName">
+					<!-- CMS Placeholder Content START -->Last name *<!-- CMS Placeholder - Content END  -->
+					</label>
+					<input name="txtLastName" type="text" maxlength="40" id="txtLastName" tabindex="4" />
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  -->
+					</p>
+				</div>
+				<div class="row">
+					<label for="txtSpareText2">
+					<!-- CMS Placeholder Content START -->Vehicle No *<!-- CMS Placeholder - Content END  -->
+					</label>
+					<input name="txtSpareText2" type="text" maxlength="8" id="txtSpareText2" tabindex="37" />
+					<p class="error">
+					<!-- CMS Placeholder Content START --></p>
+				</div>
+				<div class="row">
+					<p class="col_left">
+					<!-- CMS Placeholder Content START -->Gender *<!-- CMS Placeholder - Content END  -->
+					</p>
+					<label class="radio" for="rbGender_0">Masculino</label>
+					<input class="radio" id="rbGender_0" tabindex="1" type="radio" value="0" name="rbGender">
+					<label class="radio" for="rbGender_1">Feminino</label>
+					<input class="radio" id="rbGender_1" tabindex="1" type="radio" value="1" name="rbGender">
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  -->
+					</p>
+				</div>
+				<div class="row">
+					<label for="txtDOBDay">
+					<!-- CMS Placeholder Content START -->Date of Birth *<!-- CMS Placeholder - Content END  -->
+					</label>
+					<input name="txtDOBDay" type="text" maxlength="2" id="txtDOBDay" tabindex="5" class="dob" />
+					<input name="txtDOBMonth" type="text" maxlength="2" id="txtDOBMonth" tabindex="6" class="dob" />
+					<input name="txtDOBYear" type="text" maxlength="4" id="txtDOBYear" tabindex="7" class="dob" />
+					<p class="example">
+					<!-- CMS Placeholder Content START -->dd/mm/yyyy<!-- CMS Placeholder - Content END  -->
+					</p>
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  -->
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  -->
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder Content START --></p>
+				</div>
+				<div class="row">
+					<label for="ddGIIDType">
+					<!-- CMS Placeholder Content START -->
+					ID Type *<!-- CMS Placeholder - Content END  --></label>
+					<select name="ddGIIDType" id="ddGIIDType" tabindex="8">
+					<option selected="selected" value="-1">Select One</option>
+					<option value="1">CADASTRO DE PESSOA FISICA</option>
+					<option value="2">DRIVER&#39;S LICENSE</option>
+					<option value="3">ID DOCUMENT</option>
+					<option value="4">PASSPORT</option>
+					</select>
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					<!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<label for="txtGIIDNumber">
+					<!-- CMS Placeholder Content START -->ID Number *<!-- CMS Placeholder Content START --></label>
+					<input name="txtGIIDNumber" type="text" maxlength="12" id="txtGIIDNumber" tabindex="9" />
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder Content START --></p>
+				</div>
+				</fieldset> <fieldset class="address">
+				<h2>Address</h2>
+				<div class="row">
+					<label for="txtStreetNumber">
+					<!-- CMS Placeholder Content START -->Street Number *<!-- CMS Placeholder Content START --></label>
+					<input name="txtStreetNumber" type="text" maxlength="10" id="txtStreetNumber" tabindex="19" />
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder Content START --></p>
+				</div>
+				<div class="row">
+					<label for="ddStreetType">
+					<!-- CMS Placeholder Content START -->Street Type *<!-- CMS Placeholder Content START --></label>
+					<select name="ddStreetType" id="ddStreetType" tabindex="17">
+					<option selected="selected" value="-1">Select One</option>
+					<option value="1">AVENIDA</option>
+					<option value="2">CALLE</option>
+					<option value="3">CALLEJON</option>
+					<option value="4">CAMINO</option>
+					<option value="5">CARR</option>
+					<option value="6">PARQUE</option>
+					<option value="7">PASAJE</option>
+					<option value="8">PASEO</option>
+					<option value="9">PATIO</option>
+					<option value="10">VEREDA</option>
+					<option value="11">VIA</option>
+					</select>
+					<img id="imgStatusStreetType" style="DISPLAY: none" src="/spinner.gif">
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder Content START --></p>
+				</div>
+				<div class="row">
+					<label for="txtStreetName">
+					<!-- CMS Placeholder Content START -->Street Name *<!-- CMS Placeholder Content START --></label>
+					<input name="txtStreetName" type="text" maxlength="40" id="txtStreetName" tabindex="18" />
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder Content START --></p>
+				</div>
+				<div class="row">
+					<label for="txtApartment">
+					<!-- CMS Placeholder Content START -->Apartment *<!-- CMS Placeholder Content START --></label>
+					<input name="txtApartment" type="text" maxlength="40" id="txtApartment" tabindex="20" />
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder Content START --></p>
+				</div>
+				<div class="row">
+					<label for="txtFloor">
+					<!-- CMS Placeholder Content START -->Floor *<!-- CMS Placeholder Content START --></label>
+					<input name="txtFloor" type="text" maxlength="40" id="txtFloor" tabindex="21" />
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder Content START --></p>
+				</div>
+				<div class="row">
+					<label for="ddState">
+					<!-- CMS Placeholder Content START -->State *<!-- CMS Placeholder Content START --></label>
+					<select name="ddState" id="ddState" tabindex="22" onchange="getE('imgStatusState').style.display='block';Call(BuildQuery('StateValue',getV('ddState'),'',''), 'FillChild(0,\'ddCity\',\'{responseText}\',\'State\',\'Select One\',\'-1\');');">
+					<option selected="selected" value="-1">Select One</option>
+					<option value="1">AC</option>
+					<option value="2">AL</option>
+					<option value="3">AM</option>
+					<option value="4">AP</option>
+					<option value="5">BA</option>
+					<option value="6">CE</option>
+					<option value="7">DF</option>
+					<option value="8">ES</option>
+					<option value="9">GO</option>
+					<option value="10">MA</option>
+					<option value="11">MG</option>
+					<option value="12">MS</option>
+					<option value="13">MT</option>
+					<option value="14">PA</option>
+					<option value="15">PB</option>
+					<option value="16">PE</option>
+					<option value="17">PI</option>
+					<option value="18">PR</option>
+					<option value="19">RJ</option>
+					<option value="20">RN</option>
+					<option value="21">RO</option>
+					<option value="22">RR</option>
+					<option value="23">RS</option>
+					<option value="24">SC</option>
+					<option value="25">SE</option>
+					<option value="26">SP</option>
+					<option value="27">TO</option>
+					<option value="28">UNKNOWN</option>
+					</select>
+					<img id="imgStatusState" style="DISPLAY: none" src="/spinner.gif">
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<label for="ddCity">
+					<!-- CMS Placeholder Content START -->City *<!-- CMS Placeholder - Content END  --></label>
+					<select name="ddCity" id="ddCity" tabindex="23"></select>
+					<img id="imgStatusCity" style="DISPLAY: none" src="/spinner.gif">
+					<p class="error">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<label for="txtZipCode"><!-- CMS Placeholder Content START -->Zip Code *<!-- CMS Placeholder - Content END  --></label>
+					<input name="txtZipCode" type="text" maxlength="7" id="txtZipCode" tabindex="24" />
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				</fieldset> <fieldset class="contactDetails">
+				<h2><!-- CMS Placeholder Content START -->Contact Details<!-- CMS Placeholder - Content END  --></h2>
+				<div class="row">
+					<label for="txtEmail"><!-- CMS Placeholder Content START -->Email *<!-- CMS Placeholder - Content END  --></label>
+					<input name="txtEmail" type="text" maxlength="60" id="txtEmail" tabindex="10" />
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<label for="txtConfirmEmail"><!-- CMS Placeholder Content START -->Confirm Email *<!-- CMS Placeholder - Content END  --></label>
+					<input name="txtConfirmEmail" type="text" maxlength="60" id="txtConfirmEmail" tabindex="11" oncontextmenu="return false" onkeydown="return noPaste(event)" />
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<label for="txtHomePhoneAreaCode"><!-- CMS Placeholder Content START -->Home Phone<br>
+					[Area Code + number] *<!-- CMS Placeholder - Content END  --></label>
+					<div class="phoneGroup">
+						<input name="txtHomePhone" type="text" maxlength="10" id="txtHomePhone" tabindex="13" />
+						<p class="example">[011 4783 9523]</p>
+					</div>
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<label for="txtMobileAreaCode"><!-- CMS Placeholder Content START -->Mobile Phone<br>
+					[Area Code + number] *<!-- CMS Placeholder - Content END  --></label>
+					<div class="phoneGroup">
+						<input name="txtMobile" type="text" maxlength="5" id="txtMobile" tabindex="15" />
+						<p class="example">[01234 55567]</p>
+					</div>
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<label for="ddCompanyMobile"><!-- CMS Placeholder Content START -->Mobile Phone Company *<!-- CMS Placeholder - Content END  --></label>
+					<select name="ddCompanyMobile" id="ddCompanyMobile" tabindex="16">
+					<option selected="selected" value="-1">Select One</option>
+					<option value="1">NO ANSWER</option>
+					<option value="2">OTHER</option>
+					</select><img id="imgStatusCompanyMobile" style="DISPLAY: none" src="/spinner.gif">
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				</fieldset> </div>
+			<div class="regSection2">
+				<fieldset class="brandPreferences">
+				<h2><!-- CMS Placeholder Content START -->Tell us about your favourite brands<!-- CMS Placeholder - Content END  --></h2>
+				<div class="row">
+					<label for="ddSmokingPrefBrand1"><!-- CMS Placeholder Content START -->What is your favourite brand 
+					? *<!-- CMS Placeholder - Content END  --></label>
+					<select name="ddSmokingPrefBrand1" id="ddSmokingPrefBrand1" tabindex="25" onchange="getE('imgStatusSmokingPrefBrand1').style.display='block';Call(BuildQuery('SmokingPrefBrand1Value',getV('ddSmokingPrefBrand1'),'',''), 'FillChild(0,\'ddSmokingPrefSubBrand1\',\'{responseText}\',\'SmokingPrefBrand1\',\'Select One\',\'-1\');');">
+					<option selected="selected" value="-1">Select One</option>
+					<option value="18">BELMONT</option>
+					<option value="2">BENSON &amp; HEDGES</option>
+					<option value="12">CAMEL</option>
+					<option value="9">CAPRI</option>
+					<option value="6">CARLTON</option>
+					<option value="16">CHANCELLER</option>
+					<option value="19">CHARM</option>
+					<option value="20">CONTINENTAL</option>
+					<option value="21">CORPORATE</option>
+					<option value="22">DALLAS</option>
+					<option value="23">DERBY</option>
+					<option value="24">DUNAS</option>
+					<option value="25">FLY</option>
+					<option value="44">FORTUNA</option>
+					<option value="26">FREE</option>
+					<option value="27">GALAXY</option>
+					<option value="28">GUDAN GARAN</option>
+					<option value="29">HILTON</option>
+					<option value="30">HOLLYWOOD</option>
+					<option value="31">INDY</option>
+					<option value="11">KENT</option>
+					<option value="10">L&amp;M</option>
+					<option value="7">LUCKY STRIKE</option>
+					<option value="32">LUXOR</option>
+					<option value="3">MARLBORO</option>
+					<option value="33">MINISTER</option>
+					<option value="34">MUSTANG</option>
+					<option value="5">NEXT</option>
+					<option value="45">NO ANSWER</option>
+					<option value="36">OSCAR</option>
+					<option value="1">OTHER / UNKNOWN</option>
+					<option value="15">PALACE</option>
+					<option value="8">PALL MALL</option>
+					<option value="4">PARLIAMENT</option>
+					<option value="35">PLAZA</option>
+					<option value="13">RITZ</option>
+					<option value="17">SAMPOERNA</option>
+					<option value="38">SAN MARINO</option>
+					<option value="37">SHELTON</option>
+					<option value="39">SUDAN</option>
+					<option value="14">UNBRANDED</option>
+					<option value="40">US</option>
+					<option value="41">VANGUARD</option>
+					<option value="42">WEST</option>
+					<option value="43">YES</option>
+					</select>
+					<img id="imgStatusSmokingPrefBrand1" style="DISPLAY: none" src="/spinner.gif">
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<label for="ddSmokingPrefSubBrand1"><!-- CMS Placeholder Content START -->...and sub brand? *<!-- CMS Placeholder - Content END  --></label>
+					<select name="ddSmokingPrefSubBrand1" id="ddSmokingPrefSubBrand1" tabindex="26">
+					</select>
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<p class="fullWidthLabel"><!-- CMS Placeholder Content START -->How much do you like your favorite 
+					brand? *<!-- CMS Placeholder - Content END  --></p>
+					<table>
+						<tr>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating1_1">1</label></td>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating1_2">2</label></td>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating1_3">3</label></td>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating1_4">4</label></td>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating1_5">5</label></td>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating1_6">6</label></td>
+						</tr>
+						<tr>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating1_1" tabindex="27" type="radio" value="1" name="rbSmokingPrefRating1"></td>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating1_2" tabindex="27" type="radio" value="2" name="rbSmokingPrefRating1"></td>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating1_3" tabindex="27" type="radio" value="3" name="rbSmokingPrefRating1"></td>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating1_4" tabindex="27" type="radio" value="4" name="rbSmokingPrefRating1"></td>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating1_5" tabindex="27" type="radio" value="5" name="rbSmokingPrefRating1"></td>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating1_6" tabindex="27" type="radio" value="6" name="rbSmokingPrefRating1"></td>
+						</tr>
+						<tr>
+							<td>Very Bad</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>Very Good</td>
+						</tr>
+					</table>
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<label for="ddSmokingPrefBrand2"><!-- CMS Placeholder Content START -->Other brands you smoke? *<!-- CMS Placeholder - Content END  --></label>
+					<select name="ddSmokingPrefBrand2" id="ddSmokingPrefBrand2" tabindex="28" onchange="getE('imgStatusSmokingPrefBrand2').style.display='block';Call(BuildQuery('SmokingPrefBrand2Value',getV('ddSmokingPrefBrand2'),'',''), 'FillChild(0,\'ddSmokingPrefSubBrand2\',\'{responseText}\',\'SmokingPrefBrand2\',\'Select One\',\'-1\');');">
+					<option selected="selected" value="-1">Select One</option>
+					<option value="18">BELMONT</option>
+					<option value="2">BENSON &amp; HEDGES</option>
+					<option value="12">CAMEL</option>
+					<option value="9">CAPRI</option>
+					<option value="6">CARLTON</option>
+					<option value="16">CHANCELLER</option>
+					<option value="19">CHARM</option>
+					<option value="20">CONTINENTAL</option>
+					<option value="21">CORPORATE</option>
+					<option value="22">DALLAS</option>
+					<option value="23">DERBY</option>
+					<option value="24">DUNAS</option>
+					<option value="25">FLY</option>
+					<option value="44">FORTUNA</option>
+					<option value="26">FREE</option>
+					<option value="27">GALAXY</option>
+					<option value="28">GUDAN GARAN</option>
+					<option value="29">HILTON</option>
+					<option value="30">HOLLYWOOD</option>
+					<option value="31">INDY</option>
+					<option value="11">KENT</option>
+					<option value="10">L&amp;M</option>
+					<option value="7">LUCKY STRIKE</option>
+					<option value="32">LUXOR</option>
+					<option value="3">MARLBORO</option>
+					<option value="33">MINISTER</option>
+					<option value="34">MUSTANG</option>
+					<option value="5">NEXT</option>
+					<option value="45">NO ANSWER</option>
+					<option value="36">OSCAR</option>
+					<option value="1">OTHER / UNKNOWN</option>
+					<option value="15">PALACE</option>
+					<option value="8">PALL MALL</option>
+					<option value="4">PARLIAMENT</option>
+					<option value="35">PLAZA</option>
+					<option value="13">RITZ</option>
+					<option value="17">SAMPOERNA</option>
+					<option value="38">SAN MARINO</option>
+					<option value="37">SHELTON</option>
+					<option value="39">SUDAN</option>
+					<option value="14">UNBRANDED</option>
+					<option value="40">US</option>
+					<option value="41">VANGUARD</option>
+					<option value="42">WEST</option>
+					<option value="43">YES</option>
+					</select><img id="imgStatusSmokingPrefBrand2" style="DISPLAY: none" src="/spinner.gif">
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<label for="ddSmokingPrefSubBrand2"><!-- CMS Placeholder Content START -->...and sub brand? *<!-- CMS Placeholder - Content END  --></label>
+					<select name="ddSmokingPrefSubBrand2" id="ddSmokingPrefSubBrand2" tabindex="29">
+					</select>
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				<div class="row">
+					<p class="fullWidthLabel"><!-- CMS Placeholder Content START -->How much do you like your occasional 
+					brand? *<!-- CMS Placeholder - Content END  --></p>
+					<table>
+						<tr>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating2_1">1</label></td>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating2_2">2</label></td>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating2_3">3</label></td>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating2_4">4</label></td>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating2_5">5</label></td>
+							<td>
+							<label class="radio" for="rbSmokingPrefRating2_6">6</label></td>
+						</tr>
+						<tr>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating2_1" tabindex="30" type="radio" value="1" name="rbSmokingPrefRating2"></td>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating2_2" tabindex="30" type="radio" value="2" name="rbSmokingPrefRating2"></td>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating2_3" tabindex="30" type="radio" value="3" name="rbSmokingPrefRating2"></td>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating2_4" tabindex="30" type="radio" value="4" name="rbSmokingPrefRating2"></td>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating2_5" tabindex="30" type="radio" value="5" name="rbSmokingPrefRating2"></td>
+							<td>
+							<input class="radio" id="rbSmokingPrefRating2_6" tabindex="30" type="radio" value="6" name="rbSmokingPrefRating2"></td>
+						</tr>
+						<tr>
+							<td>Very Bad</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>Very Good</td>
+						</tr>
+					</table>
+					<p class="error"><!-- CMS Placeholder Content START --><!-- CMS Placeholder - Content END  --></p>
+				</div>
+				</fieldset> <fieldset class="spareSections">
+				<h2>Spare sections</h2>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="ddSpareDropDown1">
+					<!-- CMS Placeholder Content START -->Spare DropDown 1<!-- CMS Placeholder Content END --></label>
+					<select id="ddSpareDropDown1">
+						<option selected="selected">Please select...</option>
+						<option>Option 2</option>
+					</select>
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="ddSpareDropDown2">
+					<!-- CMS Placeholder Content START -->Spare DropDown 2<!-- CMS Placeholder Content END --></label>
+					<select id="ddSpareDropDown2">
+						<option selected="selected">Please select...</option>
+						<option>Option 1</option>
+					</select>
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="ddSpareDropDown3">
+					<!-- CMS Placeholder Content START -->Spare DropDown 3<!-- CMS Placeholder Content END --></label>
+					<select id="ddSpareDropDown3">
+						<option selected="selected">Please select...</option>
+						<option>Option 3</option>
+					</select>
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="ddSpareDropDown4">
+					<!-- CMS Placeholder Content START -->Spare DropDown 4<!-- CMS Placeholder Content END --></label>
+					<select id="ddSpareDropDown4">
+						<option selected="selected">Please select...</option>
+						<option>Option 4</option>
+					</select>
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="ddSpareDropDown5">
+					<!-- CMS Placeholder Content START -->Spare DropDown 5<!-- CMS Placeholder Content END --></label>
+					<select id="ddSpareDropDown5">
+						<option selected="selected">Please select...</option>
+						<option>Option 5</option>
+					</select>
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="txtSpareText1">
+					<!-- CMS Placeholder Content START -->Spare Text 1<!-- CMS Placeholder Content END --></label>
+					<input type="text" id="txtSpareText1" /> ,<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="txtSpareText2">
+					<!-- CMS Placeholder Content START -->Spare Text 2<!-- CMS Placeholder Content END --></label>
+					<input type="text" id="txtSpareText2" /> ,<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="txtSpareText3">
+					<!-- CMS Placeholder Content START -->Spare Text 3<!-- CMS Placeholder Content END --></label>
+					<input type="text" id="txtSpareText3" />
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="txtSpareText4">
+					<!-- CMS Placeholder Content START -->Spare Text 4<!-- CMS Placeholder Content END --></label>
+					<input type="text" id="txtSpareText4" />
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="txtSpareText5">
+					<!-- CMS Placeholder Content START -->Spare Text 5<!-- CMS Placeholder Content END --></label>
+					<input type="text" id="txtSpareText5" /> ,<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="txtSpareNumeric1">
+					<!-- CMS Placeholder Content START -->Spare Number 1<!-- CMS Placeholder Content END --></label>
+					<input type="text" id="txtSpareNumeric1" />
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="txtSpareNumeric2">
+					<!-- CMS Placeholder Content START -->Spare Number 2<!-- CMS Placeholder Content END --></label>
+					<input type="text" id="txtSpareNumeric2" />
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="txtSpareNumeric3">
+					<!-- CMS Placeholder Content START -->Spare Number 3<!-- CMS Placeholder Content END --></label>
+					<input type="text" id="txtSpareNumeric3" />
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="txtSpareNumeric4">
+					<!-- CMS Placeholder Content START -->Spare Number 4<!-- CMS Placeholder Content END --></label>
+					<input type="text" id="txtSpareNumeric4" />
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<label for="txtSpareNumeric5">
+					<!-- CMS Placeholder Content START -->Spare Number 5<!-- CMS Placeholder Content END --></label>
+					<input type="text" id="txtSpareNumeric5" />
+					<p class="error">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<input class="checkbox" id="chkSpareCheck1" tabindex="46" type="checkbox" name="chkSpareCheck1"></input>
+					<label for="chkSpareCheck1" class="checkboxLabel">
+					<!-- CMS Placeholder Content START -->Spare Check 1<!-- CMS Placeholder Content END --></label>
+					<p class="checkboxError">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<!-- This row is used if the user is allowed to update this field -->
+					<input class="checkbox" id="chkSpareCheck2" tabindex="46" type="checkbox" name="chkSpareCheck2"></input>
+					<label for="chkSpareCheck2" class="checkboxLabel">
+					<!-- CMS Placeholder Content START -->Spare Check 2<!-- CMS Placeholder Content END --></label>
+					<p class="checkboxError">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				</fieldset> <fieldset class="confirmations">
+				<h2>
+				<!-- CMS Placeholder Content START -->Confirmations<!-- CMS Placeholder Content END --></h2>
+				<div class="row">
+					<input class="checkbox" id="chkConfirmAbove18" tabindex="48" type="checkbox" name="chkConfirmAbove18" disabled=""></input>
+					<label class="checkboxLabel" for="chkConfirmAbove18">
+					<!-- CMS Placeholder Content START -->I am a smoker over the 
+					age of 18<!-- CMS Placeholder Content END --></label>
+					<p class="checkboxError">
+					<!-- CMS Placeholder Content START --><!-- CMS Placeholder Content END --></p>
+				</div>
+				<div class="row">
+					<input class="checkbox" id="chkReceiveInfo" tabindex="49" type="checkbox" name="chkReceiveInfo" disabled=""></input>
+					<label class="checkboxLabel" for="chkReceiveInfo">
+					<!-- CMS Placeholder Content START -->Accept to recieve marketing 
+					information<!-- CMS Placeholder Content END --></label>
+					<p class="checkboxError">
+					<!-- CMS Placeholder Content START -->
+					
+					<!-- CMS Placeholder Content END --></p>
+				</div>
+				</fieldset> </div>
+			<div class="submit">
+				<a id="lnkSubmitBtn" href="RegistrationPage2.htm"><!-- CMS Placeholder Content START -->Submit<!-- CMS Placeholder Content END --></a></div>
+			<div class="clear">
+			</div>
+		</div>
+		<div class="footer">
+			<p class="healthAlert">This Site is reserved for adult smokers over 
+			18 years old, who live in XXX</p>
+			<div class="navigation">
+				<ul>
+					<li><a href="/LandingPage.htm">Casa</a> </li>
+					<li>
+					<a href="/Footer/TermsAndConditions.htm" target="_Blank">Terms 
+					and Conditions</a> </li>
+					<li>
+					<a href="/NR/exeres/73257501-7428-4F64-9E84-841AB34DA465,frameless.htm?NRMODE=Published" target="_Blank">
+					Contact Us</a> </li>
+					<li><a href="/Footer/FAQ.htm" target="_Blank">FAQ</a> </li>
+					<li><a href="/Footer/RemoveMe.htm">Remove Me</a> </li>
+					<li style="display: none">
+					<a href="/demoPages/PMISite.htm" target="_Blank">PMI Corporate</a>
+					</li>
+					<li class="last" id="health">
+					<a href="/Footer/HealthInformation.htm" target="_Blank">Health</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</form>
+
+</body>
+
+</html>

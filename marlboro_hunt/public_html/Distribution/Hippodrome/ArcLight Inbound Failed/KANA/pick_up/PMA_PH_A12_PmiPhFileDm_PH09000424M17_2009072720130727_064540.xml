@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-16" standalone="yes"?>
+<OutboundDMFile>
+	<Record>
+		<AudienceDropDate>2009-07-08</AudienceDropDate>
+		<MarketCode>PH</MarketCode>
+		<ConsumerId>3001581</ConsumerId>
+		<FirstName>JAYSON</FirstName>
+		<ThirdName>LUMANLAN</ThirdName>
+		<HouseNumber>
+			<StreetName>177 ASCANO ST</StreetName>
+			<City>PASAY CITY</City>
+			<District>MALIBAY</District>
+			<Province>METRO MANILA</Province>
+			<PostalCode>1300</PostalCode>
+			<Country>PH</Country>
+		</HouseNumber>
+		<MobilePhoneNumber>639293198229</MobilePhoneNumber>
+		<CampaignCode>PH08000421I01</CampaignCode>
+		<PhaseCode>XXXA</PhaseCode>
+		<AudienceCode>test</AudienceCode>
+		<MediaCategoryCode>ODM</MediaCategoryCode>
+		<MobileServiceProvider>U</MobileServiceProvider>
+		<DateOfBirth>1983-04-07</DateOfBirth>
+		<Gender>Male</Gender>
+		<SignatureReasonCode>P</SignatureReasonCode>
+		<AgeVerificationType>G</AgeVerificationType>
+		<GovernmentIDType>DRIVERS LICENSE</GovernmentIDType>
+		<GovernmentIDNumber>N0304376085</GovernmentIDNumber>
+		<OptOffDirectMail>Opt In</OptOffDirectMail>
+		<OptOffMobilePhone>Opt In</OptOffMobilePhone>
+		<OptOffAllChannels>0</OptOffAllChannels>
+		<OptOffTelemarketing>Opt In</OptOffTelemarketing>
+		<CurrentBrand>MARLBORO</CurrentBrand>
+		<CurrentBrandAffinity>6</CurrentBrandAffinity>
+		<CurrentBrandFlavor>MENTHOL</CurrentBrandFlavor>
+		<CurrentBrandTarLevel>LIGHTS</CurrentBrandTarLevel>
+		<AlternatePurchaseIndicator>PURCHASE ANOTHER BRAND</AlternatePurchaseIndicator>
+		<FirstAlternateBrand>MARLBORO</FirstAlternateBrand>
+		<SecondAlternateBrand>MARLBORO</SecondAlternateBrand>
+		<FirstBrandFlavor>MENTHOL</FirstBrandFlavor>
+		<FirstBrandTarLevel>FULL FLAVOR</FirstBrandTarLevel>
+	</Record>
+	<Record>
+		<AudienceDropDate>2009-07-08</AudienceDropDate>
+		<MarketCode>PH</MarketCode>
+		<ConsumerId>3006414</ConsumerId>
+		<FirstName>ANGELICA</FirstName>
+		<ThirdName>PANGANIBAN</ThirdName>
+		<Nickname>brenn</Nickname>
+		<HouseNumber>
+			<StreetName>20 Sangley st.</StreetName>
+			<City>PARANAQUE CITY</City>
+			<District>Greenheights Village</District>
+			<Province>METRO MANILA</Province>
+			<PostalCode>1700</PostalCode>
+			<Country>PH</Country>
+		</HouseNumber>
+		<HomePhoneNumber>02-30064141</HomePhoneNumber>
+		<MobilePhoneNumber>639179752542</MobilePhoneNumber>
+		<CampaignCode>PH08000421I01</CampaignCode>
+		<PhaseCode>XXXA</PhaseCode>
+		<AudienceCode>test</AudienceCode>
+		<MediaCategoryCode>ODM</MediaCategoryCode>
+		<MobileServiceProvider>U</MobileServiceProvider>
+		<DateOfBirth>1984-10-29</DateOfBirth>
+		<Gender>Female</Gender>
+		<EmailAddress>ANGELICA_PANGANIBAN@YAHOO.COM</EmailAddress>
+		<SignatureReasonCode>P</SignatureReasonCode>
+		<AgeVerificationType>G</AgeVerificationType>
+		<GovernmentIDType>DRIVERS LICENSE</GovernmentIDType>
+		<GovernmentIDNumber>11111113006414</GovernmentIDNumber>
+		<OptOffDirectMail>Opt In</OptOffDirectMail>
+		<OptOffHomePhone>Opt In</OptOffHomePhone>
+		<OptOffMobilePhone>Opt In</OptOffMobilePhone>
+		<OptOffDigital>Opt In</OptOffDigital>
+		<OptOffAllChannels>0</OptOffAllChannels>
+		<OptOffTelemarketing>Opt In</OptOffTelemarketing>
+		<CurrentBrand>MARLBORO</CurrentBrand>
+		<CurrentBrandAffinity>6</CurrentBrandAffinity>
+		<CurrentBrandFlavor>MENTHOL</CurrentBrandFlavor>
+		<CurrentBrandTarLevel>LIGHTS</CurrentBrandTarLevel>
+		<AlternatePurchaseIndicator>PURCHASE ANOTHER BRAND</AlternatePurchaseIndicator>
+		<FirstAlternateBrand>MARLBORO</FirstAlternateBrand>
+		<SecondAlternateBrand>MARLBORO</SecondAlternateBrand>
+		<FirstBrandFlavor>MENTHOL</FirstBrandFlavor>
+		<FirstBrandTarLevel>FULL FLAVOR</FirstBrandTarLevel>
+	</Record>
+	<Record>
+		<AudienceDropDate>2009-07-08</AudienceDropDate>
+		<MarketCode>PH</MarketCode>
+		<ConsumerId>3006444</ConsumerId>
+		<FirstName>FRANCIS</FirstName>
+		<ThirdName>LLOREN</ThirdName>
+		<Nickname>JAY-AR</Nickname>
+		<HouseNumber>
+			<StreetName>155 I. Santos St.,</StreetName>
+			<City>PASAY CITY</City>
+			<District>Malibay</District>
+			<Province>METRO MANILA</Province>
+			<PostalCode>1300</PostalCode>
+			<Country>PH</Country>
+		</HouseNumber>
+		<MobilePhoneNumber>639272461994</MobilePhoneNumber>
+		<CampaignCode>PH08000421I01</CampaignCode>
+		<PhaseCode>XXXA</PhaseCode>
+		<AudienceCode>test</AudienceCode>
+		<MediaCategoryCode>ODM</MediaCategoryCode>
+		<MobileServiceProvider>U</MobileServiceProvider>
+		<DateOfBirth>1984-02-16</DateOfBirth>
+		<Gender>Male</Gender>
+		<EmailAddress>kitt0y@yahoo.com</EmailAddress>
+		<SignatureReasonCode>P</SignatureReasonCode>
+		<AgeVerificationType>G</AgeVerificationType>
+		<GovernmentIDType>DRIVERS LICENSE</GovernmentIDType>
+		<GovernmentIDNumber>N0306023814</GovernmentIDNumber>
+		<OptOffDirectMail>Opt In</OptOffDirectMail>
+		<OptOffMobilePhone>Opt In</OptOffMobilePhone>
+		<OptOffDigital>Opt In</OptOffDigital>
+		<OptOffAllChannels>0</OptOffAllChannels>
+		<OptOffTelemarketing>Opt In</OptOffTelemarketing>
+		<CurrentBrand>MARLBORO</CurrentBrand>
+		<CurrentBrandAffinity>6</CurrentBrandAffinity>
+		<CurrentBrandFlavor>MENTHOL</CurrentBrandFlavor>
+		<CurrentBrandTarLevel>LIGHTS</CurrentBrandTarLevel>
+		<AlternatePurchaseIndicator>PURCHASE ANOTHER BRAND</AlternatePurchaseIndicator>
+		<FirstAlternateBrand>MARLBORO</FirstAlternateBrand>
+		<SecondAlternateBrand>MARLBORO</SecondAlternateBrand>
+		<FirstBrandFlavor>MENTHOL</FirstBrandFlavor>
+		<FirstBrandTarLevel>FULL FLAVOR</FirstBrandTarLevel>
+	</Record>
+	<Record>
+		<AudienceDropDate>2009-07-08</AudienceDropDate>
+		<MarketCode>PH</MarketCode>
+		<ConsumerId>3006452</ConsumerId>
+		<FirstName>ROY</FirstName>
+		<SecondName>S</SecondName>
+		<ThirdName>JUAN</ThirdName>
+		<Nickname>Beckz</Nickname>
+		<HouseNumber>
+			<StreetName>L3A Pictorial Lane</StreetName>
+			<City>PARANAQUE CITY</City>
+			<District>4th Estate Subdivision</District>
+			<Province>METRO MANILA</Province>
+			<PostalCode>1700</PostalCode>
+			<Country>PH</Country>
+		</HouseNumber>
+		<OfficeTelephoneNumber>02-30064523</OfficeTelephoneNumber>
+		<HomePhoneNumber>02-30064521</HomePhoneNumber>
+		<CampaignCode>PH08000421I01</CampaignCode>
+		<PhaseCode>XXXA</PhaseCode>
+		<AudienceCode>test</AudienceCode>
+		<MediaCategoryCode>ODM</MediaCategoryCode>
+		<MobileServiceProvider>U</MobileServiceProvider>
+		<DateOfBirth>1975-06-04</DateOfBirth>
+		<Gender>Male</Gender>
+		<EmailAddress>ROY_JUAN@YAHOO.COM</EmailAddress>
+		<SignatureReasonCode>P</SignatureReasonCode>
+		<AgeVerificationType>G</AgeVerificationType>
+		<GovernmentIDType>DRIVERS LICENSE</GovernmentIDType>
+		<GovernmentIDNumber>11111113006452</GovernmentIDNumber>
+		<OptOffDirectMail>Opt In</OptOffDirectMail>
+		<OptOffHomePhone>Opt In</OptOffHomePhone>
+		<OptOffDigital>Opt In</OptOffDigital>
+		<OptOffAllChannels>0</OptOffAllChannels>
+		<OptOffTelemarketing>Opt In</OptOffTelemarketing>
+		<OptOffOfficePhone>Opt In</OptOffOfficePhone>
+		<CurrentBrand>MARLBORO</CurrentBrand>
+		<CurrentBrandAffinity>6</CurrentBrandAffinity>
+		<CurrentBrandFlavor>MENTHOL</CurrentBrandFlavor>
+		<CurrentBrandTarLevel>LIGHTS</CurrentBrandTarLevel>
+		<AlternatePurchaseIndicator>PURCHASE ANOTHER BRAND</AlternatePurchaseIndicator>
+		<FirstAlternateBrand>MARLBORO</FirstAlternateBrand>
+		<SecondAlternateBrand>MARLBORO</SecondAlternateBrand>
+		<FirstBrandFlavor>MENTHOL</FirstBrandFlavor>
+		<FirstBrandTarLevel>FULL FLAVOR</FirstBrandTarLevel>
+	</Record>
+	<Record>
+		<AudienceDropDate>2009-07-08</AudienceDropDate>
+		<MarketCode>PH</MarketCode>
+		<ConsumerId>3006466</ConsumerId>
+		<FirstName>ALLAN</FirstName>
+		<ThirdName>REYES</ThirdName>
+		<Nickname>JOBECK</Nickname>
+		<HouseNumber>
+			<StreetName>505TH SEARCH AND RESCUE GROUP</StreetName>
+			<City>PASAY CITY</City>
+			<District>COLONEL JESUS VILLAMOR AIR BASE</District>
+			<Province>METRO MANILA</Province>
+			<PostalCode>1300</PostalCode>
+			<Country>PH</Country>
+		</HouseNumber>
+		<OfficeTelephoneNumber>02-8535013</OfficeTelephoneNumber>
+		<HomePhoneNumber>043-3120083</HomePhoneNumber>
+		<MobilePhoneNumber>639152520325</MobilePhoneNumber>
+		<CampaignCode>PH08000421I01</CampaignCode>
+		<PhaseCode>XXXA</PhaseCode>
+		<AudienceCode>test</AudienceCode>
+		<MediaCategoryCode>ODM</MediaCategoryCode>
+		<MobileServiceProvider>U</MobileServiceProvider>
+		<DateOfBirth>1973-06-04</DateOfBirth>
+		<Gender>Male</Gender>
+		<EmailAddress>rheyxagr@yahoo.com</EmailAddress>
+		<SignatureReasonCode>P</SignatureReasonCode>
+		<AgeVerificationType>G</AgeVerificationType>
+		<GovernmentIDType>DRIVERS LICENSE</GovernmentIDType>
+		<GovernmentIDNumber>A0293045351</GovernmentIDNumber>
+		<OptOffDirectMail>Opt In</OptOffDirectMail>
+		<OptOffHomePhone>Opt In</OptOffHomePhone>
+		<OptOffMobilePhone>Opt In</OptOffMobilePhone>
+		<OptOffDigital>Opt In</OptOffDigital>
+		<OptOffAllChannels>0</OptOffAllChannels>
+		<OptOffTelemarketing>Opt In</OptOffTelemarketing>
+		<OptOffOfficePhone>Opt In</OptOffOfficePhone>
+		<CurrentBrand>MARLBORO</CurrentBrand>
+		<CurrentBrandAffinity>6</CurrentBrandAffinity>
+		<CurrentBrandFlavor>MENTHOL</CurrentBrandFlavor>
+		<CurrentBrandTarLevel>LIGHTS</CurrentBrandTarLevel>
+		<AlternatePurchaseIndicator>PURCHASE ANOTHER BRAND</AlternatePurchaseIndicator>
+		<FirstAlternateBrand>MARLBORO</FirstAlternateBrand>
+		<SecondAlternateBrand>MARLBORO</SecondAlternateBrand>
+		<FirstBrandFlavor>MENTHOL</FirstBrandFlavor>
+		<FirstBrandTarLevel>FULL FLAVOR</FirstBrandTarLevel>
+	</Record>
+	<Record>
+		<AudienceDropDate>2009-07-08</AudienceDropDate>
+		<MarketCode>PH</MarketCode>
+		<ConsumerId>3013499</ConsumerId>
+		<FirstName>MARK</FirstName>
+		<ThirdName>BANTEGUI</ThirdName>
+		<Nickname>Lex</Nickname>
+		<HouseNumber>
+			<StreetName>2352 COLAYCO STREET</StreetName>
+			<City>PASAY CITY</City>
+			<District>PASAY CITY</District>
+			<Province>METRO MANILA</Province>
+			<PostalCode>1300</PostalCode>
+			<Country>PH</Country>
+		</HouseNumber>
+		<MobilePhoneNumber>639063008893</MobilePhoneNumber>
+		<CampaignCode>PH08000421I01</CampaignCode>
+		<PhaseCode>XXXA</PhaseCode>
+		<AudienceCode>test</AudienceCode>
+		<MediaCategoryCode>ODM</MediaCategoryCode>
+		<MobileServiceProvider>U</MobileServiceProvider>
+		<DateOfBirth>1985-02-02</DateOfBirth>
+		<Gender>Male</Gender>
+		<EmailAddress>ithnkurcute@yahoo.com</EmailAddress>
+		<SignatureReasonCode>P</SignatureReasonCode>
+		<AgeVerificationType>G</AgeVerificationType>
+		<GovernmentIDType>DRIVERS LICENSE</GovernmentIDType>
+		<GovernmentIDNumber>N0307017075</GovernmentIDNumber>
+		<OptOffDirectMail>Opt In</OptOffDirectMail>
+		<OptOffMobilePhone>Opt In</OptOffMobilePhone>
+		<OptOffDigital>Opt In</OptOffDigital>
+		<OptOffAllChannels>0</OptOffAllChannels>
+		<OptOffTelemarketing>Opt In</OptOffTelemarketing>
+		<CurrentBrand>MARLBORO</CurrentBrand>
+		<CurrentBrandAffinity>6</CurrentBrandAffinity>
+		<CurrentBrandFlavor>MENTHOL</CurrentBrandFlavor>
+		<CurrentBrandTarLevel>LIGHTS</CurrentBrandTarLevel>
+		<AlternatePurchaseIndicator>PURCHASE ANOTHER BRAND</AlternatePurchaseIndicator>
+		<FirstAlternateBrand>MARLBORO</FirstAlternateBrand>
+		<SecondAlternateBrand>MARLBORO</SecondAlternateBrand>
+		<FirstBrandFlavor>MENTHOL</FirstBrandFlavor>
+		<FirstBrandTarLevel>FULL FLAVOR</FirstBrandTarLevel>
+	</Record>
+	<Record>
+		<AudienceDropDate>2009-07-08</AudienceDropDate>
+		<MarketCode>PH</MarketCode>
+		<ConsumerId>3021900</ConsumerId>
+		<FirstName>JEANNE</FirstName>
+		<ThirdName>CO</ThirdName>
+		<Nickname>Chris</Nickname>
+		<HouseNumber>
+			<StreetName>225 Villaruel Street</StreetName>
+			<City>PASAY CITY</City>
+			<District>barangay Santa Clara</District>
+			<Province>METRO MANILA</Province>
+			<PostalCode>1300</PostalCode>
+			<Country>PH</Country>
+		</HouseNumber>
+		<HomePhoneNumber>02-8311082</HomePhoneNumber>
+		<MobilePhoneNumber>639178992936</MobilePhoneNumber>
+		<CampaignCode>PH08000421I01</CampaignCode>
+		<PhaseCode>XXXA</PhaseCode>
+		<AudienceCode>test</AudienceCode>
+		<MediaCategoryCode>ODM</MediaCategoryCode>
+		<MobileServiceProvider>U</MobileServiceProvider>
+		<DateOfBirth>1973-07-25</DateOfBirth>
+		<Gender>Female</Gender>
+		<EmailAddress>cojeanne88@yahoo.com</EmailAddress>
+		<SignatureReasonCode>P</SignatureReasonCode>
+		<AgeVerificationType>G</AgeVerificationType>
+		<GovernmentIDType>DRIVERS LICENSE</GovernmentIDType>
+		<GovernmentIDNumber>N0492227693</GovernmentIDNumber>
+		<OptOffDirectMail>Opt In</OptOffDirectMail>
+		<OptOffHomePhone>Opt In</OptOffHomePhone>
+		<OptOffMobilePhone>Opt In</OptOffMobilePhone>
+		<OptOffDigital>Opt In</OptOffDigital>
+		<OptOffAllChannels>0</OptOffAllChannels>
+		<OptOffTelemarketing>Opt In</OptOffTelemarketing>
+		<CurrentBrand>MARLBORO</CurrentBrand>
+		<CurrentBrandAffinity>6</CurrentBrandAffinity>
+		<CurrentBrandFlavor>MENTHOL</CurrentBrandFlavor>
+		<CurrentBrandTarLevel>LIGHTS</CurrentBrandTarLevel>
+		<AlternatePurchaseIndicator>PURCHASE ANOTHER BRAND</AlternatePurchaseIndicator>
+		<FirstAlternateBrand>MARLBORO</FirstAlternateBrand>
+		<SecondAlternateBrand>MARLBORO</SecondAlternateBrand>
+		<FirstBrandFlavor>MENTHOL</FirstBrandFlavor>
+		<FirstBrandTarLevel>FULL FLAVOR</FirstBrandTarLevel>
+	</Record>
+	<Record>
+		<AudienceDropDate>2009-07-08</AudienceDropDate>
+		<MarketCode>PH</MarketCode>
+		<ConsumerId>3031157</ConsumerId>
+		<FirstName>RICKY</FirstName>
+		<SecondName>TULOG</SecondName>
+		<ThirdName>HATTON</ThirdName>
+		<Nickname>James</Nickname>
+		<HouseNumber>
+			<StreetName>12c W. Vinzons st.</StreetName>
+			<City>PARANAQUE CITY</City>
+			<District>VOB Vill. B.F Homes pque M.m</District>
+			<Province>METRO MANILA</Province>
+			<PostalCode>1700</PostalCode>
+			<Country>PH</Country>
+		</HouseNumber>
+		<HomePhoneNumber>02-30311571</HomePhoneNumber>
+		<MobilePhoneNumber>639279744649</MobilePhoneNumber>
+		<CampaignCode>PH08000421I01</CampaignCode>
+		<PhaseCode>XXXA</PhaseCode>
+		<AudienceCode>test</AudienceCode>
+		<MediaCategoryCode>ODM</MediaCategoryCode>
+		<MobileServiceProvider>U</MobileServiceProvider>
+		<DateOfBirth>1978-06-22</DateOfBirth>
+		<Gender>Male</Gender>
+		<EmailAddress>RICKY_HATTON@YAHOO.COM</EmailAddress>
+		<SignatureReasonCode>P</SignatureReasonCode>
+		<AgeVerificationType>G</AgeVerificationType>
+		<GovernmentIDType>DRIVERS LICENSE</GovernmentIDType>
+		<GovernmentIDNumber>11111113031157</GovernmentIDNumber>
+		<OptOffDirectMail>Opt In</OptOffDirectMail>
+		<OptOffHomePhone>Opt In</OptOffHomePhone>
+		<OptOffMobilePhone>Opt In</OptOffMobilePhone>
+		<OptOffDigital>Opt In</OptOffDigital>
+		<OptOffAllChannels>0</OptOffAllChannels>
+		<OptOffTelemarketing>Opt In</OptOffTelemarketing>
+		<CurrentBrand>MARLBORO</CurrentBrand>
+		<CurrentBrandAffinity>6</CurrentBrandAffinity>
+		<CurrentBrandFlavor>MENTHOL</CurrentBrandFlavor>
+		<CurrentBrandTarLevel>LIGHTS</CurrentBrandTarLevel>
+		<AlternatePurchaseIndicator>PURCHASE ANOTHER BRAND</AlternatePurchaseIndicator>
+		<FirstAlternateBrand>MARLBORO</FirstAlternateBrand>
+		<SecondAlternateBrand>MARLBORO</SecondAlternateBrand>
+		<FirstBrandFlavor>MENTHOL</FirstBrandFlavor>
+		<FirstBrandTarLevel>FULL FLAVOR</FirstBrandTarLevel>
+	</Record>
+	<Record>
+		<AudienceDropDate>2009-07-08</AudienceDropDate>
+		<MarketCode>PH</MarketCode>
+		<ConsumerId>3031173</ConsumerId>
+		<FirstName>OSCAR</FirstName>
+		<SecondName>TIMBWANG</SecondName>
+		<ThirdName>DE LA HOYA</ThirdName>
+		<Nickname>James</Nickname>
+		<HouseNumber>
+			<StreetName>41 texas</StreetName>
+			<City>PARANAQUE CITY</City>
+			<District>better living, don bosco</District>
+			<Province>METRO MANILA</Province>
+			<PostalCode>1700</PostalCode>
+			<Country>PH</Country>
+		</HouseNumber>
+		<OfficeTelephoneNumber>02-30311733</OfficeTelephoneNumber>
+		<MobilePhoneNumber>639162347886</MobilePhoneNumber>
+		<CampaignCode>PH08000421I01</CampaignCode>
+		<PhaseCode>XXXA</PhaseCode>
+		<AudienceCode>test</AudienceCode>
+		<MediaCategoryCode>ODM</MediaCategoryCode>
+		<MobileServiceProvider>U</MobileServiceProvider>
+		<DateOfBirth>1984-11-05</DateOfBirth>
+		<Gender>Male</Gender>
+		<EmailAddress>GOLDEN_BOY@YAHOO.COM</EmailAddress>
+		<SignatureReasonCode>P</SignatureReasonCode>
+		<AgeVerificationType>G</AgeVerificationType>
+		<GovernmentIDType>DRIVERS LICENSE</GovernmentIDType>
+		<GovernmentIDNumber>11111113031173</GovernmentIDNumber>
+		<OptOffDirectMail>Opt In</OptOffDirectMail>
+		<OptOffMobilePhone>Opt In</OptOffMobilePhone>
+		<OptOffDigital>Opt In</OptOffDigital>
+		<OptOffAllChannels>0</OptOffAllChannels>
+		<OptOffTelemarketing>Opt In</OptOffTelemarketing>
+		<OptOffOfficePhone>Opt In</OptOffOfficePhone>
+		<CurrentBrand>MARLBORO</CurrentBrand>
+		<CurrentBrandAffinity>6</CurrentBrandAffinity>
+		<CurrentBrandFlavor>MENTHOL</CurrentBrandFlavor>
+		<CurrentBrandTarLevel>LIGHTS</CurrentBrandTarLevel>
+		<AlternatePurchaseIndicator>PURCHASE ANOTHER BRAND</AlternatePurchaseIndicator>
+		<FirstAlternateBrand>WEST</FirstAlternateBrand>
+		<SecondAlternateBrand>WEST</SecondAlternateBrand>
+		<FirstBrandFlavor>MENTHOL</FirstBrandFlavor>
+		<FirstBrandTarLevel>FULL FLAVOR</FirstBrandTarLevel>
+	</Record>
+</OutboundDMFile>

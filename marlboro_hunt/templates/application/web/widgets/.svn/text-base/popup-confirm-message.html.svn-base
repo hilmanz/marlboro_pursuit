@@ -1,0 +1,12 @@
+
+	<div class="popupContainer popup" id="popup-confirm-message">
+    	<a id="fancybox-close" class="closePopup" href="#">&nbsp;</a>
+        <div class="popupContent">
+        	<div class="entry-popup">
+            	<P>ntially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</P>
+            
+
+             
+            </div><!--END .entry-popup-->
+		</div><!-- END .popupContent -->
+    </div><!-- END .popupContainer -->

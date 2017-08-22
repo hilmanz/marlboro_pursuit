@@ -1,0 +1,76 @@
+<div class="section profilePage">
+    <ul class="columns-content page-content clearfix">
+        <li class="col-sidebar">
+           {$profie_box}
+           {$my_circle}
+		   {$side_banner}
+        </li> <!-- END .col-sidebar -->
+       <li class="col-main">
+			{$wallpaper}
+			<br>
+            <div id="gallery-list">
+                <div class="blog-title clearfix">
+                    <div class="fl">
+                        <h3><a href="#">My Gallery</a></h3>
+                    </div>
+                    <div class="fr">
+                        <h3><a href="{$basedomain}my" class="btnBack">BACK</a></h3>
+                    </div>
+                </div> <!-- END .blog-title -->
+				<div class="blog-title clearfix">
+					<ul class="columns-3 allgallery">
+						{section name=i loop=$my_gallery_all}
+						<li class="col3">
+							<div class="article_box">
+								<div class="imgBox">
+								 <a class="thumb300">
+								<img class="greyscale" src="{if $my_gallery_all[i].image}{$basedomain}public_assets/{$my_gallery_all[i].typecontent}/{$my_gallery_all[i].image}{else}{$basedomain}assets/content/thumb/gallery1.jpg{/if}" />
+								</a>
+								 <a class="icon_cat icon_{$my_gallery_all[i].typeofarticle}" href="#">&nbsp;</a>
+								</div>
+								<div class="article_isi">
+									<h3>{$my_gallery_all[i].title}</h3>
+									{if $my_gallery_all[i].articleType==3}
+										<div class="mp3Player">
+											<audio src="{$basedomain}public_assets/music/mp3/{$my_gallery_all[i].file}" type="audio/mp3" controls="controls" width="180"></audio>	
+										</div><!-- end .mp3Player -->
+									{/if}
+									<div class="boxBottom2">
+										<div class="content_action fl">
+											<ul>
+												<li><a class="icon_love " href="#">{$my_gallery_all[i].favorite}</a></li>
+												<li><a class="icon_comment" href="#">{$my_gallery_all[i].commentcount}</a></li>
+												<li><a class="icon_view" href="#">{$my_gallery_all[i].views}</a></li>
+											</ul>
+										</div><!--END .content_action-->
+										<a href="javascript:void(0)" class="icon_trash fr" id="deleteimg" imageid="{$my_gallery_all[i].id_image}"></a>
+									</div><!--END .clearfix-->
+								</div><!--END .article_isi-->
+							</div><!--END .article_box-->
+						</li><!-- END .col3 -->
+						{/section}
+					 </ul><!-- END .columns-3 -->
+				</div>
+				<div class="paging" id="pagingIDgallery"></div> <!-- END .paging -->
+            </div><!-- END #theContent -->
+		</li><!-- END .col-main -->    
+    </ul><!-- END .page-content -->
+</div><!-- END .section -->
+
+<script type="text/javascript">
+
+{literal}
+	 $(document).on('click','#deleteimg',function(){
+		var cid = $(this).attr("imageid");
+		$.post(basedomain+'my/ajax',{cid:cid,needs:'hapusmygallery'},function(data){
+			//if(data) $(".valjenis").attr("value",data);
+			//else $(".valjenis").html("");
+		},"JSON");
+	});
+</script>
+{/literal}
+
+<script>
+	getpaging({$start},{$total},"pagingIDgallery","paging_ajax_mygallery",9);
+</script>
+

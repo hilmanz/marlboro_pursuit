@@ -1,0 +1,51 @@
+
+<div id="registration2" class="registration" style="margin-top:70px"> 
+	<div class="head">
+    	<h3>Registration is free. Join us and earn access to exclusive content and special offers.<br />
+To complete the registration process, a copy of a valid government-issued id has to be submitted for age verification. Upon verification, your username and password will be sent to you.
+For accuracy of registered data please review and confirm the details provided. </h3>
+    </div><!-- END .head -->
+    <div class="section">
+    	<form id="reg3" action="{$basedomain}questionnaire/survey" class="theForm" method="POST">
+        <!--<h3>Please attach a soft copy of your VALID government-issued ID (GIID). <a href="#popup-giidlist" class="showPopup">SEE valid GIID List</a> | <a href="#popup-upload-photo" class="showPopup">Upload giid now</a> | <a href="#">Upload giid LATER</a></h3>
+        -->
+<h3>To continue with registration, please submit a copy of your GIID within seven (7) days. Failure to do so will restart registration process. </h3>
+		<h2>After completing and signing this survey form, I declare that:</h2>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+		
+			<!-- Index dengan huruf belum bisa -->
+		  {section name=i loop=$survey}
+		  
+		  <tr>
+           {*} <td valign="top"><input type="checkbox" name="survey[]" value="{$survey[i].id}"/></td>{/*}
+            <td valign="top">{$index[i]})</td>
+            <td valign="top">{$survey[i].question}</td>
+          </tr>
+		 
+		  {/section}
+		  
+        </table>
+        <h2>Toward this end, I hereby grant my consent to PMFTC Inc. to</h2>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			{section name=i loop=$consent}
+          <tr>
+		   {*} <td valign="top"><input type="checkbox" name="survey[]" value="{$consent[i].id}"/></td>{/*}
+            <td valign="top">{$index[i]})</td>
+            <td valign="top">{$consent[i].question}</td>
+          </tr>
+		  {/section}
+          
+        </table>
+        <div class="row rowSubmit">
+			<input type="hidden" value="1" name="token"/>
+        	<input type="submit" value="NEXT" class="button btnRed" name="submit"/>
+        </div><!-- END .rowSubmit -->
+        </form>
+        <!--
+		<div class="step">
+        	<a class="page1 btnStep fl" >Page 1</a>
+        	<a class="page2 btnStep current" >Page 2</a>
+        	<a class="page3 btnStep fr ">Page 3</a>
+        </div>--><!-- END .step -->
+    </div><!-- END .section -->
+</div><!-- END .registration -->

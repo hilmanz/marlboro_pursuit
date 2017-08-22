@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Shared/trend
+END
+logarithmicBestFitClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Shared/trend/logarithmicBestFitClass.php
+END
+polynomialBestFitClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Shared/trend/polynomialBestFitClass.php
+END
+exponentialBestFitClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Shared/trend/exponentialBestFitClass.php
+END
+linearBestFitClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Shared/trend/linearBestFitClass.php
+END
+trendClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Shared/trend/trendClass.php
+END
+powerBestFitClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Shared/trend/powerBestFitClass.php
+END
+bestFitClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Shared/trend/bestFitClass.php
+END

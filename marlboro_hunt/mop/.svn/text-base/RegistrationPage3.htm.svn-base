@@ -1,0 +1,109 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+<title>
+</title>
+<meta name="ROBOTS" content="FOLLOW,INDEX">
+
+<!--
+-->
+		<link href="css/amildmop.css" rel="stylesheet" type="text/css" />
+		
+</head>
+
+<body>
+
+<form name="Form1" method="post" action="RegistrationPage3.aspx?NRMODE=Unpublished&amp;FRAMELESS=false&amp;NRNODEGUID=%7b842026D9-0794-4557-93DB-D4724B69BC92%7d&amp;NRORIGINALURL=%2fNR%2fexeres%2f842026D9-0794-4557-93DB-D4724B69BC92%2ehtm%3fwbc_purpose%3dBasic%26NRMODE%3dUnpublished%26WBCMODE%3dPresentationUnpublished&amp;NRCACHEHINT=ModifyLoggedIn&amp;wbc_purpose=Basic&amp;WBCMODE=PresentationUnpublished" id="Form1" enctype="multipart/form-data">
+
+
+	<div class="mainPage">
+		<div class="header">
+			<div class="legalInfo">
+				<!-- phLegalInfo sould be added --></div>
+			<div class="intro">
+				<!-- CMS Placeholder - Title -->
+				<span id="phHeaderTitle"><H1>Registration nearly complete</H1><!-- CMS Placeholder - Introduction text START -->
+<P class=intro>To complete your registration, we need to verify that you are 18 or more years old.</P>
+<P class=intro>It's easy to do, just provide details of a government issued ID and will check to make sure</P>
+<P class=intro>You can check online, upload a copy or print it and send it to use later</P>
+<P>Fields marked '*' are mandatory</P></span>
+				<!-- CMS Placeholder - Introduction text END  --></div>
+			<div class="clear">
+			</div>
+		</div>
+		<div class="content">
+			<div class="contentIntro">
+				<span id="phContentIntro"></span>
+			</div>
+			
+			<!-- section 2 -->
+			<div class="r3UploadSection">
+				<!-- CMS Placeholder - Title -->
+<span id="phUploadingID"><H2>Upload Your ID...</H2><!-- CMS Placeholder Content START -->
+<P class=r3UploadSection>To finish your registration please upload a scanned copy of your ID</P></span><!-- CMS Placeholder Content END -->
+<DIV class=row><!-- CMS Placeholder - For image -->
+<span id="phImgid_ico2"><IMG alt="" src="http://202.87.248.47/PMI/Images/id_ico2.jpg" vspace=5></span></DIV>
+<DIV class=row><input name="txtFileBrowse" id="txtFileBrowse" type="file" class="formField" size="18" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<P class=error>
+	</P></DIV>
+<DIV class=submit>
+	<a id="lnkBtnUploadingContinue" OnClick="javascript:xt_med('C', '111', 'ACS::Registration::Registration_Add_Your_ID::Upload_GIID','N');" href="javascript:__doPostBack('lnkBtnUploadingContinue','')">NEXT</a>
+</DIV>
+<DIV class=clear></DIV>
+					
+				</div>
+		<!-- section 3 -->
+		<div class="r3FaxSection">
+			<!-- CMS Placeholder - Title -->
+<span id="phPDFTitle"><BR>
+<H2>.. or Send By Fax</H2>
+<P>To finish your registration please send us a copy of your ID</P>
+<OL>
+<LI>Print out the completed form 
+<LI>Check the information is correct 
+<LI>Fax us a copy of your ID and the Application form to 0800-444-6277 
+<LI>Or send us a copy by mail</LI></OL></span><!-- CMS Placeholder Content END -->
+<DIV class=row><!-- CMS Placeholder - For image -->
+<span id="phImgdni_03"><IMG height=110 alt="" src="" width=368 vspace=5></span></DIV>
+
+<DIV class=submit>
+	<a id="lnkBtnSaveForm" disabled="disabled" OnClick="return Enable();">Save</a></DIV>
+
+
+<DIV class=submit>
+	<a id="lnkBtnPrintForm" OnClick="javascript:xt_med('C', '111', 'ACS::Registration::Registration_Add_Your_ID::Print_GIID','N');" href="javascript:__doPostBack('lnkBtnPrintForm','')">Print</a></DIV>
+
+<DIV class=submit>
+	<!--<a id="lnkBtnContinue" href="javascript:__doPostBack('lnkBtnContinue','')">Continue</a>-->
+    <a id="lnkBtnContinue" href="LandingPage.htm">Continue</a>
+	
+</A></DIV>
+<DIV class=clear></DIV>
+					
+				</div>
+	</div>
+	<DIV class=footer>
+<P class=healthAlert>This Site is reserved for adult smokers over 18 years old, who live in XXX</P>
+<div class="navigation">
+				<ul>
+					<li><a href="../LandingPage/LandingPage.htm">Home</a></li>
+					<li><a href="../footer/TermsAndConditions.htm" target="_Blank" onclick="javascript:var tmpX000=1;var tmpX001=window.open('../footer/TermsAndConditions.htm','terms','width=900,height=660');return false;">Terms and Conditions</a></li>
+					<li><a href="../footer/ContactUs.htm" target="_Blank" onclick="javascript:var tmpX000=1;var tmpX001=window.open('../footer/ContactUs.htm','contact','width=900,height=660');return false;">Contact us</a></li>
+					<li><a id="health" href="../footer/HealthWarning.htm" target="_Blank" onclick="javascript:var tmpX000=1;var tmpX001=window.open('../footer/HealthWarning.htm','health','width=900,height=660');return false;">Health</a></li>
+					<li><a href="../RemoveMe/RemoveMe.htm">Remove Me</a></li>
+					<li><a href="../demoPages/PMISite.htm" target="_Blank">PMI corporate</a></li>
+					<li class="last"><a href="../footer/FAQ.htm" target="_Blank" onclick="javascript:var tmpX000=1;var tmpX001=window.open('../footer/FAQ.htm','FAQ','width=900,height=660');return false;">FAQ</a></li>
+				</ul>
+			</div></DIV>
+
+</div>
+<div>
+</div>
+</form>  
+
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options
+END
+ClientOptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options/ClientOptions.php
+END
+ClientPrefix.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options/ClientPrefix.php
+END
+ClientProfile.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options/ClientProfile.php
+END
+ClientCluster.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options/ClientCluster.php
+END
+IOption.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options/IOption.php
+END
+CustomOption.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options/CustomOption.php
+END
+IClientOptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options/IClientOptions.php
+END
+ClientConnectionFactory.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options/ClientConnectionFactory.php
+END
+ClientReplication.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options/ClientReplication.php
+END
+Option.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/lib/Predis/Options/Option.php
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/marlboro-hunt-2013/!svn/ver/432/trunk/marlboro_hunt/config
+END
+mail.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/marlboro-hunt-2013/!svn/ver/401/trunk/marlboro_hunt/config/mail.inc.php
+END
+config.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/marlboro-hunt-2013/!svn/ver/120/trunk/marlboro_hunt/config/config.inc.php
+END
+config.sample.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/config/config.sample.inc.php
+END
+routes.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/marlboro-hunt-2013/!svn/ver/279/trunk/marlboro_hunt/config/routes.php
+END
+config.dashboard.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/marlboro-hunt-2013/!svn/ver/68/trunk/marlboro_hunt/config/config.dashboard.inc.php
+END
+config.inc.local.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/marlboro-hunt-2013/!svn/ver/7/trunk/marlboro_hunt/config/config.inc.local.php
+END
+locale.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/marlboro-hunt-2013/!svn/ver/432/trunk/marlboro_hunt/config/locale.inc.php
+END

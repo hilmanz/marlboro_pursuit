@@ -1,0 +1,143 @@
+<script>
+	//var basedomain = "{$basedomain}";
+	{literal}
+
+	$(document).on('click','.pencetini',function(){
+		var userid = $(this).attr('userid');
+	
+		//alert(userid);
+		$.post(basedomain+"admin/index.php?s=dyo&act=getMyGallery" ,{userid:userid}, function(inilemparandatanya){
+				$(".inicontainernya").html(viewdyogallery(inilemparandatanya));
+		},"JSON");
+	});
+	
+	
+	$(document).on('click','.test',function(){
+		var userid = $(this).attr('userid');
+		var contentid = $(this).attr('contentid');
+		var n_status = $(this).prop('checked');
+		if (n_status == true){
+			n_status = 2;
+		}else{
+			n_status = 0;
+		}
+		//alert(n_status);
+		$.post(basedomain+"admin/index.php?s=dyo&act=ajax" ,{userid:userid, id:contentid, n_status:n_status }, function(inilemparandatanya){
+		
+		var status = inilemparandatanya.status;
+		if (status == 2){
+			alert('Already Have a Winner');
+		}else if (status == 1){
+			alert('Canceled Winner');
+		}else if (status == 0){
+			alert('Winner');
+		}
+		
+		},"JSON");
+	});
+	
+	
+	function viewdyogallery(data){
+		var html ="";
+		$.each(data,function(i,e){
+		
+		if (e.n_status == 2){
+			checkparam = 'checked';
+		}else{
+			checkparam = '';
+		}
+			
+			html+="	 <div class='box'>";		
+			html+="	   <div class='thumbLanding'>";
+			html+="	       <a href='#' class='thumb300'>";
+			html+="	          <img src='"+basedomain+"public_assets/user/dyo/"+e.image+"' style='width:220px; height:220px'>";
+			html+="	     </a><br><br>";
+			html+="	<input type='checkbox' class='test' id='test' contentid='"+e.id+"' userid='"+e.userid+"' "+checkparam+" >Favourite<br>";
+				/*html+="		<select id='test' class='test' contentid='"+e.id+"' userid='"+e.userid+"'>";
+				html+="			<option value='0' class='orange' {if $n_status==0} selected='selected' {/if}>Available</option>";
+				html+="			<option value='1' class='green' {if $n_status==1} selected='selected' {/if} >Rejected</option>";
+				html+="			<option value='2' class='red' {if $n_status==2} selected='selected' {/if} >Favourite</option>";
+				html+="		</select> <br/> <br/>";*/
+				html+="	 Total Vote :&nbsp "+e.vote+" <br>";
+				html+="	 Datetime :&nbsp "+e.datetime+"";
+			html+="	 </div>";
+			html+="	 </div>";
+		
+		});
+		
+		
+		return html;  
+	
+	}
+	
+	{/literal}
+</script>
+<div class="theContent">
+
+    <div class="theTitle">
+        <h2>{$folder} List</h2>
+    </div><!--contenttitle-->
+    <div class="tableoptions">        
+   <form method="GET" action="">
+        <input type="text" name="search" value="{$search}">
+        <input type="hidden" name="s" value="{$folder}" />
+        <input type="hidden" name="cari" value="cari" />
+     &nbsp &nbsp
+       
+        <!-- <select name="article_type">
+            <option value=""> - Type - </option>
+            {section name=i loop=$typelist}
+            {if $typelist[i].id == $article_type}<option value="{$typelist[i].id}" selected>{$typelist[i].content_name}</option>
+            {else}<option value="{$typelist[i].id}">{$typelist[i].content_name}</option>
+            {/if}
+            {/section}
+        </select> -->
+       <span>Date Range</span>
+        <input type="text" name="startdate" value="{$startdate}" class="datepicker radius3" />
+       <span>s/d</span>
+        <input type="text" name="enddate" value="{$enddate}" class="datepicker radius3" />
+        <input type="submit" value="cari" class="stdbtn btn_orange" />
+    </form>
+    </div><!--tableoptions-->	
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <colgroup>
+            <col class="con0" style="width: 4%" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="head0">No</th>
+                <th class="head1">Name</th>
+               <!--  <th class="head1">Images</th> -->
+                <th class="head1">Datetime</th>
+               <!--  <th class="head1">Status</th> -->
+			</tr>
+        </thead>
+        <tbody>
+            {foreach from=$list key=k item=v}
+            <tr>
+                <td width="10">{$v.no}&nbsp;</td>
+                <td><nobr><a class="showPopup pencetini" href="#popupShirt" userid="{$v.id}" >{$v.name}</a></nobr></td>
+				<!-- <td><nobr><img src="{$baseurl}public_assets/user/dyo/{$v.image}" width="75px" /></nobr></td> -->
+				<td><nobr>{$v.datetime}</nobr></td>
+				</tr>
+            {/foreach}
+        </tbody>
+    </table>
+    <div class="paging">
+    	{$paging}
+    </div>
+</div><!--theContent-->
+
+<div id="popupShirt">
+	<div id="popupHead">
+		<h5>DYO SHIRT</h5>
+    </div>
+	<div class="inicontainernya">
+	
+	</div>
+</div>

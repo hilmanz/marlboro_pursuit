@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/contributor
+END
+contributor_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/contributor/contributor_edit.html
+END
+contributor_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/contributor/contributor_new.html
+END
+contributor_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/admin/contributor/contributor_list.html
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader
+END
+Excel2007.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader/Excel2007.php
+END
+IReadFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader/IReadFilter.php
+END
+CSV.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader/CSV.php
+END
+IReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader/IReader.php
+END
+Serialized.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader/Serialized.php
+END
+OOCalc.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader/OOCalc.php
+END
+SYLK.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader/SYLK.php
+END
+Excel5.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader/Excel5.php
+END
+DefaultReadFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader/DefaultReadFilter.php
+END
+Excel2003XML.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPExcel/Reader/Excel2003XML.php
+END

@@ -1,0 +1,459 @@
+2013-04-02 09:39:56 SELECT * FROM social_member WHERE username='ovan' LIMIT 1
+2013-04-02 09:39:56 can login
+2013-04-02 09:39:59 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-02 09:39:59 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-02 09:39:59 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-02 09:39:59 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-02 09:40:01 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-02 09:40:01 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-02 09:40:01 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-02 09:40:01 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-02 09:41:19 SELECT * FROM marlborohunt_city_reference WHERE provinceid <> 0 AND city <> '(NOT SPECIFIED)'    ORDER BY city
+2013-04-02 09:41:19 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1386) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-02 09:41:19 have attending
+2013-04-02 09:41:19 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1387,1449,1444,1443,1442,1399,1393,1392,1391,1390) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-02 09:41:19 have attending
+2013-04-02 09:41:19 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='side_banner' AND n_status=1 LIMIT 1 
+2013-04-02 09:41:19 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'event' AND n_status = 1 LIMIT 1
+2013-04-02 09:41:19 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%12%' AND type IN (3) AND n_status IN (1) 
+2013-04-02 09:41:19 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1409) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-02 09:41:19 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1386) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-02 09:41:19 have attending
+2013-04-02 09:41:19 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1387,1449,1444,1443,1442,1399,1393,1392,1391,1390) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-02 09:41:19 have attending
+2013-04-02 09:41:20 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-02 09:41:20 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-02 09:41:20 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-02 09:41:20 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-02 09:41:20 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-02 09:41:20 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-02 09:41:20 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-02 09:41:20 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-02 09:54:50 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN athreesix_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 09:56:00 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 09:56:45 
+		SELECT sum(ancr.point) rank,categoryid ,category
+		FROM axis_news_content_rank ancr
+		LEFT JOIN axis_news_content_category ancc ON ancc.id= ancr.categoryid
+		WHERE userid=8998 
+		GROUP BY categoryid ORDER BY rank DESC LIMIT 5 
+2013-04-02 09:56:45 
+			SELECT art.rank titleRank,art.id levelRank FROM social_rank sr
+			LEFT JOIN social_media_account sma ON sma.userid=sr.userid
+			LEFT JOIN axis_rank_table art ON art.id=sr.rank
+			WHERE sr.userid = 8998 AND sr.n_status = 1 limit 1		
+		
+2013-04-02 09:56:54 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:00:04 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:04:45 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:05:08 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:05:29 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:05:57 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:06:41 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:07:06 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:07:59 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:08:48 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:09:30 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:10:24 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:30:10 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:31:08 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:33:56 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:34:11 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:47:23 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:51:00 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:51:33 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:58:35 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 10:58:44 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:02:34 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:03:04 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:03:26 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:05:15 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:06:20 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:06:45 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:11:29 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:13:41 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:15:17 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:16:54 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:17:39 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:17:53 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:19:09 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:19:22 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:19:36 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:19:48 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:20:15 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:20:29 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:20:42 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:20:53 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:21:08 SELECT * FROM marlborohunt_city_reference WHERE provinceid <> 0 AND city <> '(NOT SPECIFIED)'    ORDER BY city
+2013-04-02 11:21:08 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1386) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-02 11:21:08 have attending
+2013-04-02 11:21:08 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1387,1449,1444,1443,1442,1399,1393,1392,1391,1390) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-02 11:21:08 have attending
+2013-04-02 11:21:08 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='side_banner' AND n_status=1 LIMIT 1 
+2013-04-02 11:21:08 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'event' AND n_status = 1 LIMIT 1
+2013-04-02 11:21:08 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%12%' AND type IN (3) AND n_status IN (1) 
+2013-04-02 11:21:08 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1409) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-02 11:21:08 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1386) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-02 11:21:08 have attending
+2013-04-02 11:21:08 	SELECT  count(*) total , contentid  FROM marlborohunt_news_content_comment 
+					WHERE contentid IN (1387,1449,1444,1443,1442,1399,1393,1392,1391,1390) AND n_status = 1
+					 GROUP BY contentid 
+					ORDER BY date DESC 
+					
+2013-04-02 11:21:08 have attending
+2013-04-02 11:21:09 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-02 11:21:09 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-02 11:21:09 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-02 11:21:09 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-02 11:21:09 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-02 11:21:09 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-02 11:21:09 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-02 11:21:09 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-02 11:21:11 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:31:37 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 11:40:56 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 12:16:57 
+			SELECT sm.*,cityref.city as cityname FROM social_member sm
+			LEFT JOIN marlborohunt_city_reference cityref ON sm.city = cityref.id
+			WHERE sm.id = 8998 LIMIT 1
+2013-04-02 12:17:03 can not register
+2013-04-02 12:18:56 can not register
+2013-04-02 12:27:38 can not register
+2013-04-02 12:28:24 can not register
+2013-04-02 12:32:04 can not register
+2013-04-02 12:32:13 can not register
+2013-04-02 13:27:01 can not register
+2013-04-02 14:17:52 can not register
+2013-04-02 14:18:40 can not register
+2013-04-02 14:24:17 can not register
+2013-04-02 14:24:58 can not register
+2013-04-02 14:26:49 can not register
+2013-04-02 14:27:01 can not register
+2013-04-02 14:27:05 can not register
+2013-04-02 14:28:20 can not register
+2013-04-02 14:28:28 can not register
+2013-04-02 14:28:55 can not register
+2013-04-02 14:29:01 can not register
+2013-04-02 14:29:02 can not register
+2013-04-02 14:29:42 can not register
+2013-04-02 14:32:07 can not register
+2013-04-02 14:35:29 can not register
+2013-04-02 14:35:41 can not register
+2013-04-02 14:36:09 can not register
+2013-04-02 14:37:21 can not register
+2013-04-02 14:37:53 can not register
+2013-04-02 14:37:56 can not register
+2013-04-02 14:38:30 can not register
+2013-04-02 14:40:58 can not register
+2013-04-02 14:41:54 can not register
+2013-04-02 14:42:38 can not register
+2013-04-02 14:43:25 can not register
+2013-04-02 14:44:01 can not register
+2013-04-02 14:44:19 can not register
+2013-04-02 14:45:30 can not register
+2013-04-02 14:46:13 can not register
+2013-04-02 14:46:56 can not register
+2013-04-02 14:50:59 can not register
+2013-04-02 14:51:59 can not register
+2013-04-02 14:52:14 can not register
+2013-04-02 14:54:15 can not register
+2013-04-02 14:54:40 can not register
+2013-04-02 14:55:08 can not register
+2013-04-02 14:55:23 can not register
+2013-04-02 14:55:46 can not register
+2013-04-02 15:33:08 can not register
+2013-04-02 15:33:43 can not register
+2013-04-02 15:35:17 can not register
+2013-04-02 15:35:46 can not register
+2013-04-02 15:36:01 can not register
+2013-04-02 15:43:02 can not register
+2013-04-02 15:43:46 can not register
+2013-04-02 15:52:56 can not register
+2013-04-02 15:58:04 can not register
+2013-04-02 15:58:16 can not register
+2013-04-02 15:58:48 can not register
+2013-04-02 15:59:52 can not register
+2013-04-02 16:02:28 can not register
+2013-04-02 16:03:15 can not register
+2013-04-02 16:03:46 can not register
+2013-04-02 16:04:28 can not register
+2013-04-02 16:06:18 can not register
+2013-04-02 16:07:40 can not register
+2013-04-02 16:08:40 can not register
+2013-04-02 16:09:10 can not register
+2013-04-02 16:10:12 can not register
+2013-04-02 16:11:52 can not register
+2013-04-02 16:12:17 can not register
+2013-04-02 16:13:59 can not register
+2013-04-02 16:14:32 can not register
+2013-04-02 16:15:27 can not register
+2013-04-02 16:16:14 can not register
+2013-04-02 16:16:29 can not register
+2013-04-02 16:17:02 can not register
+2013-04-02 16:17:50 can not register
+2013-04-02 16:18:33 can not register
+2013-04-02 16:19:11 can not register
+2013-04-02 16:19:47 can not register
+2013-04-02 16:20:23 can not register
+2013-04-02 16:20:39 can not register
+2013-04-02 16:23:01 can not register
+2013-04-02 16:23:22 can not register
+2013-04-02 16:24:00 can not register
+2013-04-02 16:24:12 can not register
+2013-04-02 16:24:51 can not register
+2013-04-02 16:25:38 can not register
+2013-04-02 16:25:44 can not register
+2013-04-02 16:26:26 can not register
+2013-04-02 16:27:21 can not register
+2013-04-02 16:28:28 can not register
+2013-04-02 16:29:38 can not register
+2013-04-02 16:30:37 can not register
+2013-04-02 16:31:27 can not register
+2013-04-02 16:33:54 can not register
+2013-04-02 16:34:25 can not register
+2013-04-02 16:34:52 can not register
+2013-04-02 16:36:25 can not register
+2013-04-02 16:37:04 can not register
+2013-04-02 16:37:55 can not register
+2013-04-02 16:38:52 can not register
+2013-04-02 16:39:14 can not register
+2013-04-02 16:39:34 can not register
+2013-04-02 16:39:56 can not register
+2013-04-02 16:40:06 can not register
+2013-04-02 16:40:48 can not register
+2013-04-02 16:41:23 can not register
+2013-04-02 16:43:12 can not register
+2013-04-02 16:43:35 can not register
+2013-04-02 16:43:57 can not register
+2013-04-02 16:45:13 can not register
+2013-04-02 16:46:24 can not register
+2013-04-02 16:51:12 can not register
+2013-04-02 16:56:13 can not register
+2013-04-02 16:56:43 can not register
+2013-04-02 16:57:32 can not register
+2013-04-02 16:59:28 can not register
+2013-04-02 17:00:03 can not register
+2013-04-02 17:05:16 can not register
+2013-04-02 17:10:53 can not register

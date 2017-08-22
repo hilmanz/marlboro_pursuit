@@ -1,0 +1,113 @@
+<!--Header, Navigasi page-->
+
+
+	<div id="circleLogin">
+		<div class="circleContent">
+			<h1>Already registered?</h1>
+			<h3>Please provide your log-in details below</h3>
+			<form class="loginBox theForms" action="{$basedomain}login/local"  method="POST" onSubmit="return validate()">
+				<div class="row">
+					
+					<div class="the-field"  onclick="$(this).find('#value-email').hide();$(this).find('.username').focus();">
+						<input type="text" class="username full-width required checkthis" onBlur="if(this.value=='')$('#value-email').show();" name="username" onFocus="$('#value-email').hide();"/>
+						<span class="the-value" id="value-email">Your@Email.com</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="the-field"  onclick="$(this).find('#value-password').hide();$(this).find('.password').focus();">
+						<input  type="password" class="password full-width required checkthis" onBlur="if(this.value=='')$('#value-password').show();" name="password" onFocus="$('#value-password').hide();" onchange="$(this).find('#value-password').hide();" />
+						<span class="the-value" id="value-password">Your Password</span>
+					</div>
+				</div>
+				
+				<div class="moreInfo">
+                    <div class="row">
+                        <a href="{$basedomain}forgotpassword" class="forgotPassword">Forgot Your Password?</a>
+                    </div>
+                    <div class="row rowCheck">
+                        <div class="clear" class="full-width required">
+                            <input type="checkbox" class="checkbox" name="colors[]" />
+                            <label>I am an adult smoker 18 years or older, residing in the Philippines</label>
+                        </div>
+                        <div class="clear">
+                            <input type="checkbox" name="colors[]" class="checkbox" />
+                            <label>I have read and understood the <a href="#popup-tnc" class="showPopup popuptnc">Terms and Conditions</a> and <a class="showPopup popupprivacy" href="#popup-privacy">Privacy Statement and Consent</a></label>
+                        </div>
+                    </div>
+                    <div class="row rowInformation">
+                        <p>Member must tick both statements to continue logging into their account.</p>
+                        <p>Registered but haven't submitted your documents yet? <a href="{$basedomain}register/trackingcode">Click here</a></p>
+                    </div>
+                    <div class="row rowSubmit">
+                        <input type="hidden" value="1" name="login"/>
+						<input type="submit" value="" class="loginBtn" name="submit"/>
+                    </div>
+                </div>
+				
+			</form>
+		</div><!-- END .circleContent -->
+	</div><!-- END #circleLogin -->
+ </div><!-- END .loginPage -->
+ </div><!-- END #loginPage -->
+
+{literal}
+	<script language="javascript">
+		
+		$(document).ready(function(){
+			var passwordnyakosong = $(".password").val();
+			//if(passwordnyakosong!='') $(".password").val('');
+			if(passwordnyakosong!='') $('#value-password').hide();
+			
+			var passwordnyakosong = $(".username").val();
+			//if(passwordnyakosong!='') $(".username").val('');
+			if(passwordnyakosong!='') $('#value-email').hide();
+		
+		});
+		$(document).on('focus','.password',function(){
+			$('#value-email').hide();
+		});
+		
+		function validate()
+		{
+			var chks = document.getElementsByName('colors[]');
+			var checkCount = 0;
+			var checkfields = true;
+			for (var i = 0; i < chks.length; i++)
+			{
+				if (chks[i].checked)
+				{
+					checkCount++;
+				}
+			}
+			if (checkCount < 2)
+			{
+
+				/* s: popup global */
+					$(".trigun").trigger("click");
+					$(".msgpopupglobal").html(locale.musttick);
+				/* e: popup global */
+			
+				return false;
+			}
+			
+			$(".checkthis").each(function(i,e){
+				
+					if($(this).val()=='') {		
+							
+						checkfields = false;
+							
+						}
+				
+			});
+			
+			if(checkfields==false){
+				/* s: popup global */
+					$(".trigun").trigger("click");
+					$(".msgpopupglobal").html(locale.fillallthefielduserpass);
+				/* e: popup global */
+			}
+			
+			return true;
+		}
+	</script>
+{/literal}

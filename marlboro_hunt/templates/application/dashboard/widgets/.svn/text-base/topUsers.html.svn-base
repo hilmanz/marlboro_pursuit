@@ -1,0 +1,128 @@
+<div id="top-user">
+    <div class="the-title fl">
+        <h2>Top 10 Most Viewed Users All Time</h2>
+		
+     </div>
+	 <div class="select_op rt">
+        <div class="shorter">
+            <form method="GET" action="{$basedomain}activities">
+			<select class="styled weeks" name="week" konten="tes">
+              <option value="7" {if $week == 1}selected="selected"{/if}>Week 1</option>
+              <option value="14" {if $week == 2}selected="selected"{/if}>Week 2</option>
+              <option value="21" {if $week == 3}selected="selected"{/if}>Week 3</option>
+              <option value="28" {if $week == 4}selected="selected"{/if}>Week 4</option>
+            </select>
+			</form>
+        </div>
+     </div>
+     <div class="iconTable">
+        <table class="gridtable">
+            <tr class="user_list">
+			{section name=i loop=$topViewMostTime}
+                <th>{$topViewMostTime[i].name}</th>
+			{/section}
+            </tr>
+            <tr class="icon_list">
+			{section name=i loop=$topViewMostTime}    				
+						<td><img src='{$basedomainpath}public_assets/user/photo/tiny_{$topViewMostTime[i].img}'  /></td>
+                    {/section}
+			</tr>
+        </table>
+     </div>
+     <div class="the-title fl">
+        <h2>Top 10 very active users</h2>
+     </div>
+     <div class="select_op rt">
+        <div class="shorter">
+            <form method="GET" action="{$basedomain}activities">
+			<select class="styled weeks" name="week">
+              <option value="7" {if $week == 1}selected="selected"{/if}>Week 1</option>
+              <option value="14" {if $week == 2}selected="selected"{/if}>Week 2</option>
+              <option value="21" {if $week == 3}selected="selected"{/if}>Week 3</option>
+              <option value="28" {if $week == 4}selected="selected"{/if}>Week 4</option>
+            </select>
+			</form>
+        </div>
+     </div>
+       <div class="iconTable">
+        <table class="gridtable">
+            <tr class="user_list">
+			{section name=i loop=$topTenSuperUser}
+                <th>{$topTenSuperUser[i].name}</th>
+			{/section}
+            </tr>
+            <tr class="icon_list">
+			{section name=i loop=$topTenSuperUser}    				
+						<td><img src='{$basedomainpath}public_assets/user/photo/tiny_{$topTenSuperUser[i].img}'  /></td>
+                    {/section}
+			</tr>
+        </table>
+     </div>
+     <div class="the-title fl">
+        <h2>Top 10 Most Viewed Users Weekly</h2>
+     </div>
+     <div class="select_op rt">
+        <div class="shorter">
+            <form method="GET" action="{$basedomain}activities">
+			<select class="styled weeks" name="week">
+              <option value="7" {if $week == 1}selected="selected"{/if}>Week 1</option>
+              <option value="14" {if $week == 2}selected="selected"{/if}>Week 2</option>
+              <option value="21" {if $week == 3}selected="selected"{/if}>Week 3</option>
+              <option value="28" {if $week == 4}selected="selected"{/if}>Week 4</option>
+            </select>
+			</form>
+        </div>
+     </div>
+       <div class="iconTable">
+        <table class="gridtable">
+            <tr class="user_list">
+			{section name=i loop=$topTenUserWeekly}
+                <th>{$topTenUserWeekly[i].name}</th>
+			{/section}
+            </tr>
+            <tr class="icon_list">
+			{section name=i loop=$topTenUserWeekly}    				
+							<td><img src='{$basedomainpath}public_assets/user/photo/tiny_{$topTenUserWeekly[i].img}'  /></td>
+                    {/section}
+            </tr>
+        </table>
+     </div>
+     <div class="the-title fl">
+        <h2>Top 10 User (based on number of friends)</h2>
+     </div>
+     <div class="select_op rt">
+        <div class="shorter">
+            <form method="GET" action="{$basedomain}activities" >
+			<select class="styled weeks" name="week">
+              <option value="7" {if $week == 1}selected="selected"{/if}>Week 1</option>
+              <option value="14" {if $week == 2}selected="selected"{/if}>Week 2</option>
+              <option value="21" {if $week == 3}selected="selected"{/if}>Week 3</option>
+              <option value="28" {if $week == 4}selected="selected"{/if}>Week 4</option>
+            </select>
+			</form>
+        </div>
+     </div>
+       <div class="iconTable">
+        <table class="gridtable">
+            <tr class="user_list">
+			{section name=i loop=$topTenBasedNumFriend}
+                <th>{$topTenBasedNumFriend[i].name}</th>
+			{/section}
+            </tr>
+            <tr class="icon_list">
+			{section name=i loop=$topTenBasedNumFriend}    				
+							<td><img src='{$basedomainpath}public_assets/user/photo/tiny_{$topTenBasedNumFriend[i].img}'  /></td>
+                    {/section}
+            </tr>
+        </table>
+     </div>
+</div><!--end.#topUsers-->
+
+{literal}
+<script>	
+	$(document).on('change','.weeks',function(){    
+			$(this).parent().submit();            
+			       
+	});
+</script>
+{/literal}

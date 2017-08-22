@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/authentication
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/authentication/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/authentication/index.php
+END
+common.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/authentication/common.php
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/marlboro-hunt-2013/!svn/ver/232/trunk/scripts/deploy/conf
+END
+exclude-staging.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/marlboro-hunt-2013/!svn/ver/232/trunk/scripts/deploy/conf/exclude-staging.txt
+END
+exclude-production.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/marlboro-hunt-2013/!svn/ver/232/trunk/scripts/deploy/conf/exclude-production.txt
+END
+exclude-reporting.txt
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/marlboro-hunt-2013/!svn/ver/232/trunk/scripts/deploy/conf/exclude-reporting.txt
+END

@@ -1,0 +1,24 @@
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Dashboard Pursuit</title>
+<!--Stylesheets-->
+<link rel="stylesheet" href="{$assets_domain}css/style.css" type="text/css"  media="all" />
+<link rel="stylesheet" href="{$assets_domain}css/superfish.css" type="text/css"  media="all" />
+<link rel="stylesheet" href="{$assets_domain}css/colours/red.css" type="text/css"  media="all" />
+<link rel="stylesheet" href="{$assets_domain}css/jquery-ui-datepicker.css" type="text/css"  media="all" />
+<!--Favicon-->
+<link rel="shortcut icon" href="{$assets_domain}images/favicon.png" type="image/x-icon" />
+<!--JavaScript-->
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'></script>-->
+<script type="text/javascript" src="{$assets_domain}js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/superfish.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.effect.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/organictabs.jquery.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/customform.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/scripts.js"></script>
+	<script src="{$assets_domain}js/hchart/highcharts.js"></script>
+		<script type="text/javascript" language="javascript" src="{$assets_domain}js/highchartHelper.js"></script>	
+</head>

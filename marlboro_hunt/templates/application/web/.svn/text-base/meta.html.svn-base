@@ -1,0 +1,50 @@
+  <!--Meta Tags-->
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--Title-->
+<title>MARLBORO.PH</title>
+<!--Stylesheets-->
+<link rel="stylesheet" type="text/css" href="{$assets_domain}js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<link rel="stylesheet" href="{$assets_domain}css/icon.css" type="text/css"  media="all" />
+<link rel="stylesheet" href="{$assets_domain}css/superfish.css" type="text/css"  media="all" />
+<link rel="stylesheet" href="{$assets_domain}css/turn.css" type="text/css"  media="all" />
+<link rel="stylesheet" href="{$assets_domain}css/bigvideo.css">
+<link rel="stylesheet" href="{$assets_domain}css/point_of_viuu_top.css" />
+<link rel="stylesheet" href="{$assets_domain}css/marlboro.css" type="text/css"  media="all" />
+<link rel="stylesheet" href="{$assets_domain}css/responsive.css" type="text/css"  media="all" />
+<link type="text/css" href="{$assets_domain}css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+<link rel="stylesheet" href="{$assets_domain}css/video-js.css" type="text/css" />
+<!--Favicon-->
+<link rel="shortcut icon" href="{$assets_domain}images/favicon_temp.png" type="image/x-icon" />
+<!--JavaScript-->
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'></script>-->
+<script type="text/javascript" src="{$assets_domain}js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery-ui-1.8.min.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.validate.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/superfish.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/video.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/turn.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/respond.src.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.lwtCountdown-1.0.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/customform.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery-perspective-min.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/scripts.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/modernizr.custom.80212.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.jscrollpane.min.js"></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="{$assets_domain}js/selectivizr-min.js"></script>
+<![endif]-->
+<script  type="text/javascript" src="{$assets_domain}js/jquery.form.js"></script>
+			
+<script>
+	var basedomain = "{$basedomain}" ;
+	var pages = "{$pages}" ;
+	var locale = {$locale|@json_encode} ;
+
+	
+</script>

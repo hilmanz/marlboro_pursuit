@@ -1,0 +1,27 @@
+<div id="top" class="topbar clearfix">
+    <div id="site-title">
+    	<a href="{$basedomain}user.php"><img src="{$assets_domain}images/logo.png" /></a>
+    </div><!-- END #site-title -->
+    <div class="topbar-right clearfix">
+        <div id="userInfo">
+            <div class="userEntry">
+                <div class="title">
+            		<h3 class="username"><a href="#">{$user->name}</a></h3>
+                </div>
+            	<div class="inner">
+                	<a href="{$basedomain}logout.php" class="logout">Logout</a>
+                </div>
+            </div><!-- END .userEntry -->
+        </div>
+    </div><!-- END .topbar-right -->
+</div><!-- END .topbar -->
+{if $isLogin}
+<div id="main-menu-wrapper" class="clearfix">
+    <ul id="main-menu" class="fl">
+        <li><a href="{$basedomain}home" class="hoverslide">User Category</a></li>
+        <li><a href="{$basedomain}analytic" class="hoverslide">Google Analytics</a></li>
+        <li><a href="{$basedomain}activities"class="hoverslide">Web Activities</a></li>
+        <li><a href="{$basedomain}demographic" class="hoverslide">Demographic Data</a></li>
+    </ul>
+</div><!-- END .main-menu-wrapper -->
+{/if}

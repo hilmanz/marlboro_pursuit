@@ -1,0 +1,72 @@
+{literal}
+<script>
+if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
+    jQuery(function($){ //on document.ready
+        $('#birthday').datepicker();
+    })
+}
+</script>
+{/literal}
+
+<div  style="padding-left:185px;">
+<table width="100%" cellpadding="3" >
+<tr align="left" valign="top">
+<td colspan="1" rowspan="1" >
+<h1>Profile Update</h1>
+ <form method="POST" id="formLogin" action="{$basedomain}my/setting">
+
+<table>
+<tr>
+<td  valign="top" >Avatar: </td>
+<td><img src="{$basedomain}public_assets/user/photo/{if $img}{$img}{else}default.jpg{/if}"><br><br></td>
+</tr>
+<tr>
+<td  valign="top" colspan = "2"><label><i>Ukuran file avatar yang bisa diupload maksimum 1200 KB.</i>&nbsp;</label><br><br></td>
+</tr>
+<tr>
+<td  valign="top" ><label for="img">Upload Image&nbsp;</label></td>
+<td  valign="top" ><input type="file" name="img" id="file" value=""><br><br></td>
+</tr>
+</table> 
+<p><label>Name: </label> &nbsp;
+ <input type="text" name="name" value="{$name}"/>
+</p>
+<br>
+<p>
+<label>Email: </label>&nbsp;
+<input type="text" name="email" value="{$email}"/>
+</p>
+<br>
+<p><label>Sex: </label>&nbsp;
+<input type="text" name="sex" value="{$sex}"/>
+</p>
+<br>
+<p><label>Birthday: </label>&nbsp;
+<input type="date" id="birthday" name="birthday" size="20"  value="{$birthday}"/> <i>&nbsp;*pilih tanggal Lahir anda</i>
+</p>
+<br>
+<p><label>Influencer: </label>&nbsp;
+<input type="text" name="influencer" value="{$influencer}"/>
+</p>
+<br>
+<p><label>Street Name: </label>&nbsp;
+<input type="text" name="StreetName" value="{$StreetName}"/>
+</p>
+<br>
+<p>Description: <br>
+<textarea style="width: 250px; height: 40px" name="description">
+{$description}
+</textarea><br><br><br><br>
+</p>
+<input type="hidden" name="update" value="1" />
+<input type="hidden" name="tokenize" value="{$tokenize}" />
+<input name="submit" type="Submit" value="Update">
+
+<br>
+</form>
+
+<!--widget di dalam act => {$slider_header}-->
+</td></tr></table>
+</body>
+</html>
+</div>

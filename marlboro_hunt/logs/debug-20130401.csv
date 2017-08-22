@@ -1,0 +1,6 @@
+Date,Activity,User,Web Service,Command,Response ,SessionID
+"01-04-2013 13:32:44"," - CheckReferral - ",,"https://staging-artcademy-amild.es-dm.com/dm.mopid.webservice/centralwebservice.asmx/CheckReferral?sessionID=",CheckReferral,,
+"01-04-2013 13:40:49"," - CheckReferral - ",,"https://staging-artcademy-amild.es-dm.com/dm.mopid.webservice/centralwebservice.asmx/CheckReferral?sessionID=",CheckReferral,,
+"01-04-2013 13:42:39"," - CheckReferral - ",,"https://staging-artcademy-amild.es-dm.com/dm.mopid.webservice/centralwebservice.asmx/CheckReferral?sessionID=",CheckReferral,,
+"01-04-2013 14:03:54"," - CheckReferral - ",,"https://staging-artcademy-amild.es-dm.com/dm.mopid.webservice/centralwebservice.asmx/CheckReferral?sessionID=",CheckReferral,,
+"01-04-2013 14:09:42"," - CheckReferral - ",,"https://staging-artcademy-amild.es-dm.com/dm.mopid.webservice/centralwebservice.asmx/CheckReferral?sessionID=",CheckReferral,,

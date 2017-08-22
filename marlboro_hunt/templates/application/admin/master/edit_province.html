@@ -1,0 +1,61 @@
+<div class="theContent">
+    <div class="theTitle">
+        <h2>Edit Province</h2>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>
+            <form name="cal" method="POST" action="" enctype="multipart/form-data" onsubmit="javascript: return validator();">
+                <tr class="head">
+					<td><strong>Province</strong></td>
+					<td><input type="text" name="province" style="width:400px;" value="{$province}"/></td>
+				</tr>
+				<tr class="head">
+					<td><strong>Province EN</strong></td>
+					<td><input type="text" name="province_en" style="width:400px;" value="{$province_en}"/></td>
+				</tr>
+                <tr class="head">
+					<td><strong>N</strong></td>
+					<td><input type="text" name="nn" style="width:100px;text-align:right;" value="{$n}"/></td>
+				</tr>
+                <tr class="head">
+					<td><strong>S</strong></td>
+					<td><input type="text" name="ss" style="width:100px;text-align:right;" value="{$s}"/></td>
+				</tr>
+                <tr class="head">
+					<td><strong>E</strong></td>
+					<td><input type="text" name="ee" style="width:100px;text-align:right;" value="{$e}"/></td>
+				</tr>
+                <tr class="head">
+					<td><strong>W</strong></td>
+					<td><input type="text" name="ww" style="width:100px;text-align:right;" value="{$w}"/></td>
+				</tr>
+                <tr class="head">
+					<td><strong>Cover</strong></td>
+					<td>
+						<select name="cover" style="width:100px;">
+                            <option value="3g" {if $cover=='3g'} selected="selected" {/if}>3G</option>
+                            <option value="edge" {if $cover=='edge'} selected="selected" {/if}>EDGE</option>
+						</select>
+					</td>
+				</tr>
+                <tr class="head">
+					<td><strong>Image 3G</strong></td>
+					<td><input type="file" name="image_3g"/></td>
+				</tr>
+                <tr class="head">
+					<td><strong>Image EDGE</strong></td>
+					<td><input type="file" name="image_edge"/></td>
+				</tr>
+                <tr>
+                    <td colspan="2">
+                    <input type="submit" value=" Save " class="stdbtn btn_orange"/>&nbsp;&nbsp; 
+                    <input type="button" value="Cancel" class="stdbtn btn_yellow" onclick="javascript: window.location.href='index.php?s=master&act=list_province' ;" />
+                    </td>
+                </tr>
+                <input type="hidden" name="s" value="master" />
+                <input type="hidden" name="act" value="edit_province" />
+                <input type="hidden" name="id" value="{$id_province}" />
+            </form>
+    	</tbody>
+	</table>
+</div><!--theContent-->

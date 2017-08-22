@@ -1,0 +1,102 @@
+<div id="landingPage">
+	<div class="landingPage">
+        <ul class="columns-3 clearfix">
+            <li class="col3">
+                <div class="box">
+                    <div class="thumbLanding">
+                        <a class="thumb300 showPopup2 kickoffpop" href="#popup-video-kickoff">
+                            <img src="{$basedomain}assets/content/retail-thumb.jpg" />
+                        	<span class="icon_play">&nbsp;</span>
+						 </a>
+                    </div><!-- END .thumbLanding -->
+                    <div class="captions">
+                        <h1>kickoff</h1>
+                        <a class="readmore showPopup2" href="#popup-video-kickoff">let go of your maybe</a>
+                    </div><!-- END .captions -->
+                </div><!-- END .box -->
+            </li><!-- END .col3 -->
+            <li class="col3">
+                <div class="box comingsoon">
+                    <div class="thumbLanding">
+                        <a class="thumb300" href="#">
+                            <img src="{$basedomain}assets/content/comingsoon_dyo.jpg" />
+                        </a>
+                    </div><!-- END .thumbLanding -->
+                    <div class="captions">
+                        <h1>Design Your Shirt</h1>
+                        <a class="readmore" href="#">Coming Soon</a>
+                    </div><!-- END .captions -->
+                </div><!-- END .box -->
+            </li><!-- END .col3 -->
+            <li class="col3">
+                <div class="box">
+                    <div class="thumbLanding">
+                        <a class="thumb300 showPopup2 laborpopup" href="#popup-video-laborday">
+                            <img src="{$basedomain}assets/content/labor-thumb.jpg" />
+                        	<span class="icon_play">&nbsp;</span>
+                        </a>
+                    </div><!-- END .thumbLanding -->
+                    <div class="captions">
+                        <h1>Labor Day</h1>
+                        <a class="readmore showPopup2" href="#popup-video-laborday">Sneak Peek</a>
+                    </div><!-- END .captions -->
+                </div><!-- END .box -->
+            </li><!-- END .col3 -->
+        </ul><!-- END .columns-3 -->
+    </div><!-- END .landingPage -->
+</div><!-- END #landingPage -->
+{include file="application/web/widgets/popup-video-kickoff.html"}
+{include file="application/web/widgets/popup-video-laborday.html"}
+
+
+
+		<script>
+		var welcomeloginvideo = false;
+		var laborwelcomevideo = false;
+		{if $popvideowelcome==true} var welcomeloginvideo = true; {/if}
+		{if $popvideolabor==true} var laborwelcomevideo = true; {/if}
+		
+		{literal}
+		
+		$(document).ready(function(){
+		
+			if(welcomeloginvideo==true) {
+			
+			$(".kickoffpop").trigger('click');
+					if(!navigator.userAgent.match(/MSIE/)) myVideoPursuit.play();
+			
+			}
+			
+			if(laborwelcomevideo==true) {
+				$(".laborpopup").trigger('click');
+				if(!navigator.userAgent.match(/MSIE/)) myVideoLabor.play();
+			}
+		});
+				
+	
+	
+
+			var myVideoPursuit=document.getElementById("video-pursuit"); 
+			var myVideoLabor=document.getElementById("video-labor"); 
+		
+		function pause(){		
+			if(!navigator.userAgent.match(/MSIE/)){
+					if($("#video-pursuit").children("video")){
+						myVideoPursuit.pause();
+						return false;
+					}
+					if($("#video-labor").children("video")){	
+						myVideoLabor.pause();	
+						return false;						
+					}
+					window.location = window.location.reload();
+			}else{
+					
+						window.location = window.location.reload();
+			
+			}		
+		}
+		</script>
+	
+	
+	{/literal}

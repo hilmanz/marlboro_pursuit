@@ -1,0 +1,1176 @@
+2013-04-05 07:04:47 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:29:17 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:29:17 cannot login, password or username not exists 
+2013-04-05 07:29:35 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:29:35 cannot login, password or username not exists 
+2013-04-05 07:29:59 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:29:59 cannot login, password or username not exists 
+2013-04-05 07:31:55 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:31:55 cannot login, password or username not exists 
+2013-04-05 07:32:13 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:32:13 cannot login, password or username not exists 
+2013-04-05 07:32:33 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:32:33 cannot login, password or username not exists 
+2013-04-05 07:33:08 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:33:08 cannot login, password or username not exists 
+2013-04-05 07:33:21 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:33:21 cannot login, password or username not exists 
+2013-04-05 07:41:28 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:41:28 cannot login, password or username not exists 
+2013-04-05 07:42:31 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:42:31 cannot login, password or username not exists 
+2013-04-05 07:42:46 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:42:46 cannot login, password or username not exists 
+2013-04-05 07:42:53 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:42:53 cannot login, password or username not exists 
+2013-04-05 07:43:01 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:43:01 cannot login, password or username not exists 
+2013-04-05 07:43:23 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:43:23 cannot login, password or username not exists 
+2013-04-05 07:44:06 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:44:06 cannot login, password or username not exists 
+2013-04-05 07:44:55 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:44:55 cannot login, password or username not exists 
+2013-04-05 07:45:04 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:45:04 cannot login, password or username not exists 
+2013-04-05 07:45:54 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:45:54 cannot login, password or username not exists 
+2013-04-05 07:46:53 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:46:53 can login
+2013-04-05 07:48:04 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-05 07:48:04 cannot login, password or username not exists 
+2013-04-05 07:49:34 can not register
+2013-04-05 07:49:50 can not register
+2013-04-05 07:49:55 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/8c31830d17414905aec142fe62757f4c.jpeg
+2013-04-05 07:50:25 SELECT * FROM social_member WHERE username='csaca' LIMIT 1
+2013-04-05 07:50:55 SELECT * FROM social_member WHERE username='csaca' LIMIT 1
+2013-04-05 07:50:55 can login
+2013-04-05 07:52:01 can not register
+2013-04-05 07:52:15 can not register
+2013-04-05 07:52:25 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/1f4a0131c6c9fd8857a9e150c1d401f3.jpeg
+2013-04-05 07:52:51 SELECT * FROM social_member WHERE username='rewr' LIMIT 1
+2013-04-05 07:56:09 SELECT * FROM social_member WHERE username='rewr' LIMIT 1
+2013-04-05 07:56:09 can login
+2013-04-05 07:57:16 can not register
+2013-04-05 07:57:28 can not register
+2013-04-05 07:57:35 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/f9d0c4c68f5e0c815a8ae0db90bbb089.jpeg
+2013-04-05 07:58:04 SELECT * FROM social_member WHERE username='sccsa' LIMIT 1
+2013-04-05 07:58:25 SELECT * FROM social_member WHERE username='sccsa' LIMIT 1
+2013-04-05 07:58:25 can login
+2013-04-05 07:58:29 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 07:58:29 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 07:58:29 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 07:58:29 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 07:58:29 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 07:58:29 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 07:58:29 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 07:58:29 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 08:00:27 SELECT * FROM social_member WHERE username='sccsa' LIMIT 1
+2013-04-05 08:04:33 SELECT * FROM social_member WHERE username='sccsa' LIMIT 1
+2013-04-05 08:04:33 SELECT * FROM social_member WHERE username='' LIMIT 1
+2013-04-05 08:04:33 can login
+2013-04-05 08:04:33 cannot login, password or username not exists 
+2013-04-05 08:05:19 can not register
+2013-04-05 08:05:31 can not register
+2013-04-05 08:05:39 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/84d1d09ac948e011e18992f57a76f3b9.jpeg
+2013-04-05 08:06:10 SELECT * FROM social_member WHERE username='gvn' LIMIT 1
+2013-04-05 08:06:34 SELECT * FROM social_member WHERE username='' LIMIT 1
+2013-04-05 08:06:34 can login
+2013-04-05 08:08:29 can not register
+2013-04-05 08:08:38 can not register
+2013-04-05 08:08:43 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/fa1d1fd18a5c9f6e7a53a0e5575196f9.jpeg
+2013-04-05 08:09:15 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:11:00 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:11:00 can login
+2013-04-05 08:11:04 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 08:11:04 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 08:11:04 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 08:11:04 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 08:11:04 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 08:11:04 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 08:11:04 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 08:11:04 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 08:45:26 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:45:27 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:45:27 cannot login, password or username not exists 
+2013-04-05 08:45:42 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:45:42 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:45:42 cannot login, password or username not exists 
+2013-04-05 08:45:49 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:45:49 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:45:49 cannot login, password or username not exists 
+2013-04-05 08:46:07 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:46:07 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:46:07 cannot login, password or username not exists 
+2013-04-05 08:46:31 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:46:31 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:46:31 cannot login, password or username not exists 
+2013-04-05 08:46:56 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:46:56 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:46:56 cannot login, password or username not exists 
+2013-04-05 08:47:15 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:47:15 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:47:15 cannot login, password or username not exists 
+2013-04-05 08:47:35 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:47:35 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:47:35 cannot login, password or username not exists 
+2013-04-05 08:47:57 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:47:57 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:47:57 cannot login, password or username not exists 
+2013-04-05 08:48:43 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:48:43 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:48:43 can login
+2013-04-05 08:49:22 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:49:22 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:49:22 can login
+2013-04-05 08:50:17 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:50:17 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 08:50:17 can login
+2013-04-05 09:44:33 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 09:44:33 can login
+2013-04-05 09:44:36 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 09:44:36 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 09:44:36 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 09:44:36 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 09:44:37 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 09:44:37 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 09:44:37 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 09:44:37 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 09:44:52 can not register
+2013-04-05 09:45:04 can not register
+2013-04-05 09:45:13 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/ac4b19bf3f872661542a59725d1cf5ce.jpeg
+2013-04-05 09:45:46 SELECT * FROM social_member WHERE username='sdfsfsd' LIMIT 1
+2013-04-05 09:45:46 can login
+2013-04-05 09:45:49 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 09:45:49 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 09:45:49 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 09:45:49 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 09:45:49 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 09:45:49 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 09:45:49 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 09:45:49 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 09:48:43 SELECT * FROM social_member WHERE username='sdfsfsd' LIMIT 1
+2013-04-05 09:49:18 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 09:49:18 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 09:49:18 cannot login, password or username not exists 
+2013-04-05 09:51:12 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 09:51:12 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 09:51:12 cannot login, password or username not exists 
+2013-04-05 09:52:18 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 09:52:18 SELECT * FROM social_member WHERE username='acsa' LIMIT 1
+2013-04-05 09:52:18 can login
+2013-04-05 09:52:22 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 09:52:22 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 09:52:22 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 09:52:22 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 09:52:22 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 09:52:22 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 09:52:22 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 09:52:22 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 09:52:50 SELECT * FROM social_member WHERE username='sdfsfsd' LIMIT 1
+2013-04-05 09:53:14 SELECT * FROM social_member WHERE username='sdfsfsd' LIMIT 1
+2013-04-05 09:53:14 can login
+2013-04-05 09:53:18 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 09:53:18 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 09:53:18 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 09:53:18 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 09:53:18 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 09:53:18 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 09:53:18 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 09:53:18 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 09:53:38 SELECT * FROM social_member WHERE username='sdfsfsd' LIMIT 1
+2013-04-05 09:53:38 SELECT * FROM social_member WHERE username='sdfsfsd' LIMIT 1
+2013-04-05 09:53:38 can login
+2013-04-05 09:53:42 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 09:53:42 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 09:53:42 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 09:53:42 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 09:53:42 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 09:53:42 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 09:53:42 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 09:53:42 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 10:11:46 can not register
+2013-04-05 10:12:58 can not register
+2013-04-05 10:13:05 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/6dc7a3be670dae0c38b0ab22dd10547e.jpeg
+2013-04-05 10:13:38 SELECT * FROM social_member WHERE username='cop' LIMIT 1
+2013-04-05 10:14:02 SELECT * FROM social_member WHERE username='cop' LIMIT 1
+2013-04-05 10:14:02 can login
+2013-04-05 10:14:06 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 10:14:06 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 10:14:06 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 10:14:06 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 10:14:06 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 10:14:06 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 10:14:06 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 10:14:06 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 10:14:22 SELECT * FROM social_member WHERE username='cop' LIMIT 1
+2013-04-05 10:14:22 SELECT * FROM social_member WHERE username='cop' LIMIT 1
+2013-04-05 10:14:22 can login
+2013-04-05 10:14:26 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 10:14:26 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 10:14:26 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 10:14:26 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 10:14:26 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 10:14:26 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 10:14:26 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 10:14:26 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 10:16:37 can not register
+2013-04-05 10:16:51 can not register
+2013-04-05 10:17:06 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/1546b9ebbdeaeff7e96eded84d4c5638.jpeg
+2013-04-05 10:17:36 SELECT * FROM social_member WHERE username='jncskj' LIMIT 1
+2013-04-05 10:18:16 SELECT * FROM social_member WHERE username='jncskj' LIMIT 1
+2013-04-05 10:18:16 can login
+2013-04-05 10:18:20 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 10:18:20 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 10:18:20 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 10:18:20 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 10:18:20 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 10:18:20 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 10:18:20 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 10:18:20 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 10:19:05 can not register
+2013-04-05 10:20:10 can not register
+2013-04-05 10:20:20 can not register
+2013-04-05 10:23:43 can not register
+2013-04-05 10:23:52 can not register
+2013-04-05 10:53:11 can not register
+2013-04-05 10:54:22 can not register
+2013-04-05 10:54:47 can not register
+2013-04-05 10:55:13 can not register
+2013-04-05 10:55:22 can not register
+2013-04-05 10:55:36 can not register
+2013-04-05 10:55:45 can not register
+2013-04-05 10:56:38 can not register
+2013-04-05 10:58:11 can not register
+2013-04-05 10:58:31 can not register
+2013-04-05 11:05:07 can not register
+2013-04-05 11:08:06 can not register
+2013-04-05 11:08:18 can not register
+2013-04-05 11:08:42 can not register
+2013-04-05 11:09:10 can not register
+2013-04-05 11:10:26 can not register
+2013-04-05 11:10:40 can not register
+2013-04-05 11:10:51 can register
+2013-04-05 11:10:51 do register
+2013-04-05 11:10:51 name is null
+2013-04-05 11:10:51 failed to register
+2013-04-05 11:12:32 can not register
+2013-04-05 11:12:43 can register
+2013-04-05 11:12:43 do register
+2013-04-05 11:12:43 name is null
+2013-04-05 11:12:43 failed to register
+2013-04-05 11:15:25 can not register
+2013-04-05 11:32:08 can not register
+2013-04-05 11:33:28 can register
+2013-04-05 11:33:28 do register
+2013-04-05 11:33:28 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'gfdgdg', 'gdfgdg', 'o.pulu@yahoo.com', NOW(), NULL, 'gfdgdg',
+				166, Male, '2000-0-1','gfdgd', 'gdfgdg', 'vdss', '123-31231', 
+				'1231-12312', 0, 0, 0, '12345678', '7c222fb2927d828af22f592134e8932480637c0d')
+2013-04-05 11:33:28 failed to register
+2013-04-05 11:35:34 can not register
+2013-04-05 11:35:58 can register
+2013-04-05 11:35:58 do register
+2013-04-05 11:36:51 can register
+2013-04-05 11:36:51 do register
+2013-04-05 11:37:19 can register
+2013-04-05 11:37:19 do register
+2013-04-05 11:37:19 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'cvsdss', 'csacsa', 'o.pulu@yahoo.com', NOW(), NULL, 'cvsdss',
+				166, Male, '2000-0-1','vdss', 'vdsaca', 'csca', '1231-31231', 
+				'21312-42124', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:37:44 can register
+2013-04-05 11:37:44 do register
+2013-04-05 11:37:44 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'cvsdss', 'csacsa', 'o.pulu@yahoo.com', NOW(), NULL, 'cvsdss',
+				166, Male, '2000-0-1','vdss', 'vdsaca', 'csca', '1231-31231', 
+				'21312-42124', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:38:37 can register
+2013-04-05 11:38:37 do register
+2013-04-05 11:38:37 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'cvsdss', 'csacsa', 'o.pulu@yahoo.com', NOW(), NULL, 'cvsdss',
+				166, 'Male', '2000-0-1','vdss', 'vdsaca', 'csca', '1231-31231', 
+				'21312-42124', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:44:35 can register
+2013-04-05 11:44:35 do register
+2013-04-05 11:44:35 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'cvsdss', 'csacsa', 'o.pulu@yahoo.com', NOW(), NULL, 'cvsdss',
+				166, 'Male', '2000-0-1','vdss', 'vdsaca', 'csca', '1231-31231', 
+				'21312-42124', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:47:29 can register
+2013-04-05 11:47:29 do register
+2013-04-05 11:47:29 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'cvsdss', 'csacsa', 'o.pulu@yahoo.com', NOW(), NULL, 'cvsdss',
+				166, 'Male', '2000-0-1','vdss', 'vdsaca', 'csca', '1231-31231', 
+				'21312-42124', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:47:54 can register
+2013-04-05 11:47:54 do register
+2013-04-05 11:47:54 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'cvsdss', 'csacsa', 'o.pulu@yahoo.com', NOW(), NULL, 'cvsdss',
+				166, 'Male', '2000-0-1','vdss', 'vdsaca', 'csca', '1231-31231', 
+				'21312-42124', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:49:08 can not register
+2013-04-05 11:49:21 can not register
+2013-04-05 11:49:37 can register
+2013-04-05 11:49:37 do register
+2013-04-05 11:49:37 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'vdsvds', 'vdsvds', 'o.pulu@yahoo.com', NOW(), NULL, 'vdsvds',
+				152, 'Male', '2000-0-1','cszz', 'csc', 'csa', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:50:06 can register
+2013-04-05 11:50:06 do register
+2013-04-05 11:50:06 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'vdsvds', 'vdsvds', 'o.pulu@yahoo.com', NOW(), NULL, 'vdsvds',
+				152, 'Male', '2000-0-1','cszz', 'csc', 'csa', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:50:14 can not register
+2013-04-05 11:50:29 can register
+2013-04-05 11:50:29 do register
+2013-04-05 11:50:29 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'dszcsas', 'vxcxs', 'o.pulu@yahoo.com', NOW(), NULL, 'dszcsas',
+				141, 'Male', '2000-0-1','vdzcas', 'cscasc', '', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:50:38 can register
+2013-04-05 11:50:38 do register
+2013-04-05 11:50:38 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'dszcsas', 'vxcxs', 'o.pulu@yahoo.com', NOW(), NULL, 'dszcsas',
+				141, 'Male', '2000-0-1','vdzcas', 'cscasc', '', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:50:50 can register
+2013-04-05 11:50:50 do register
+2013-04-05 11:50:50 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'dszcsas', 'vxcxs', 'o.pulu@yahoo.com', NOW(), NULL, 'dszcsas',
+				141, 'Male', '2000-0-1','vdzcas', 'cscasc', '', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:50:50 failed to register
+2013-04-05 11:51:27 can not register
+2013-04-05 11:51:42 can register
+2013-04-05 11:51:42 do register
+2013-04-05 11:51:42 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'dvsds', 'csacasvd', 'o.pulu@yahoo.com', NOW(), NULL, 'dvsds',
+				151, 'Male', '2000-0-1','vdsvsdfesfs', 'fsefs', '', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:52:10 can not register
+2013-04-05 11:52:23 can register
+2013-04-05 11:52:23 do register
+2013-04-05 11:52:23 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'csacawcas', 'csacawca', 'o.pulu@yahoo.com', NOW(), NULL, 'csacawcas',
+				, 'Male', '2000-0-1','cacsc', 'csacwqc', '', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:52:23 failed to register
+2013-04-05 11:52:34 can not register
+2013-04-05 11:52:57 can register
+2013-04-05 11:52:57 do register
+2013-04-05 11:52:57 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'a', 'a', 'o.pulu@yahoo.com', NOW(), NULL, 'a',
+				, 'Male', '2000-0-1','a', 'a', '', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:52:57 failed to register
+2013-04-05 11:54:11 can not register
+2013-04-05 11:54:29 can register
+2013-04-05 11:54:29 do register
+2013-04-05 11:54:29 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'asd', 'asd', 'o.pulu@yahoo.com', NOW(), NULL, 'asd',
+				, 'Male', '2000-0-1','asd', 'asd', '', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:54:29 failed to register
+2013-04-05 11:55:24 can not register
+2013-04-05 11:55:44 can register
+2013-04-05 11:55:44 do register
+2013-04-05 11:55:44 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'asd', 'asd', 'o.pulu@yahoo.com', NOW(), NULL, 'asd',
+				, 'Male', '2000-0-1','asd', 'asd', '', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:55:44 failed to register
+2013-04-05 11:55:54 can not register
+2013-04-05 11:56:16 can register
+2013-04-05 11:56:16 do register
+2013-04-05 11:56:16 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'asd', 'asd', 'o.pulu@yahoo.com', NOW(), NULL, 'asd',
+				151, 'Male', '2000-0-1','asd', 'asd', 'sadad', '123-132', 
+				'123-123', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 11:57:14 can not register
+2013-04-05 11:57:35 can register
+2013-04-05 11:57:35 do register
+2013-04-05 11:57:35 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'csaca', 'csacsac', 'o.pulu@yahoo.com', NOW(), NULL, 'csaca',
+				141, 'Male', '2000-0-1','csac', 'dwqd', 'vdss', '123-31231', 
+				'4123-1241', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 12:00:30 can not register
+2013-04-05 12:00:48 can register
+2013-04-05 12:00:48 do register
+2013-04-05 12:00:48 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'wacas', 'casca', 'o.pulu@yahoo.com', NOW(), NULL, 'wacas',
+				151, 'Male', '2000-0-1','saacc', 'sacsa', 'sac', '123-3121', 
+				'1231-412412', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 12:01:18 can not register
+2013-04-05 12:01:34 can register
+2013-04-05 12:01:34 do register
+2013-04-05 12:01:34 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'casac', 'csswa', 'o.pulu@yahoo.com', NOW(), NULL, 'casac',
+				208, 'Male', '2000-0-1','asacaw', 'csaca', 'scacsa', '123-31231', 
+				'1232-312312', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 12:02:29 can not register
+2013-04-05 12:06:10 can register
+2013-04-05 12:06:10 do register
+2013-04-05 12:06:10 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'wacascqw', 'csaawa', 'o.pulu@yahoo.com', NOW(), NULL, 'wacascqw',
+				141, 'Male', '2000-0-1','csac', 'cass', 'csaca', '123-3213', 
+				'213-131', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 12:10:26 can register
+2013-04-05 12:10:26 do register
+2013-04-05 12:10:26 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'vdsvsqasa', 'dvsdvd', 'o.pulu@yahoo.com', NOW(), NULL, 'vdsvsqasa',
+				166, 'Male', '2000-0-1','csacasv', 'csaw', 'fsfs', '123-131', 
+				'313-131', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 14:36:36 do register
+2013-04-05 14:36:48 do register
+2013-04-05 14:47:10 do register
+2013-04-05 14:47:10 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'csac', 'csa', 'o.pulu@yahoo.com', NOW(), NULL, 'csac',
+				166, '', '--','csa', 'csacsa', 'e3ww', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:00:05 do register
+2013-04-05 15:00:05 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'csac', 'csa', 'o.pulu@yahoo.com', NOW(), NULL, 'csac',
+				166, '', '--','csa', 'csacsa', 'e3ww', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:00:48 do register
+2013-04-05 15:00:48 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'csac', 'csa', 'o.pulu@yahoo.com', NOW(), NULL, 'csac',
+				166, '', '--','csa', 'csacsa', 'e3ww', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:01:33 do register
+2013-04-05 15:01:33 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'csac', 'csa', 'o.pulu@yahoo.com', NOW(), NULL, 'csac',
+				166, '', '--','csa', 'csacsa', 'e3ww', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:04:23 do register
+2013-04-05 15:04:23 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'csaasc', 'vsvdse', 'o.pulu@yahoo.com', NOW(), NULL, 'csaasc',
+				152, 'Male', '--','csaca', 'casca', 'vsdvs', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:04:23 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/public_assets/user/gid/a17ddd0727608d60d5ad6297bf7207c6.jpeg
+2013-04-05 15:06:09 do register
+2013-04-05 15:06:09 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'scc', 'vdsvds', 'ovan@kana.co.id', NOW(), NULL, 'scc',
+				151, 'Male', '--','csacsa', 'csaca', 'csaca', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:06:09 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/public_assets/user/gid/6032371d8a56c8be2efb2e6d303fd88b.jpeg
+2013-04-05 15:06:53 do register
+2013-04-05 15:06:53 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'scc', 'vdsvds', 'ovan@kana.co.id', NOW(), NULL, 'scc',
+				151, 'Male', '--','csacsa', 'csaca', 'csaca', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:07:02 do register
+2013-04-05 15:07:02 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'scc', 'vdsvds', 'ovan@kana.co.id', NOW(), NULL, 'scc',
+				151, 'Male', '--','csacsa', 'csaca', 'csaca', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:07:53 do register
+2013-04-05 15:07:53 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'sdadad', 'csacqwd', 'ovan@kana.co.idv', NOW(), NULL, 'sdadad',
+				166, 'Male', '--','asda', 'sada', 'dsvds', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:07:54 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/public_assets/user/gid/0897cbcf0c732553c2f7ab687f05db2e.jpeg
+2013-04-05 15:11:51 do register
+2013-04-05 15:11:51 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'csadwa', 'csasa', 'o.pulu@yahoo.com', NOW(), NULL, 'csadwa',
+				151, 'Male', '--','dadwa', 'dwadwa', 'csasca', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:11:51 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/public_assets/user/gid/cc35b4e120528cc08607cd1f8da00614.jpeg
+2013-04-05 15:21:52 SELECT * FROM social_member WHERE username='csadwa' LIMIT 1
+2013-04-05 15:33:19 SELECT * FROM social_member WHERE username='csadwa' AND verified = 1 LIMIT 1
+2013-04-05 15:33:19 cannot login, password or username not exists 
+2013-04-05 15:34:17 do register
+2013-04-05 15:34:17 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'grdgd', 'grdgd', 'o.pulu@yahoo.com', NOW(), NULL, 'grdgd',
+				151, 'Male', '--','g4ww', 'fewwe', 'vdffd', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 15:34:17 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/public_assets/user/gid/bcd4a0bb6e22116d60d168123513e3a3.jpeg
+2013-04-05 15:34:49 SELECT * FROM social_member WHERE username='grdgd' AND verified = 1 LIMIT 1
+2013-04-05 15:35:36 SELECT * FROM social_member WHERE username='grdgd' AND verified = 1 LIMIT 1
+2013-04-05 15:35:59 SELECT * FROM social_member WHERE username='grdgd' AND verified = 1 LIMIT 1
+2013-04-05 15:36:17 SELECT * FROM social_member WHERE username='grdgd' AND verified = 1 LIMIT 1
+2013-04-05 15:41:08 SELECT * FROM social_member WHERE username='grdgd' AND verified = 1 LIMIT 1
+2013-04-05 15:42:02 SELECT * FROM social_member WHERE username='grdgd' AND verified = 1 LIMIT 1
+2013-04-05 15:59:10 SELECT * FROM social_member WHERE username='grdgd' AND verified = 1 LIMIT 1
+2013-04-05 16:02:17 SELECT * FROM social_member WHERE username='grdgd' AND verified = 1 LIMIT 1
+2013-04-05 16:04:30 SELECT * FROM social_member WHERE username='grdgd' AND verified = 1 LIMIT 1
+2013-04-05 16:05:27 SELECT * FROM social_member WHERE username='grdgd' AND verified = 1 LIMIT 1
+2013-04-05 16:37:57 SELECT * FROM social_member WHERE username='grdgd' LIMIT 1
+2013-04-05 16:37:57 can login
+2013-04-05 16:38:00 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 16:38:00 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 16:38:00 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 16:38:00 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 16:38:01 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 16:38:01 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 16:38:01 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 16:38:01 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 16:41:07 do register
+2013-04-05 16:41:07 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, n_status, 
+				login_count, verified, salt, password)
+			VALUES (NULL, 'cewv', 'vdvswe', 'ovan@kana.co.id', NOW(), NULL, 'cewv',
+				166, 'Male', '--','cesves', 'veww', 'cascsa', '-', 
+				'-', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 16:41:07 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/public_assets/user/gid/c7862079ba69b9ecaa38df4ce186fb98.jpeg
+2013-04-05 16:41:41 SELECT * FROM social_member WHERE username='cewv' AND verified = 1 LIMIT 1
+2013-04-05 16:42:54 SELECT * FROM social_member WHERE username='cewv' LIMIT 1
+2013-04-05 16:42:54 can login
+2013-04-05 16:42:58 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 16:42:58 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 16:42:58 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 16:42:58 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 16:42:58 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 16:42:58 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 16:42:58 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 16:42:58 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 16:43:19 SELECT * FROM social_member WHERE username='newpassword' AND verified = 1 LIMIT 1
+2013-04-05 16:43:19 cannot login, password or username not exists 
+2013-04-05 16:45:11 SELECT * FROM social_member WHERE username='cewv' AND verified = 1 LIMIT 1
+2013-04-05 16:45:11 SELECT * FROM social_member WHERE username='cewv' LIMIT 1
+2013-04-05 16:45:11 can login
+2013-04-05 16:46:36 SELECT * FROM social_member WHERE username='cewv' AND verified = 1 LIMIT 1
+2013-04-05 16:46:36 SELECT * FROM social_member WHERE username='cewv' LIMIT 1
+2013-04-05 16:46:36 can login
+2013-04-05 16:46:40 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 16:46:40 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 16:46:40 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 16:46:40 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 16:46:40 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 16:46:40 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 16:46:40 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 16:46:40 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 16:52:15 do register
+2013-04-05 16:52:15 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, 
+				refered_by, n_status, login_count, verified, salt, password)
+			VALUES (NULL, 'csdcs', 'vsvds', 'o.pulu@yahoo.com', NOW(), NULL, 'csdcs',
+				152, 'Male', '2000-0-1','', '', '', '-', 
+				'-', 'tes', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 16:52:15 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/public_assets/user/gid/1b36e1a928e42643c5601da865f1d9f5.jpeg
+2013-04-05 16:54:08 SELECT * FROM social_member WHERE username='csdcs' AND verified = 1 LIMIT 1
+2013-04-05 16:54:37 SELECT * FROM social_member WHERE username='csdcs' LIMIT 1
+2013-04-05 16:54:37 can login
+2013-04-05 16:54:41 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-05 16:54:41 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 16:54:41 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-05 16:54:41 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-05 16:54:42 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-05 16:54:42 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-05 16:54:42 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-05 16:54:42 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-05 17:22:40 do register
+2013-04-05 17:22:40 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, 
+				refered_by, n_status, login_count, verified, salt, password)
+			VALUES (NULL, 'qasddfgdffgj', 'weqwewqerty', 'dfgdfjghjg', NOW(), NULL, 'qasddfgdffgj',
+				, 'Male', '2000-0-1','', '', '', '-', 
+				'-', '', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 17:23:41 do register
+2013-04-05 17:23:41 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, 
+				refered_by, n_status, login_count, verified, salt, password)
+			VALUES (NULL, 'qasddfgdffgj', 'weqwewqerty', 'dfgdfjghjg', NOW(), NULL, 'qasddfgdffgj',
+				, 'Male', '2000-0-1','', '', '', '-', 
+				'-', '', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 17:28:03 do register
+2013-04-05 17:28:03 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, 
+				refered_by, n_status, login_count, verified, salt, password)
+			VALUES (NULL, 'qasddfgdffgj', 'weqwewqerty', 'dfgdfjghjg', NOW(), NULL, 'qasddfgdffgj',
+				, 'Male', '2000-0-1','', '', '', '-', 
+				'-', '', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 17:28:17 do register
+2013-04-05 17:28:17 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, 
+				refered_by, n_status, login_count, verified, salt, password)
+			VALUES (NULL, 'qasddfgdffgj', 'weqwewqerty', 'dfgdfjghjg', NOW(), NULL, 'qasddfgdffgj',
+				, 'Male', '2000-0-1','', '', '', '-', 
+				'-', '', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 17:28:33 do register
+2013-04-05 17:28:33 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, 
+				refered_by, n_status, login_count, verified, salt, password)
+			VALUES (NULL, 'qasddfgdffgj', 'weqwewqerty', 'dfgdfjghjg', NOW(), NULL, 'qasddfgdffgj',
+				, 'Male', '2000-0-1','', '', '', '-', 
+				'-', '', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 17:28:54 do register
+2013-04-05 17:28:54 
+			INSERT INTO social_member (id, name, nickname, email, register_date, img, username,
+				city, sex, birthday, middle_name, last_name, StreetName, phone_number, landline_number, 
+				refered_by, n_status, login_count, verified, salt, password)
+			VALUES (NULL, 'qasddfgdffgj', 'weqwewqerty', 'dfgdfjghjg', NOW(), NULL, 'qasddfgdffgj',
+				, 'Male', '2000-0-1','', '', '', '-', 
+				'-', '', 0, 0, 0, '12345678', '11a914385cf2e18a56c703bed3474c665d9af855')
+2013-04-05 17:32:31 do register
+2013-04-05 17:32:31 
+			INSERT INTO social_member ( 
+			name, 			nickname, 
+			email, 			register_date, 
+			img, 			username,
+			city, 			sex, 
+			birthday, 			middle_name, 
+			last_name, 			StreetName, 			
+			phone_number, 			landline_number, 
+			refered_by, 			n_status, 
+			login_count, 			verified, 
+			salt, 			password
+			)
+			VALUES ( 
+			"qasddfgdffgj",			"weqwewqerty", 
+			"dfgdfjghjg", 			NOW(), 
+			NULL,			"qasddfgdffgj",
+			, 			'Male', 
+			'2000-0-1',			'', 
+			'', 			'', 
+			'-', 			'-', 
+			'', 			0, 
+			0, 			0, 
+			'12345678', 			'11a914385cf2e18a56c703bed3474c665d9af855'
+			)
+2013-04-05 17:32:39 do register
+2013-04-05 17:32:39 
+			INSERT INTO social_member ( 
+			name, 			nickname, 
+			email, 			register_date, 
+			img, 			username,
+			city, 			sex, 
+			birthday, 			middle_name, 
+			last_name, 			StreetName, 			
+			phone_number, 			landline_number, 
+			refered_by, 			n_status, 
+			login_count, 			verified, 
+			salt, 			password
+			)
+			VALUES ( 
+			"qasddfgdffgj",			"weqwewqerty", 
+			"dfgdfjghjg", 			NOW(), 
+			NULL,			"qasddfgdffgj",
+			, 			'Male', 
+			'2000-0-1',			'', 
+			'', 			'', 
+			'-', 			'-', 
+			'', 			0, 
+			0, 			0, 
+			'12345678', 			'11a914385cf2e18a56c703bed3474c665d9af855'
+			)
+2013-04-05 17:33:10 do register
+2013-04-05 17:33:10 
+			INSERT INTO social_member ( 
+			name, 			nickname, 
+			email, 			register_date, 
+			img, 			username,
+			city, 			sex, 
+			birthday, 			middle_name, 
+			last_name, 			StreetName, 			
+			phone_number, 			landline_number, 
+			refered_by, 			n_status, 
+			login_count, 			verified, 
+			salt, 			password
+			)
+			VALUES ( 
+			"qasddfgdffgj",			"weqwewqerty", 
+			"dfgdfjghjg", 			NOW(), 
+			NULL,			"qasddfgdffgj",
+			0, 			'Male', 
+			'2000-0-1',			'', 
+			'', 			'', 
+			'-', 			'-', 
+			'', 			0, 
+			0, 			0, 
+			'12345678', 			'11a914385cf2e18a56c703bed3474c665d9af855'
+			)
+2013-04-05 17:33:10 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/public_assets/user/gid/8248a99e81e752cb9b41da3fc43fbe7f.
+2013-04-05 17:35:01 do register
+2013-04-05 17:35:01 
+			INSERT INTO social_member ( 
+			name, 			nickname, 
+			email, 			register_date, 
+			img, 			username,
+			city, 			sex, 
+			birthday, 			middle_name, 
+			last_name, 			StreetName, 			
+			phone_number, 			landline_number, 
+			refered_by, 			n_status, 
+			login_count, 			verified, 
+			salt, 			password
+			)
+			VALUES ( 
+			"qasddfgdffgj",			"weqwewqerty", 
+			"dfgdfjghjg", 			NOW(), 
+			NULL,			"qasddfgdffgj",
+			0, 			'Male', 
+			'2000-0-1',			'', 
+			'', 			'', 
+			'-', 			'-', 
+			'', 			0, 
+			0, 			0, 
+			'12345678', 			'11a914385cf2e18a56c703bed3474c665d9af855'
+			)
+2013-04-05 17:35:49 do register
+2013-04-05 17:35:49 
+			INSERT INTO social_member ( 
+			name, 			nickname, 
+			email, 			register_date, 
+			img, 			username,
+			city, 			sex, 
+			birthday, 			middle_name, 
+			last_name, 			StreetName, 			
+			phone_number, 			landline_number, 
+			refered_by, 			n_status, 
+			login_count, 			verified, 
+			salt, 			password
+			)
+			VALUES ( 
+			"qasddfgdffgj",			"weqwewqerty", 
+			"dfgdfjghjg", 			NOW(), 
+			NULL,			"qasddfgdffgj",
+			0, 			'Male', 
+			'2000-0-1',			'', 
+			'', 			'', 
+			'-', 			'-', 
+			'', 			0, 
+			0, 			0, 
+			'12345678', 			'11a914385cf2e18a56c703bed3474c665d9af855'
+			)
+2013-04-05 17:35:57 do register
+2013-04-05 17:35:57 
+			INSERT INTO social_member ( 
+			name, 			nickname, 
+			email, 			register_date, 
+			img, 			username,
+			city, 			sex, 
+			birthday, 			middle_name, 
+			last_name, 			StreetName, 			
+			phone_number, 			landline_number, 
+			refered_by, 			n_status, 
+			login_count, 			verified, 
+			salt, 			password
+			)
+			VALUES ( 
+			"qasddfgdffgj",			"weqwewqerty", 
+			"dfgdfjghjg", 			NOW(), 
+			NULL,			"qasddfgdffgj",
+			0, 			'Male', 
+			'2000-0-1',			'', 
+			'', 			'', 
+			'-', 			'-', 
+			'', 			0, 
+			0, 			0, 
+			'12345678', 			'11a914385cf2e18a56c703bed3474c665d9af855'
+			)
+2013-04-05 17:36:51 do register
+2013-04-05 17:36:51 
+			INSERT INTO social_member ( 
+			name, 			nickname, 
+			email, 			register_date, 
+			img, 			username,
+			city, 			sex, 
+			birthday, 			middle_name, 
+			last_name, 			StreetName, 			
+			phone_number, 			landline_number, 
+			refered_by, 			n_status, 
+			login_count, 			verified, 
+			salt, 			password
+			)
+			VALUES ( 
+			"adsdfsf",			"mxncbvxzxchka", 
+			"iouikgkjhkhjk", 			NOW(), 
+			NULL,			"adsdfsf",
+			0, 			'Male', 
+			'2000-0-1',			'', 
+			'', 			'', 
+			'-', 			'-', 
+			'', 			0, 
+			0, 			0, 
+			'12345678', 			'11a914385cf2e18a56c703bed3474c665d9af855'
+			)
+2013-04-05 17:36:51 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/public_assets/user/gid/32b9e74c8f60958158eba8d1fa372971.
+2013-04-05 17:37:40 do register
+2013-04-05 17:37:40 
+			INSERT INTO social_member ( 
+			name, 			nickname, 
+			email, 			register_date, 
+			img, 			username,
+			city, 			sex, 
+			birthday, 			middle_name, 
+			last_name, 			StreetName, 			
+			phone_number, 			landline_number, 
+			refered_by, 			n_status, 
+			login_count, 			verified, 
+			salt, 			password
+			)
+			VALUES ( 
+			"adsdfsf",			"mxncbvxzxchka", 
+			"iouikgkjhkhjk", 			NOW(), 
+			NULL,			"adsdfsf",
+			0, 			'Male', 
+			'2000-0-1',			'', 
+			'', 			'', 
+			'-', 			'-', 
+			'', 			0, 
+			0, 			0, 
+			'12345678', 			'11a914385cf2e18a56c703bed3474c665d9af855'
+			)
+2013-04-05 17:38:35 do register
+2013-04-05 17:38:35 
+			INSERT INTO social_member ( 
+			name, 			nickname, 
+			email, 			register_date, 
+			img, 			username,
+			city, 			sex, 
+			birthday, 			middle_name, 
+			last_name, 			StreetName, 			
+			phone_number, 			landline_number, 
+			refered_by, 			n_status, 
+			login_count, 			verified, 
+			salt, 			password
+			)
+			VALUES ( 
+			"ruyjgyj",			"opaspa", 
+			"fghwtwf", 			NOW(), 
+			NULL,			"ruyjgyj",
+			0, 			'Male', 
+			'2000-0-1',			'', 
+			'', 			'', 
+			'-', 			'-', 
+			'', 			0, 
+			0, 			0, 
+			'12345678', 			'11a914385cf2e18a56c703bed3474c665d9af855'
+			)
+2013-04-05 17:39:26 do register
+2013-04-05 17:39:26 
+			INSERT INTO social_member ( 
+			name, 			nickname, 
+			email, 			register_date, 
+			img, 			username,
+			city, 			sex, 
+			birthday, 			middle_name, 
+			last_name, 			StreetName, 			
+			phone_number, 			landline_number, 
+			refered_by, 			n_status, 
+			login_count, 			verified, 
+			salt, 			password
+			)
+			VALUES ( 
+			"arukaaruka",			"arukaaruka", 
+			"arukarukaruka", 			NOW(), 
+			NULL,			"arukaaruka",
+			0, 			'', 
+			'2000-0-1',			'', 
+			'', 			'', 
+			'-', 			'-', 
+			'', 			0, 
+			0, 			0, 
+			'12345678', 			'11a914385cf2e18a56c703bed3474c665d9af855'
+			)
+2013-04-05 17:39:48 SELECT * FROM social_member WHERE username='arukaaruka' AND verified = 1 LIMIT 1
+2013-04-05 17:39:48 cannot login, password or username not exists 

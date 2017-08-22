@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPMailer
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPMailer/LICENSE
+END
+changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPMailer/changelog.txt
+END
+docs.ini
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPMailer/docs.ini
+END
+class.phpmailer.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPMailer/class.phpmailer.php
+END
+class.pop3.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPMailer/class.pop3.php
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPMailer/README.md
+END
+class.smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/PHPMailer/class.smtp.php
+END

@@ -1,0 +1,65 @@
+
+<div class="theContent">
+    <div class="theTitle">
+        <h2>{$folder} List</h2>
+       
+        <a href="index.php?s={$folder}&act=register" class="btn btn_pencil"><span>Add {$folder}</span></a>
+    </div><!--contenttitle-->
+    <div class="tableoptions">        
+    <form>
+        <input type="text" name="search" value="{$search}">
+        <input type="hidden" name="s" value="{$folder}" />
+        <input type="hidden" name="cari" value="cari" />     
+      
+        <input type="submit" value="cari" class="stdbtn btn_orange" />
+    </form>
+    </div><!--tableoptions-->	
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <colgroup>
+            <col class="con0" style="width: 4%" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="head0">No</th>
+                <th class="head0">Module name</th>
+				<th class="head1">request id</th>
+				<th class="head1">module path</th>
+                <th class="head0">Status</th>
+                <th class="head1">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {foreach from=$list key=k item=v}
+            <tr>
+                <td width="10">{$v.no}&nbsp;</td>              
+                <td>{$v.description}</td>              
+                <td><nobr>{$v.requestID}</nobr></td>
+                <td><nobr>{$v.plugin_path}</nobr></td>
+				<td align="center">
+                    {if $v.is_enabled==0} <span class="orange">inactive</span>
+                    {else} <span class="green">active</span>                
+                    {/if}
+                </td>
+                
+                <td>
+                    <nobr>
+                   
+							<a href="index.php?s={$folder}&act=edit&requestID={$v.requestID}" class="green"> update </a>
+                            |
+                            <a href="index.php?s={$folder}&act=hapus&requestID={$v.requestID}" class="red" onclick="return confirm('Are you sure you want to delete this?')">delete</a>
+                      
+                    </nobr>
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    <div class="paging">
+    	{$paging}
+    </div>
+</div><!--theContent-->

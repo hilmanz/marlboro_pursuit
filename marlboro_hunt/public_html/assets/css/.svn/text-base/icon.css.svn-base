@@ -1,0 +1,78 @@
+/*
+Theme Name:  A 360 
+Version: 1.0
+Author: Acit Jazz 2013
+*/
+.icon_cat{
+	display:block;
+	width:45px; height:45px;
+	background-repeat:no-repeat;
+}
+.icon_fashion{
+	background-image:url(../images/icon/categories/fashion.png);
+}
+.icon_music{
+	background-image:url(../images/icon/categories/music.png);
+}
+.icon_photograpy{
+	background-image:url(../images/icon/categories/photograpy.png);
+}
+.icon_visual{
+	background-image:url(../images/icon/categories/visual.png);
+}
+#carousel li.flex-active-slide .icon_fashion{
+	background-image:url(../images/icon/categories/fashion_black.png);
+}
+#carousel li.flex-active-slide .icon_music{
+	background-image:url(../images/icon/categories/music_black.png);
+}
+#carousel li.flex-active-slide .icon_photograpy{
+	background-image:url(../images/icon/categories/photograpy_black.png);
+}
+#carousel li.flex-active-slide .icon_visual{
+	background-image:url(../images/icon/categories/visual_black.png);
+}
+.icon_post{
+	background-image:url(../images/icon/icon_pencil.png);
+}
+.icon{
+	display:block;
+}
+.the-title .icon{
+	padding:0 0 0 45px;
+	font-size:20px;
+	line-height:40px;
+}
+.icon_ribbon{
+	background:url(../images/icon/icon_ribbon.png) no-repeat;
+}
+.icon_refresh{
+	background:url(../images/icon/icon_refresh.png) no-repeat;
+}
+.icon_news{
+	background:url(../images/icon/icon_news.png) no-repeat;
+}
+.icon_tag{
+	background: url(../images/icon/icon_tag.png) no-repeat;
+	background-position:0 0;
+}
+.icon_smile{
+	background: url(../images/icon/icon_smile.png) no-repeat;
+	background-position:0 0;
+}
+.icon_arrow{
+	background:url(../images/icon/icon_arrow_down.png) no-repeat right center;
+}
+.icon_love{
+	background-image: url(../images/icon/icon_love.png);
+}
+.icon_comment{
+	background-image: url(../images/icon/icon_comment.png) ;
+}
+.icon_view{
+	background-image: url(../images/icon/icon_view.png) ;
+}
+.content_action li a{
+	background-position:0px 2px;
+	background-repeat:no-repeat;
+}

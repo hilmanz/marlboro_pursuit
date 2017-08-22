@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/StaticPage/admin
+END
+group_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/StaticPage/admin/group_edit.html
+END
+list_by_group.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/StaticPage/admin/list_by_group.html
+END
+edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/StaticPage/admin/edit.html
+END
+group_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/StaticPage/admin/group_new.html
+END
+group_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/StaticPage/admin/group_list.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/StaticPage/admin/index.html
+END
+manage.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/StaticPage/admin/manage.html
+END
+new.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/StaticPage/admin/new.html
+END
+list.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/StaticPage/admin/list.html
+END

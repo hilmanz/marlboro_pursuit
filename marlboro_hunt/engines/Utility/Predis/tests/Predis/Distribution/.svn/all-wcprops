@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/tests/Predis/Distribution
+END
+EmptyRingExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/tests/Predis/Distribution/EmptyRingExceptionTest.php
+END
+KetamaPureRingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/tests/Predis/Distribution/KetamaPureRingTest.php
+END
+HashRingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/tests/Predis/Distribution/HashRingTest.php
+END

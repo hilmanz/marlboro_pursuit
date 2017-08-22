@@ -1,0 +1,580 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML>
+	<HEAD>
+		<title>
+			
+</title>
+		<meta name="ROBOTS" content="FOLLOW,INDEX">
+
+		<!--
+-->
+		<link href="css/amildmop.css" rel="stylesheet" type="text/css" />
+		
+				
+	</HEAD>
+	<body>
+		<form name="Form1" id="Form1">
+
+
+			<div class="mainPage">
+				<div class="header">
+					<div class="legalInfo">
+					<!-- CMS Placeholder - Content text START   -->
+					<P class=legalInfo>This is a secure site.</P>
+					<P class=legalInfo>To protect your data all information is automatically encrypted.</P>
+					<!-- CMS Placeholder - Content text End   -->
+					</div>
+					<div class="intro">
+					<!-- CMS Placeholder - Content text START   -->
+					<H1>Registration page 2</H1>
+					<P class=intro>Please verify your details below and create your online account.</P>
+					<P class=intro>Fields marked '*' are mandatory</P>
+					<!-- CMS Placeholder - Content text End   -->
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="content">
+					<div class="contentIntro">
+						<span id="phContentIntro"></span>
+					</div>
+					<div class="regSection1">
+						<fieldset>
+							<h2><!-- CMS Placeholder - Content text START   -->Personal Details<!-- CMS Placeholder - Content text End   --></h2>
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   --> First Name <!-- CMS Placeholder - Content text End   --></P>
+									<P class="col_right">
+										<span id="lblFirstName"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Other Name<!-- CMS Placeholder - Content text End   --></P>
+									<P class="col_right">
+										<span id="lblOtherName"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Last Name<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblLastName"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Vehicle No<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareText2"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Date Of Birth<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblDOB"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->ID Type<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblGIIDType"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->ID Number<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblGIIDNumber"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Gender<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblGender"></span></P>
+								</DIV>
+							
+						</fieldset>
+						<fieldset>
+							<h2>Address</h2>
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Street Number<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblStreetNumber"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Street Type<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblStreetType"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Street Name<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblStreetName"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Apartment<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblApartment"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Floor<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblFloor"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->State<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblState"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->City<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblCity"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Zip Code<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblZipCode"></span></P>
+								</DIV>
+							
+						</fieldset>
+						<fieldset>
+							<h2>Contact Details</h2>
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Email<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblEmail"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Home Phone<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblHomePhone"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Mobile Phone<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblMobile"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Mobile Phone Company<!-- CMS Placeholder - Content text END   --> </P>
+									<P class="col_right">
+										<span id="lblCompanyMobile"></span></P>
+								</DIV>
+							
+						</fieldset>
+					</div>
+					<div class="regSection2">
+						<fieldset>
+							<h2><!-- CMS Placeholder - Content text START   -->Tell us about your favourite brands<!-- CMS Placeholder - Content text END   --></h2>
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->What is your favourite brand?<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSmokingPrefBrand1"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->...and sub brand?<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSmokingPrefSubBrand1"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="fullWidthLabel">
+										<!-- CMS Placeholder - Content text START   -->How much do you like your favorite brand?<!-- CMS Placeholder - Content text END   --></P>
+									<TABLE id="rating1">
+										<TR>
+											
+												<TD id="tdLabelSmokingPrefRating1_1"><LABEL class="radio" for="rbSmokingPrefRating1_1">1</LABEL></TD>
+											
+												<TD id="tdLabelSmokingPrefRating1_2"><LABEL class="radio" for="rbSmokingPrefRating1_2">2</LABEL></TD>
+											
+												<TD id="tdLabelSmokingPrefRating1_3"><LABEL class="radio" for="rbSmokingPrefRating1_3">3</LABEL></TD>
+											
+												<TD id="tdLabelSmokingPrefRating1_4"><LABEL class="radio" for="rbSmokingPrefRating1_4">4</LABEL></TD>
+											
+												<TD id="tdLabelSmokingPrefRating1_5"><LABEL class="radio" for="rbSmokingPrefRating1_5">5</LABEL></TD>
+											
+												<TD id="tdLabelSmokingPrefRating1_6"><LABEL class="radio" for="rbSmokingPrefRating1_6">6</LABEL></TD>
+											</TR>
+										<TR>
+											
+												<TD id="tdInputSmokingPrefRating1_1"><INPUT class="radio" id="rbSmokingPrefRating1_1" disabled type="radio" value="1"
+														name="rbSmokingPrefRating1"></TD>
+											
+												<TD id="tdInputSmokingPrefRating1_2"><INPUT class="radio" id="rbSmokingPrefRating1_2" disabled type="radio" value="2"
+														name="rbSmokingPrefRating1"></TD>
+											
+												<TD id="tdInputSmokingPrefRating1_3"><INPUT class="radio" id="rbSmokingPrefRating1_3" disabled type="radio" value="3"
+														name="rbSmokingPrefRating1"></TD>
+											
+												<TD id="tdInputSmokingPrefRating1_4"><INPUT class="radio" id="rbSmokingPrefRating1_4" disabled type="radio" value="4"
+														name="rbSmokingPrefRating1"></TD>
+											
+												<TD id="tdInputSmokingPrefRating1_5"><INPUT class="radio" id="rbSmokingPrefRating1_5" disabled type="radio" value="5"
+														name="rbSmokingPrefRating1"></TD>
+											
+												<TD id="tdInputSmokingPrefRating1_6"><INPUT class="radio" id="rbSmokingPrefRating1_6" disabled type="radio" value="6"
+														name="rbSmokingPrefRating1"></TD>
+											</TR>
+										<TR>
+											<TD>
+												<!-- CMS Placeholder - Content text START   -->Very Bad<!-- CMS Placeholder - Content text END   --></TD>
+											<TD>&nbsp;</TD>
+											<TD>&nbsp;</TD>
+											<TD>&nbsp;</TD>
+											<TD>&nbsp;</TD>
+											<TD>
+												<!-- CMS Placeholder - Content text START   -->Very Good<!-- CMS Placeholder - Content text END   --></TD>
+										</TR>
+									</TABLE>
+									</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Other brands you smoke?<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSmokingPrefBrand2"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->...and sub brand?<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSmokingPrefSubBrand2"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="fullWidthLabel">
+										<!-- CMS Placeholder - Content text START   -->How much do you like your occasional brand?<!-- CMS Placeholder - Content text END   --></P>
+									<TABLE id="rating2">
+										<TR>
+											
+												<TD id="tdLabelSmokingPrefRating2_1"><LABEL class="radio" for="rbSmokingPrefRating2_1">1</LABEL></TD>
+											
+												<TD id="tdLabelSmokingPrefRating2_2"><LABEL class="radio" for="rbSmokingPrefRating2_2">2</LABEL></TD>
+											
+												<TD id="tdLabelSmokingPrefRating2_3"><LABEL class="radio" for="rbSmokingPrefRating2_3">3</LABEL></TD>
+											
+												<TD id="tdLabelSmokingPrefRating2_4"><LABEL class="radio" for="rbSmokingPrefRating2_4">4</LABEL></TD>
+											
+												<TD id="tdLabelSmokingPrefRating2_5"><LABEL class="radio" for="rbSmokingPrefRating2_5">5</LABEL></TD>
+											
+												<TD id="tdLabelSmokingPrefRating2_6"><LABEL class="radio" for="rbSmokingPrefRating2_6">6</LABEL></TD>
+											</TR>
+										<TR>
+											
+												<TD id="tdInputSmokingPrefRating2_1"><INPUT class="radio" id="rbSmokingPrefRating2_1" disabled type="radio" value="1"
+														name="rbSmokingPrefRating2"></TD>
+											
+												<TD id="tdInputSmokingPrefRating2_2"><INPUT class="radio" id="rbSmokingPrefRating2_2" disabled type="radio" value="2"
+														name="rbSmokingPrefRating2"></TD>
+											
+												<TD id="tdInputSmokingPrefRating2_3"><INPUT class="radio" id="rbSmokingPrefRating2_3" disabled type="radio" value="3"
+														name="rbSmokingPrefRating2"></TD>
+											
+												<TD id="tdInputSmokingPrefRating2_4"><INPUT class="radio" id="rbSmokingPrefRating2_4" disabled type="radio" value="4"
+														name="rbSmokingPrefRating2"></TD>
+											
+												<TD id="tdInputSmokingPrefRating2_5"><INPUT class="radio" id="rbSmokingPrefRating2_5" disabled type="radio" value="5"
+														name="rbSmokingPrefRating2"></TD>
+											
+												<TD id="tdInputSmokingPrefRating2_6"><INPUT class="radio" id="rbSmokingPrefRating2_6" disabled type="radio" value="6"
+														name="rbSmokingPrefRating2"></TD>
+											</TR>
+										<TR>
+											<TD>
+												<!-- CMS Placeholder - Content text START   -->Very Bad<!-- CMS Placeholder - Content text END   --></TD>
+											<TD>&nbsp;</TD>
+											<TD>&nbsp;</TD>
+											<TD>&nbsp;</TD>
+											<TD>&nbsp;</TD>
+											<TD>
+												<!-- CMS Placeholder - Content text START   -->Very Good<!-- CMS Placeholder - Content text END   --></TD>
+										</TR>
+									</TABLE>
+									</DIV>
+							
+							
+						</fieldset>
+						<fieldset>
+							<!--<h2>Spare Section</h2>-->
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Region<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareDropDown1"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->How did you hear about the promotion?<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareDropDown2"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Marital status<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareDropDown3"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Do you have children<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareDropDown4"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Do you own a vehicle<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareDropDown5"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Hobbies<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareText1"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Music brand you like<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareText3"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Newspaper you read<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareText4"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Alternate Email<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareText5"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Alternative Phone Number<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareNumeric1"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Weight in lbs<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareNumeric2"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->Height in cms<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareNumeric3"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->How many brands do you smoke?<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareNumeric4"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P class="col_left">
+										<!-- CMS Placeholder - Content text START   -->No. of cigarettes a day<!-- CMS Placeholder - Content text END   --></P>
+									<P class="col_right">
+										<span id="lblSpareNumeric5"></span></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P>
+										<!-- CMS Placeholder - Content text START   -->I am a software professional<!-- CMS Placeholder - Content text END   --></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P>
+										<!-- CMS Placeholder - Content text START   -->I accept all terms and conditions<!-- CMS Placeholder - Content text END   --></P>
+								</DIV>
+							
+							
+							
+							
+						</fieldset>
+						<fieldset>
+							<h2><!-- CMS Placeholder - Content text START   -->Confirmations<!-- CMS Placeholder - Content text END   --></h2>
+							
+								<DIV class="row">
+									<P>
+										<!-- CMS Placeholder - Content text START   -->I am a smoker over the age of 18<!-- CMS Placeholder - Content text END   --></P>
+								</DIV>
+							
+							
+								<DIV class="row">
+									<P>
+										<!-- CMS Placeholder - Content text START   -->I accept to recieve marketing information<!-- CMS Placeholder - Content text END   --></P>
+								</DIV>
+							
+						</fieldset>
+					</div>
+					<div class="submit"><a id="lnkEditBtn" tabindex="1" href="javascript:__doPostBack('lnkEditBtn','')"><!-- CMS Placeholder - Content text START   -->Edit Information<!-- CMS Placeholder - Content text END   --></a></div>
+					<div class="clear"></div>
+					<fieldset>
+						
+							<span id="phRadBtn"><!-- CMS Placeholder - Content text START   -->|Choose another LoginID<!-- CMS Placeholder - Content text END   --></span>
+							<!-- CMS Placeholder - Content text START   --><H2>choose your username and password</H2><!-- CMS Placeholder - Content text END   -->
+							<DIV class="r2chooseUPsection"></DIV>
+							
+							<DIV class="row">
+								<P class="col_left">
+									<!-- CMS Placeholder - Content text START   -->Choose a login ID *<!-- CMS Placeholder - Content text END   --></P>
+								
+									<INPUT language="javascript" class="radio" id="rbChooseLoginID_0" onclick="__doPostBack('rbChooseLoginID_0','')"
+										tabIndex="2" type="radio" CHECKED value="1" name="rbChooseLoginID">
+									<LABEL class="radioLabel" for="rbChooseLoginID_0"></LABEL>
+								</DIV>
+							<DIV class="row">
+								<DIV class="col_left"></DIV>
+								
+									<INPUT language="javascript" class="radio" id="rbChooseLoginID_1" onclick="__doPostBack('rbChooseLoginID_0','')"
+										tabIndex="2" type="radio" value="2" name="rbChooseLoginID">
+									<LABEL class="radioLabel" for="rbChooseLoginID_1">Choose another LoginID</LABEL>
+								</DIV>
+							<DIV class="row"><LABEL for="txtLoginID">
+									loginID *
+								</LABEL>
+								<input name="txtLoginID" type="text" maxlength="30" id="txtLoginID" tabindex="3" />
+								
+								</DIV>
+							
+								<DIV class="row"><LABEL for="txtPassword">
+										<!-- CMS Placeholder - Content text START   -->Password *<!-- CMS Placeholder - Content text END   -->
+									</LABEL>
+									<input name="txtPassword" type="password" maxlength="8" id="txtPassword" tabindex="4" /></DIV>
+							
+							
+								<DIV class="row"><LABEL for="txtConfirmPassword">
+										<!-- CMS Placeholder - Content text START   -->Confirm password *<!-- CMS Placeholder - Content text END   -->
+									</LABEL>
+									<input name="txtConfirmPassword" type="password" maxlength="8" id="txtConfirmPassword" tabindex="5" oncontextmenu="return false" onkeydown="return noPaste(event)" />
+									</DIV>
+							
+						
+						
+							<DIV class="row">
+								
+									<INPUT class="checkbox" id="chkTermsAndConditions" tabIndex="6" type="checkbox" name="chkTermsAndConditions"></INPUT>
+								
+								<LABEL class="checkboxLabel" for="chkTermsAndConditions">
+									<!-- CMS Placeholder - Content text START   -->Accept the <A href="javascript:var tmpX000=1;var tmpX001=window.open('/NR/exeres/1315429A-EC44-4069-9A48-651C63FA90D1.htm?NRMODE=Unpublished&amp;wbc_purpose=Basic&amp;WBCMODE=PresentationUnpublished','contact','width=900,height=660');">Terms and Conditions</A> *<!-- CMS Placeholder - Content text END   -->
+								</LABEL>
+								</DIV>
+						
+					</fieldset>
+					<div class="submit">
+                    <a id="lnkSubmitBtn" tabindex="7" onclick="javascript:return ValidateForm();" href="RegistrationPage3.htm"><!-- CMS Placeholder - Content text START   -->Continue<!-- CMS Placeholder - Content text END   --></a>
+                    </div>
+					<div class="clear"></div>
+				</div>
+				<DIV class=footer>
+<P class=healthAlert>This Site is reserved for adult smokers over 18 years old, who live in XXX</P>
+<div class="navigation">
+				<ul>
+					<li><a href="../LandingPage/LandingPage.htm">Home</a></li>
+					<li><a href="../footer/TermsAndConditions.htm" target="_Blank" onclick="javascript:var tmpX000=1;var tmpX001=window.open('../footer/TermsAndConditions.htm','terms','width=900,height=660');return false;">Terms and Conditions</a></li>
+					<li><a href="../footer/ContactUs.htm" target="_Blank" onclick="javascript:var tmpX000=1;var tmpX001=window.open('../footer/ContactUs.htm','contact','width=900,height=660');return false;">Contact us</a></li>
+					<li><a id="health" href="../footer/HealthWarning.htm" target="_Blank" onclick="javascript:var tmpX000=1;var tmpX001=window.open('../footer/HealthWarning.htm','health','width=900,height=660');return false;">Health</a></li>
+					<li><a href="../RemoveMe/RemoveMe.htm">Remove Me</a></li>
+					<li><a href="../demoPages/PMISite.htm" target="_Blank">PMI corporate</a></li>
+					<li class="last"><a href="../footer/FAQ.htm" target="_Blank" onclick="javascript:var tmpX000=1;var tmpX001=window.open('../footer/FAQ.htm','FAQ','width=900,height=660');return false;">FAQ</a></li>
+				</ul>
+			</div></DIV>
+</div>
+			
+			
+	
+
+</form>
+		
+
+	</body>
+</HTML>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/marlboro-hunt-2013/!svn/ver/85/trunk/marlboro_hunt/templates/application/admin/brandPreference
+END
+brandPreference_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/marlboro-hunt-2013/!svn/ver/80/trunk/marlboro_hunt/templates/application/admin/brandPreference/brandPreference_new.html
+END
+brandPreference_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/marlboro-hunt-2013/!svn/ver/85/trunk/marlboro_hunt/templates/application/admin/brandPreference/brandPreference_list.html
+END
+brandPreference_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/marlboro-hunt-2013/!svn/ver/80/trunk/marlboro_hunt/templates/application/admin/brandPreference/brandPreference_edit.html
+END

@@ -1,0 +1,217 @@
+
+<div class="section">
+	<ul class="columns-content page-content clearfix">
+    	<li class="col-sidebar">
+        	<div class="the-title">
+        		<h2>All User</h2>
+    		</div>
+            <div class="box-userStats">
+            	<h1 class="statsNo brown">{$alluser.jumlah}</h1>
+                <div class="gender-stats">
+                	<img src="{$assets_domain}images/men.png" />
+                    <h4>{$alluser.jumlah_male}</h4>
+                </div>
+                <div class="gender-stats">
+                	<img src="{$assets_domain}images/women.png" />
+                    <h4>{$alluser.jumlah_female}</h4>
+                </div>
+            </div>
+        </li>
+        <li class="col-main">
+			
+			<form method="GET" action="">
+        	<div class="menu_charts">
+            	<input type="text"  id="from" name="startdate" value="{$startdate}"><span>-</span>
+            	<input type="text"  id="to" name="enddate" value="{$enddate}" />
+				<input type="submit" value="search" class="stdbtn btn_orange" />
+            </div>
+			</form>
+        	<div class="box-chart" id="allUserAct"></div>
+        </li>
+    </ul><!---end.columns-content page-content clearfix-->
+    <div class="accordion">                           
+        <h3 class=""><span>Login User</span>
+        <a class="icon_arrow expand" href="#">Click to Expand</a>
+        <a class="icon_arrow_grey hide2" href="#">hide</a> </h3>
+        <div class="acc_section">
+        	<div class="acc_sectionLeft">
+            	<div class="acc_userStats">
+            		<h1 class="statsNo green">{$loginData.jumlah}</h1>
+                    <div class="acc_gender-stats">
+                        <img src="{$assets_domain}images/men_kecil.png" />
+                        <h4>{$loginData.jumlah_male}</h4>
+                    </div>
+                    <div class="acc_gender-stats">
+                        <img src="{$assets_domain}images/women_kecil.png" />
+                        <h4>{$loginData.jumlah_female}</h4>
+                	</div>
+            	</div>
+            </div><!--end.acc_sectionLeft-->
+            <div class="acc_sectionRight">
+            	<div class="acc_boxChart" id="loginUser"></div>
+            </div><!--end.acc_sectionRight-->
+        </div><!--end.acc_section-->
+        <h3 class=""><span>Active User</span>
+        <a class="icon_arrow expand" href="#">Click to Expand</a>
+        <a class="icon_arrow_grey hide2" href="#">hide</a> </h3>
+        <div class="acc_section">
+        	<div class="entry-accordion">
+                <div class="acc_sectionLeft">
+                    <div class="acc_userStats">
+                        <h1 class="statsNo green">{$activeUser.jumlah}</h1>
+                        <div class="acc_gender-stats">
+                            <img src="{$assets_domain}images/men_kecil.png" />
+                            <h4>{$activeUser.jumlah_male}</h4>
+                        </div>
+                        <div class="acc_gender-stats">
+                            <img src="{$assets_domain}images/women_kecil.png" />
+                            <h4>{$activeUser.jumlah_female}</h4>
+                        </div>
+                    </div>
+                </div><!--end.acc_sectionLeft-->
+                <div class="acc_sectionRight">
+                    <div class="acc_boxChart" id="actUser"></div>
+                </div><!--end.acc_sectionRight-->
+            </div>
+        </div><!--end.acc_section-->
+        <h3 class=""><span>Very Active User</span>
+        <a class="icon_arrow expand" href="#">Click to Expand</a>
+        <a class="icon_arrow_grey hide2" href="#">hide</a> </h3>
+        <div class="acc_section">
+        	<div class="acc_sectionLeft">
+            	<div class="acc_userStats">
+            		<h1 class="statsNo green">{$veryActive.jumlah}</h1>
+                    <div class="acc_gender-stats">
+                        <img src="{$assets_domain}images/men_kecil.png" />
+                        <h4>{$veryActive.jumlah_male}</h4>
+                    </div>
+                    <div class="acc_gender-stats">
+                        <img src="{$assets_domain}images/women_kecil.png" />
+                        <h4>{$veryActive.jumlah_female}</h4>
+                	</div>
+            	</div>
+            </div><!--end.acc_sectionLeft-->
+            <div class="acc_sectionRight">
+            	<div class="acc_boxChart" id="veryActive"></div>
+            </div><!--end.acc_sectionRight-->
+        </div><!--end.acc_section-->
+        <h3 class=""><span>Super User</span>
+        <a class="icon_arrow expand" href="#">Click to Expand</a>
+        <a class="icon_arrow_grey hide2" href="#">hide</a> </h3>
+        <div class="acc_section">
+        	<div class="acc_sectionLeft">
+            	<div class="acc_userStats">
+            		<h1 class="statsNo green">{$superUser.jumlah}</h1>
+                    <div class="acc_gender-stats">
+                        <img src="{$assets_domain}images/men_kecil.png" />
+                        <h4>{$superUser.jumlah_male}</h4>
+                    </div>
+                    <div class="acc_gender-stats">
+                        <img src="{$assets_domain}images/women_kecil.png" />
+                        <h4>{$superUser.jumlah_female}</h4>
+                	</div>
+            	</div>
+            </div><!--end.acc_sectionLeft-->
+            <div class="acc_sectionRight">
+            	<div class="acc_boxChart" id="sprUsrID"></div>
+            </div><!--end.acc_sectionRight-->
+        </div><!--end.acc_section-->
+        <h3 class=""><span>Unverified User</span>
+        <a class="icon_arrow expand" href="#">Click to Expand</a>
+        <a class="icon_arrow_grey hide2" href="#">hide</a> </h3>
+        <div class="acc_section">
+        	<div class="acc_sectionLeft">
+            	<div class="acc_userStats">
+            		<h1 class="statsNo green">{$userUnverified.jumlah}</h1>
+                    <div class="acc_gender-stats">
+                        <img src="{$assets_domain}images/men_kecil.png" />
+                        <h4>{$userUnverified.jumlah_male}</h4>
+                    </div>
+                    <div class="acc_gender-stats">
+                        <img src="{$assets_domain}images/women_kecil.png" />
+                        <h4>{$userUnverified.jumlah_female}</h4>
+                	</div>
+            	</div>
+            </div><!--end.acc_sectionLeft-->
+            <div class="acc_sectionRight">
+            	<div class="acc_boxChart" id="unverifiedUser"></div>
+            </div><!--end.acc_sectionRight-->
+        </div><!--end.acc_section-->
+    </div><!---end.accodrion-->
+</div><!--end.section-->
+
+<script type="text/javascript">
+
+
+	var alluser = {$alluser.data|@json_encode};
+	var loginData = {$loginData.data|@json_encode};
+	var activeUser = {$activeUser.data|@json_encode};
+	var veryActive = {$veryActive.data|@json_encode};
+	var superUser = {$superUser.data|@json_encode};
+	var userUnverified = {$userUnverified.data|@json_encode};
+	
+	//console.log(veryActive);
+{literal}	
+$(function () {
+
+	var allUserData = new Array();
+	var allUserDate = new Array();	
+	
+	var loginDataData = new Array();
+	var loginDataDate = new Array();
+
+	var actUserData = new Array();
+	var actUserDate = new Array();
+	
+	var sprUserData = new Array();
+	var sprUserDate = new Array();
+	
+	var vaUserData = new Array();
+	var vaUserDate = new Array();
+	
+	var userUnverData = new Array();
+	var userUnverDate = new Array();
+		
+    for (var dataDate in alluser){
+			allUserData.push(parseInt(alluser[dataDate])); // coba['2013-01-01']['total']
+			allUserDate.push(String(dataDate));
+		}
+		
+    for (var logData in loginData){
+			loginDataData.push(parseInt(loginData[logData])); // coba['2013-01-01']['total']
+			loginDataDate.push(String(logData));
+		}
+		
+	for (var actUsr in activeUser){
+			actUserData.push(parseInt(activeUser[actUsr]));		
+			actUserDate.push(String(actUsr));
+		}
+		
+	for (var sprUsr in superUser){
+			sprUserData.push(parseInt(superUser[sprUsr]));
+			sprUserDate.push(String(sprUsr));
+		}
+	
+	for (var vaData in veryActive){
+			vaUserData.push(parseInt(veryActive[vaData]));
+			vaUserDate.push(String(vaData));
+		}
+		
+	for (var userUn in userUnverified){
+			userUnverData.push(parseInt(userUnverified[userUn]));
+			userUnverDate.push(String(userUn));
+		}
+		//console.log(vaData);
+	
+	gethighChart('column','test  Chart','allUserAct',allUserData,allUserDate,1,true);
+	gethighChart('column','test  Chart','loginUser',loginDataData,loginDataDate,1,true);
+	gethighChart('column','test  Chart','actUser',actUserData,actUserDate,1,true);
+	gethighChart('column','test  Chart','veryActive',vaUserData,vaUserDate,1,true);
+	gethighChart('column','test  Chart','sprUsrID',sprUserData,sprUserDate,1,true);
+	gethighChart('column','test  Chart','unverifiedUser',userUnverData,userUnverDate,1,true);
+	
+	//drillDownChart('column','test Chart','cont',dataCoba,cateActivityGroup,1 ,false);
+	});
+		
+</script>
+{/literal}

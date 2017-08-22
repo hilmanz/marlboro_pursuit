@@ -1,0 +1,203 @@
+<div id="dyoshirtPages">
+	<div class="dyoshirtPages">
+        <ul class="columns-content clearfix">
+            <li class="col-sidebar">
+                <div class="titlePaper">
+                    <h2>Design Your</h2>
+                    <h1>OWN SHIRT</h1>
+                </div><!-- END .titlePaper -->
+                <div class="sideBar">
+                    <div class="entry">
+                        <p>YES fits, NO fits, MAYBE never did.<br />
+                        customize your own <img src="{$basedomain}assets/images/maybe.png" /> statement shirt!<br />
+                        
+                        <p>MARLBORO will choose a weekly winner and produce his or her design.</p>
+                        <a class="showPopup readmore rblack popup-game" href="#popup-game">Create Design</a><br /><br />
+                        <a class="showPopup readmore rblack popupmechanics" href="#popup-full-mechanics">Read Full Mechanics</a>
+                        <p class="f12">Please be reminded that as per the Terms and Conditions, all photos, images or designs submitted will become the property of PM</p>
+                    </div><!-- END .entry -->
+                    <div class="be-marlboro"></div>
+                </div><!-- END .sideBar -->
+            </li><!-- END .col-sidebar -->
+            <li class="col-main">
+            	<div id="dyo-gallery">
+                    <div class="perspective gallerydyo" startpage="0" >
+                        {section name=i loop=$dyogalery }
+						
+						<div class="perspective_diap">
+                            <img src="{$basedomain}public_assets/user/dyo/{$dyogalery[i].image}" alt="image" />
+							 {if $dyogalery[i].n_status==2} <p class="winner" style="display: block;"> </p> {/if}
+                            <p class="caption">
+                            	<span class="author fl">BY: {$dyogalery[i].name}</span>
+
+                                <span class="likecount fl" totalcount="{$dyogalery[i].vote}" >{$dyogalery[i].vote} LIKE</span>
+                               {if $dyogalery[i].n_status!=2} <a class="likebtn fr votebutton" href="javascript:void(0)"  dyoid="{$dyogalery[i].id}" >CLICK TO LIKE</a>{/if}
+
+                            </p><!-- END .caption -->
+                        </div><!-- END .perspective_diap -->
+						
+						{/section}
+						
+                    </div><!-- END .perspective -->
+                    <div class="gallery-act">
+                    	<form class="shorter fl" method="GET" action="{$basedomain}dyo">
+                        	<div class="colFilter weeks">
+                                <label>Filter</label>
+                                <select class="styled filter weeks" name="weeks">
+                                    <option value="1" {if $week == 1} selected="selected" {/if}>Week 1</option>
+                                    <option value="7" {if $week == 7} selected="selected" {/if}>Week 2</option>
+                                    <option value="14" {if $week == 14} selected="selected" {/if}>Week 3</option>
+                                </select>
+                        	</div><!-- END .colFilter -->
+                        	<div class="colFilter most">
+                                <label>Sort</label>
+                                <select class="styled most" name="most">
+                                    <option value="0"  {if $most == 1} selected="selected" {/if}>Most Recent</option>
+                                    <option value="1" {if $most == 2} selected="selected" {/if} >Most Viewed</option>
+                                </select>
+                        	</div><!-- END .colFilter -->
+                        </form>
+                        <div class="paging fr">
+                        	<a class="prev prevgallery" href="javascript:void(0)">PREV</a>
+                            <a class="next nextgallery" href="javascript:void(0)">NEXT</a>
+                        </div><!-- END .paging -->
+                    </div><!-- END .gallery-act -->
+                </div><!-- END .#dyo-gallery -->
+            </li><!-- END .col-main -->
+        </ul>
+    </div><!-- END .landingPage -->
+</div><!-- END #landingPage -->
+
+<script>
+	var totaldyo = {$dyototal};
+	
+	{literal}
+	
+		
+	$(document).on('click','.votebutton',function(){
+		var dyoid = $(this).attr('dyoid');
+		var thisobject = $(this);
+		var currentvote = parseInt(thisobject.siblings('.likecount').attr('totalcount'),10);
+		
+		$.post(basedomain+'dyo/ajaxgallery', {cid:dyoid,needs:'favorite'}, function(data){
+			var msg = locale.failedvote;
+			
+			if(data.status){
+				currentvote++;
+				msg = locale.successvote;
+				thisobject.siblings('.likecount').attr('totalcount',currentvote);
+				thisobject.siblings('.likecount').html(currentvote+" LIKES");
+			}
+				$(".trigun").trigger("click");
+				$(".msgpopupglobal").html(msg);
+		},"JSON");
+	});
+	
+	
+		
+	$(document).on('click','.nextgallery',function(){
+			var start = parseInt($(".gallerydyo").attr("startpage"),10)+5;
+			if(start < totaldyo){
+				$.post(basedomain+'dyo/ajaxgallery',{start:start,needs:"pagegallery"},function(data){
+					if(data.status){
+						var gallerydata = data.result.result;
+					
+						var html ="";
+						html += galleryviews(gallerydata);
+						
+						$(".gallerydyo").html(html);
+						$(".gallerydyo").attr("startpage",start);
+						
+						$('.perspective').perspective({
+							scrollingSpeed : 8000,
+							slidingSpeed : 400,
+							depth :60,
+							flightPoint : 'top',
+							hoverGap : 5,
+							maxDarkening : 1,
+							timerPers : 'hide',
+							playPers : 'hide'
+						});
+					}
+				},"JSON");
+			}
+			
+	});
+	
+	$(document).on('click','.prevgallery',function(){
+			var start = parseInt($(".gallerydyo").attr("startpage"),10)-5;
+			if(start>=0){
+				$.post(basedomain+'dyo/ajaxgallery',{start:start,needs:"pagegallery"},function(data){
+					if(data.status){
+						var gallerydata = data.result.result;
+						var html ="";
+						html += galleryviews(gallerydata);
+						
+						$(".gallerydyo").html(html);
+						$(".gallerydyo").attr("startpage",start);
+						
+						$('.perspective').perspective({
+							scrollingSpeed : 8000,
+							slidingSpeed : 400,
+							depth :60,
+							flightPoint : 'top',
+							hoverGap : 5,
+							maxDarkening : 1,
+							timerPers : 'hide',
+							playPers : 'hide'
+						});
+						
+					}
+				},"JSON");
+			}
+			
+	});		
+	
+	
+	function galleryviews(data){
+		var html ="";
+		
+		$.each(data,function(i,e){
+					html +="<div class='perspective_diap'>";
+					html +="             <img src='"+basedomain+"public_assets/user/dyo/"+e.image+"' alt='image' />";
+					html +="            <p class='caption'>";
+					html +="            	<span class='author'>BY: "+e.name+"</span>";
+					html +="               <span class='likecount'>"+e.vote+" LIKES</span>";
+					html +="               <a class='likebtn fr votebutton' href='javascript:void(0)'  dyoid='"+e.id+"' >CLICK TO LIKE</a>";
+					html +="            </p>";
+					html +="       </div>";
+		
+		});
+		
+		return html;
+		
+	}
+	
+	$(document).on('change','.weeks',function(){    
+		$(this).parent().submit(); 
+	});
+	
+	$(document).on('change','.most',function(){    
+		$(this).parent().submit(); 
+	});
+	
+	$(document).on('click','.popup-game', function(){
+		
+		$.post(basedomain+'dyo/ajaxDYO',{check:true},function(data){
+			
+			var status = data.status;
+			var thisobject = $('.popup-game');
+			if (status == false){
+				$(".trigun").trigger("click");
+				$(".msgpopupglobal").html(locale.failedcreatedyo);
+			}
+			
+		},"JSON");
+	});
+	
+	$(document).on('click','#fancybox-close, #fancybox-overlay',function(){
+	
+			window.location = basedomain+"dyo";
+	});
+	{/literal}
+</script>

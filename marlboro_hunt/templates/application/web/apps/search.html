@@ -1,0 +1,129 @@
+<div class="listPage">
+    <div id="shorter" class="clearfix">
+        <div id="left_menu">
+            <h3 class="searchtitle">Hasil Pencarian <span class="red">"{$keywords}"</span></h3>
+        </div><!-- END #left_menu -->
+        <div id="right_menu">
+		    <form method="POST" action="{$basedomain}search" class="searchTop" id="searchTop">
+				 <div class="default-text-search" style="display: none; position: absolute; height: 30px; left: 12px; width: 199px;" onclick="$(this).hide();$('#querySearch').focus();"><span style="position: relative; left: 12px; top: 8px;">{$locale.search}</span></div>
+				<input type="text" name="q" id="querySearch" onBlur="if($(this).val()=='')$('.default-text-search').show()" class="querySearchonSearchpage" value="{$keywords}" >
+                <input type="submit" value="&nbsp;" id="querySubmit">					               
+            </form>
+        </div><!-- END #right_menu -->
+    </div><!-- END #shorter -->
+    <div class="section">
+        <ul class="columns-content page-content clearfix">
+            <li class="col-sidebar">
+               {$side_banner}
+            </li> <!-- END .col-sidebar -->
+            <li class="col-main listPage">
+                
+                <div id="articlePage">
+                    <div class="blog-content clearfix">
+                        <div id="searchPage" class="article_search_content">
+				{if $article}
+						{section loop=$article name=i}
+							{if $article[i].pagenames=='music' || $article[i].pagenames=='dj'  }
+									<div class="box photo cols2">
+									   <a href="#popup-music" class="showPopup thumb120 articledetail"  contentid="{$article[i].id}" articleType="{$article[i].pagesname}" >
+										<img src="
+										{if $article[i].video_thumbnail}http://img.youtube.com/vi/{$article[i].video_thumbnail}/0.jpg
+										{else}
+											{if $article[i].thumbnail_image}
+												{$basedomain}public_assets/{$article[i].imagepath}/thumbnail_{$article[i].thumbnail_image}
+											{else}
+												{if $article[i].image}{$basedomain}public_assets/{$article[i].imagepath}/{$article[i].image}
+												{else}{$basedomain}assets/content/thumb/img_content8.jpg
+												{/if}
+											{/if}
+										{/if}
+										" alt="AltImage" alt="" class="full-image product-image" />			
+										</a>
+										<div class="isi_boxLittle">
+											<h3>{$article[i].title|truncate:50:" "}</h3>
+											<span><a href="#popup-photography" class="showPopup articledetail"  contentid="{$article[i].id}">{if $article[i].author}{$article[i].author.name}{else}anonymuse{/if}</a></span>
+											{if !$article[i].video_thumbnail}
+												<div class="mp3Player">
+													{if $article[i].hasfile && $article[i].file}
+													<div class="mp3Player fr">
+														<audio src="{$basedomain}public_assets/music/mp3/{$article[i].file}" type="audio/mp3" controls="controls" width="150"></audio>	
+													</div><!-- end .mp3Player -->	
+													{/if}
+												</div><!-- end .mp3Player -->
+											{/if}
+											<div class="content_action">
+												<ul>
+													<li><a class="icon_love count" counttype="favorite" count="{$article[i].favorite}" contentid="{$article[i].id}" href="javascript:void(0)">{$article[i].favorite}</a></li>
+													<li><a class="icon_comment count" counttype="comment" count="{$article[i].commentcount}" contentid="{$article[i].id}" href="javascript:void(0)">{$article[i].commentcount}</a></li>
+													<li><a class="icon_view count" counttype="views" count="{$article[i].views}" contentid="{$article[i].id}" href="javascript:void(0)">{$article[i].views}</a></li>
+												</ul>
+											</div><!--END .content_action-->
+										</div><!--END .isi_boxLittle-->
+									</div><!--END .box_little-->
+							{else}
+                            <div class="box photo cols2">
+                               <a href="#popup-photography" class="showPopup thumb300 articledetail"  contentid="{$article[i].id}" articleType="{$article[i].pagesname}" >
+								<img src="
+								{if $article[i].video_thumbnail}http://img.youtube.com/vi/{$article[i].video_thumbnail}/0.jpg
+								{else}
+									{if $article[i].thumbnail_image}
+										{$basedomain}public_assets/{$article[i].imagepath}/thumbnail_{$article[i].thumbnail_image}
+									{else}
+										{if $article[i].image}{$basedomain}public_assets/{$article[i].imagepath}/{$article[i].image}
+										{else}{$basedomain}assets/content/thumb/img_content8.jpg
+										{/if}
+									{/if}
+								{/if}
+								
+								" alt="AltImage" alt="" class="full-image product-image" />			
+								</a>
+                               {if $smarty.section.foo.index eq even}
+								<div class="entry-box">  
+                                    <div class="judul_galery">
+										<h3>{if $article[i].author}{$article[i].author.name} {$article[i].author.last_name} {else}anonymuse{/if}</h3>
+										<span>{$article[i].title}</span>
+									</div>
+                                    <div class="content_action right">
+                                        <ul>
+                                            <li><a class="icon_love count" counttype="favorite" count="{$article[i].favorite}" contentid="{$article[i].id}" href="javascript:void(0)">{$article[i].favorite}</a></li>
+											<li><a class="icon_comment count" counttype="comment" count="{$article[i].commentcount}" contentid="{$article[i].id}" href="javascript:void(0)">{$article[i].commentcount}</a></li>
+											<li><a class="icon_view count" counttype="views" count="{$article[i].views}" contentid="{$article[i].id}" href="javascript:void(0)">{$article[i].views}</a></li>
+									
+                                        </ul>
+                                    </div><!--END .content_action-->
+                                </div>
+								{else}
+								<div class="article_isi">
+                                     <a href="#popup-photography" class="showPopup thumb300 articledetail"  contentid="{$article[i].id}" articleType="{$article[i].pagesname}" ><h3>{$article[i].title}</h3></a>
+                                    <span>{$article[i].posted_date}</span>
+                                    <p>{$article[i].brief}</p>
+                                    <div class="content_action">
+                                        <ul>
+										<li><a class="icon_love count" counttype="favorite" count="{$article[i].favorite}" contentid="{$article[i].id}" href="javascript:void(0)">{$article[i].favorite}</a></li>
+										<li><a class="icon_comment count" counttype="comment" count="{$article[i].commentcount}" contentid="{$article[i].id}" href="javascript:void(0)">{$article[i].commentcount}</a></li>
+										<li><a class="icon_view count" counttype="views" count="{$article[i].views}" contentid="{$article[i].id}" href="javascript:void(0)">{$article[i].views}</a></li>
+									
+                                        </ul>
+                                    </div><!--END .content_action-->
+                                </div><!--END .article_isi-->
+								{/if}
+                            </div><!--END .box-->
+                           {/if}
+                        {/section}  
+				{else}
+					{$locale.notfoundsearch}
+				{/if}
+                        </div><!-- END #searchPage-->
+                    </div> <!-- END .blog-content -->
+                      <div class="paging" id="pagingID">
+                    
+                </div> <!-- END .paging -->
+                </div><!-- END #articlePage -->
+            </li><!-- END .col-main -->    
+        </ul><!-- END .page-content -->
+    </div><!-- END .section -->
+</div><!-- END .listPage -->
+
+<script>
+	 getpaging({$start},{$total},"pagingID","paging_ajax_for_search",10);
+</script>

@@ -1,0 +1,127 @@
+<script>
+	{literal}
+	
+	$(document).on('change','#status',function(){
+		var contentid = $(this).attr('contentid');
+		var statusid = $(this).val();
+		var userid = $('#user_id_'+contentid).val();
+		//alert(userid);
+		$.post(basedomain+"admin/index.php?s=userManagement&act=ajax" ,{status:statusid, id:userid}, function(dataGiid){
+			//alert(dataGiid);
+			var status = dataGiid.status;
+			//alert(status);
+			if (status == true || status == 'true'){
+				alert('Validate Success');
+				
+			}else{
+				alert('Validate Failed');
+			}
+			
+		},"JSON");
+	});
+	
+	{/literal}
+</script>
+<div class="theContent">
+    <div class="theTitle">
+        <h2>{$folder} List</h2>
+    </div><!--contenttitle-->
+	<div class="theTitle" align="left">
+		 <h5> Total Users :<br/>
+			{foreach from=$count key=k item=v}
+				{$v.statusname} = {$v.total}&nbsp &nbsp &nbsp
+			{/foreach}
+			<br /><br />Total All Users : {$jumlah}
+		</h5>
+	</div>
+    <div class="tableoptions">        
+     <form>
+        <input type="text" name="search" value="{$search}">
+        <input type="hidden" name="s" value="{$folder}" />
+        <input type="hidden" name="cari" value="cari" />
+        <select id="n_status" name="n_status">
+						<option value="-1" {if $n_status == -1} selected="selected"{/if} >- User Status -</option>
+						<option value="0" {if $n_status == 0} selected="selected"{/if}>Pending GIID Upload</option>
+						<option value="5" {if $n_status == 5}selected="selected" {/if}><!-- Verified -->Pending CSR Approval</option>
+						<option value="2" {if $n_status == 2} selected="selected"{/if}>CSR Approved</option>
+						<option value="3" {if $n_status == 3}selected="selected" {/if}><!-- Unupload GIID -->Rejected - Not Upload GIID</option>
+						<option value="4" {if $n_status == 4}selected="selected" {/if}><!-- Data Not Valid -->Rejected - Data Not Valid</option>
+						<option value="1" {if $n_status == 1} selected="selected"{/if}><!-- Pending GIID Verification -->Verified</option>
+						<option value="6" {if $n_status == 6} selected="selected"{/if}>Deactivated</option>
+						<option value="7" {if $n_status == 7}selected="selected" {/if}>Blocked</option>
+		</select> -
+		<select id="userStat" name="usertype">
+						<option value="-1" {if $usertype == -1} selected="selected"{/if} >All User</option>
+						<option value="0" {if $usertype == 0}  selected="selected"{/if} >Online</option>
+						<option value="1"  {if $usertype == 1}selected="selected"{/if}>Offline</option>
+						<option value="2" {if $usertype == 2}selected="selected" {/if}>Existing ASDB</option>
+		</select>
+       <span>Date Range</span>
+        <input type="text" name="startdate" value="{$startdate}" class="datepicker radius3" />
+       <span>to</span>
+        <input type="text" name="enddate" value="{$enddate}" class="datepicker radius3" />
+        <input type="submit" value="GO" class="stdbtn btn_orange" />
+    </form>
+    </div><!--tableoptions-->	
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <colgroup>
+            <col class="con0" style="width: 4%" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="head0">No</th>
+                <th class="head1">Name</th>
+                <th class="head1">Email</th>
+				<th class="head1">Register Date</th>
+				<th class="head1">Verified Date</th>
+                <th class="head1">Status</th>
+			</tr>
+        </thead>
+        <tbody>
+            {foreach from=$list key=k item=v}
+            <tr>
+                <td width="10">{$v.no}&nbsp;
+					<input type="hidden" id="user_id_{$v.no}" value="{$v.id}" />
+				</td>
+                <td><nobr>{$v.name}</nobr></td>
+                <td><nobr>{$v.email}</nobr></td>
+                <td><nobr>{$v.register_date|date_format:"%e %B %Y"}</nobr></td>
+                <td>
+					<nobr> 
+						{if $v.register_date == ($v.n_status==3)} - 
+						{else} {$v.register_date|date_format:"%e %B %Y"}
+						{/if}					
+					</nobr>
+				</td>
+				<!-- <td align="center">
+					<select id="status" contentid="{$v.no}">
+						<option value="0" class="orange" {if $v.n_status == 0} selected="selected"{/if}>Pending</option>
+						<option value="1" class="green" {if $v.n_status == 1} selected="selected"{/if}>Approved</option>
+						<option value="2" class="red" {if $v.n_status == 2} selected="selected"{/if}>Rejected</option>
+					</select></td> -->
+				<td align="center">
+                    {if $v.n_status==0} <span class="red">Pending GIID Upload</span>
+                    {elseif $v.n_status==5} <span class="green"><!--Verified-->Pending CSR Approval</span>
+                    {elseif $v.n_status==2} <span class="green">CSR Approved</span>
+                    {elseif $v.n_status==3} <span class="red"><!-- Unupload GIID -->Rejected - Not Upload GIID</span>
+                    {elseif $v.n_status==4} <span class="red"><!-- Data Not Valid -->Rejected - Data Not Valid</span>
+                    {elseif $v.n_status==1} <span class="blue"><!-- Pending GIID Verification -->Verified</span>
+                    {elseif $v.n_status==6} <span class="red">Deactivated</span>
+                    {elseif $v.n_status==7} <span class="red">Blocked</span>
+                    {else}
+                    {/if}
+					| <a href="index.php?s=userManagement&act=viewProfile&id={$v.id}" class="blue"><nobr>View Profile</nobr></a>
+                </td>	
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    <div class="paging">
+    	{$paging}
+    </div>
+</div><!--theContent-->

@@ -1,0 +1,226 @@
+<div id="most-viewedArtist">
+	<div class="the-title fl">
+        <h2>Most Viewed Artist (all subculture)</h2>
+    </div>
+    <div class="select_op rt">
+		<div class="shorter">
+           <form action="{$basedomain}activities" method="GET" >
+                <select class="styled weeks" name="week" >
+                  <option value="7" {if $week == 1}selected="selected"{/if}>Week 1</option>
+				  <option value="14" {if $week == 2}selected="selected"{/if}>Week 2</option>
+				  <option value="21" {if $week == 3}selected="selected"{/if}>Week 3</option>
+				  <option value="28" {if $week == 4}selected="selected"{/if}>Week 4</option>
+                </select>
+				</form>
+        </div>
+    </div>
+    <div class="section_mostview">
+    	<div class="box_iconartist fl first-child">
+        	<div class="tittle_icon">
+            	<h2>Music</h2>
+            </div>
+            <div class="icon_artist" style="width:50px;height:50px">
+			{section name=i loop=$mostViewedArtistMusic max = 1}
+            	{if $mostViewedArtistMusic[i].gender=="UB"}<img  style="width:50px;height:50px;" src='{$basedomainpath}public_assets/pages/{$mostViewedArtistMusic[i].img}'  />
+            	{else}<img src='{$basedomainpath}public_assets/user/photo/{$mostViewedArtistMusic[i].img}' style="width:50px;height:50px;" />
+				{/if}
+                <h5>{$mostViewedArtistMusic[i].names}</h5>
+            {/section}
+			</div>
+        </div><!--end.box_iconartist-->
+        <div class="box_iconartist fl">
+        	<div class="tittle_icon">
+            	<h2>Dj</h2>
+            </div>
+    	  <div class="icon_artist" style="width:50px;height:50px">
+			{section name=i loop=$mostViewedArtistDj max = 1}
+            	{if $mostViewedArtistDj[i].gender=="UB"}<img  style="width:50px;height:50px" src='{$basedomainpath}public_assets/pages/{$mostViewedArtistDj[i].img}'  />
+            	{else}<img src='{$basedomainpath}public_assets/user/photo/{$mostViewedArtistDj[i].img}' style="width:50px;height:50px;"  />
+                {/if}
+				<h5>{$mostViewedArtistDj[i].names}</h5>
+            {/section}
+			</div>
+        </div><!--end.box_iconartist-->
+        <div class="box_iconartist fl">
+        	<div class="tittle_icon">
+            	<h2>Visual Art</h2>
+            </div>
+
+			 <div class="icon_artist" style="width:50px;height:50px">
+			{section name=i loop=$mostViewedArtistVisual max = 1}
+            	{if $mostViewedArtistVisual[i].gender=="UB"}<img  style="width:50px;height:50px" src='{$basedomainpath}public_assets/pages/{$mostViewedArtistVisual[i].img}'  />
+            	{else}<img src='{$basedomainpath}public_assets/user/photo/{$mostViewedArtistVisual[i].img}' style="width:50px;height:50px;" />
+                {/if}
+				<h5>{$mostViewedArtistVisual[i].names}</h5>
+            {/section}
+			</div>
+        </div><!--end.box_iconartist-->
+        <div class="box_iconartist fl">
+        	<div class="tittle_icon">
+            	<h2>Style</h2>
+            </div>
+			<div class="icon_artist" style="width:50px;height:50px">
+			{section name=i loop=$mostViewedArtistStyle max = 1}
+            	{if $mostViewedArtistStyle[i].gender=="UB"}<img  style="width:50px;height:50px" src='{$basedomainpath}public_assets/pages/{$mostViewedArtistStyle[i].img}'  />
+            	{else}<img src='{$basedomainpath}public_assets/user/photo/{$mostViewedArtistStyle[i].img}' style="width:50px;height:50px;" />
+               {/if}
+				 <h5>{$mostViewedArtistStyle[i].names}</h5>
+            {/section}
+			</div>
+        </div><!--end.box_iconartist-->
+        <div class="box_iconartist fl">
+        	<div class="tittle_icon">
+            	<h2>Photography</h2>
+            </div>
+           
+			<div class="icon_artist" style="width:50px;height:50px">
+			{section name=i loop=$mostViewedArtistPhoto max = 1}
+            	{if $mostViewedArtistPhoto[i].gender=="UB"}<img  style="width:50px;height:50px" src='{$basedomainpath}public_assets/pages/{$mostViewedArtistPhoto[i].img}'  />
+            	{else}<img src='{$basedomainpath}public_assets/user/photo/{$mostViewedArtistPhoto[i].img}' style="width:50px;height:50px;" />
+                {/if}
+				<h5>{$mostViewedArtistPhoto[i].names}</h5>
+            {/section}
+			</div>
+        </div><!--end.box_iconartist-->
+    </div><!--end.section_table-->
+    <div class="the-title fl">
+        <h2>Most Viewed Artist (form each subculture)</h2>
+    </div>
+    <div class="select_op rt">
+        <div class="shorter">
+            <form method="GET" action="{$basedomain}activities" >
+			<select class="styled weeks" name="week">
+              <option value="7" {if $week == 1}selected="selected"{/if}>Week 1</option>
+              <option value="14" {if $week == 2}selected="selected"{/if}>Week 2</option>
+              <option value="21" {if $week == 3}selected="selected"{/if}>Week 3</option>
+              <option value="28" {if $week == 4}selected="selected"{/if}>Week 4</option>
+            </select>
+			</form>
+        </div>
+     </div>
+    <div class="accordion">                           
+        <h3 class=""><span>Music</span>
+        <a class="icon_arrow expand" href="#">Click to Expand</a>
+        <a class="icon_arrow_grey hide2" href="#">Hide</a> 
+        </h3>
+        <div class="acc_section">
+                <table class="gridtable">
+					<tr class="user_list">
+					{section name=i loop=$mostViewedArtistMusic}	
+					    <th>{$mostViewedArtistMusic[i].names}</th>
+                    {/section}
+					</tr>
+                    <tr class="icon_list"> 
+                    {section name=i loop=$mostViewedArtistMusic}  
+						<td style="width:50px;height:50px">
+							{if $mostViewedArtistMusic[i].gender=="UB"}<img  style="width:50px;height:50px" src='{$basedomainpath}public_assets/pages/{$mostViewedArtistMusic[i].img}'  />
+							{else}<img src='{$basedomainpath}public_assets/user/photo/{$mostViewedArtistMusic[i].img}' style="width:50px;height:50px;"  />
+						{/if}
+				</td>	
+                    {/section}
+					</tr>
+				</table>
+            </div><!--end.acc_section-->
+        <h3 class=""><span>Dj</span>
+        <a class="icon_arrow expand" href="#">Click to Expand</a>
+        <a class="icon_arrow_grey hide2" href="#">Hide</a> 
+        </h3>
+        <div class="acc_section">
+                <table class="gridtable">
+					<tr class="user_list">
+					{section name=i loop=$mostViewedArtistDj}	
+					    <th>{$mostViewedArtistDj[i].names}</th>
+                    {/section}
+					</tr>
+                    <tr class="icon_list">
+                    {section name=i loop=$mostViewedArtistDj}    				
+				
+					<td style="width:50px;height:50px">
+							{if $mostViewedArtistDj[i].gender=="UB"}<img  style="width:50px;height:50px" src='{$basedomainpath}public_assets/pages/{$mostViewedArtistDj[i].img}'  />
+							{else}<img src='{$basedomainpath}public_assets/user/photo/{$mostViewedArtistDj[i].img}' style="width:50px;height:50px;" />
+						{/if}
+				</td>
+				   {/section}
+					</tr>
+				</table>
+            </div><!--end.acc_section-->
+        <h3 class=""><span>Visual Art</span>
+        <a class="icon_arrow expand" href="#">Click to Expand</a>
+        <a class="icon_arrow_grey hide2" href="#">Hide</a>  
+        </h3>
+        <div class="acc_section">
+                <table class="gridtable">
+					<tr class="user_list">
+					{section name=i loop=$mostViewedArtistVisual}	
+					    <th>{$mostViewedArtistVisual[i].names}</th>
+                    {/section}
+					</tr>
+                    <tr class="icon_list">
+                    {section name=i loop=$mostViewedArtistVisual}    				
+
+					<td style="width:50px;height:50px">
+							{if $mostViewedArtistVisual[i].gender=="UB"}<img  style="width:50px;height:50px" src='{$basedomainpath}public_assets/pages/{$mostViewedArtistVisual[i].img}'  />
+							{else}<img src='{$basedomainpath}public_assets/user/photo/{$mostViewedArtistVisual[i].img}' style="width:50px;height:50px;" />
+						{/if}
+				</td>						
+						
+                    {/section}
+					</tr>
+				</table>
+            </div><!--end.acc_section-->
+        <h3 class=""><span>Style</span>
+        <a class="icon_arrow expand" href="#">Click to Expand</a>
+        <a class="icon_arrow_grey hide2" href="#">Hide</a>  
+        </h3>
+        <div class="acc_section">
+                <table class="gridtable">
+					<tr class="user_list">
+					{section name=i loop=$mostViewedArtistStyle}	
+					    <th>{$mostViewedArtistStyle[i].names}</th>
+                    {/section}
+					</tr>
+                    <tr class="icon_list">
+                    {section name=i loop=$mostViewedArtistStyle}    				
+								<td style="width:50px;height:50px">
+							{if $mostViewedArtistStyle[i].gender=="UB"}<img style="width:50px;height:50px"  src='{$basedomainpath}public_assets/pages/{$mostViewedArtistStyle[i].img}'  />
+							{else}<img src='{$basedomainpath}public_assets/user/photo/{$mostViewedArtistStyle[i].img}' style="width:50px;height:50px;" />
+						{/if}
+				</td>						
+						
+						
+                    {/section}
+					</tr>
+				</table>
+            </div><!--end.acc_section-->
+        <h3 class=""><span>Photography</span>
+        <a class="icon_arrow expand" href="#">Click to Expand</a>
+        <a class="icon_arrow_grey hide2" href="#">Hide</a> 
+        </h3>
+        <div class="acc_section">
+                <table class="gridtable">
+					<tr class="user_list">
+					{section name=i loop=$mostViewedArtistPhoto}	
+					    <th>{$mostViewedArtistPhoto[i].names}</th>
+                    {/section}
+					</tr>
+                    <tr class="icon_list">
+                    {section name=i loop=$mostViewedArtistPhoto}    				
+							<td style="width:50px;height:50px">
+							{if $mostViewedArtistPhoto[i].gender=="UB"}<img style="width:50px;height:50px" src='{$basedomainpath}public_assets/pages/{$mostViewedArtistPhoto[i].img}'  />
+							{else}<img src='{$basedomainpath}public_assets/user/photo/{$mostViewedArtistPhoto[i].img}' style="width:50px;height:50px;" />
+						{/if}
+				</td>						
+                    {/section}
+					</tr>
+				</table>
+            </div><!--end.acc_section-->
+    </div><!---end.accodrion-->
+</div><!--#most-viewebArtist-->
+
+<script>	
+{literal}
+	$(document).on('change','.weeks',function(){    
+		$(this).parent().submit();                
+	});
+</script>
+{/literal}

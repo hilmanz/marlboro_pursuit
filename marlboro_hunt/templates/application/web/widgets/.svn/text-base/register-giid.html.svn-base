@@ -1,0 +1,206 @@
+<script>
+	
+	{literal}
+	
+	$(document).on('click','#later',function(){
+		var giidNumber = $('#giid_number').val();
+		var giidType = $('#giid_type').val();
+		$(".trigun").trigger("click");
+		$(".msgpopupglobal").html("<img src='"+basedomain+"assets/images/loader.gif'>");
+		$.post(basedomain+"register/ajax" ,{later:true, giid_number:giidNumber, giid_type:giidType}, function(dataGiid){
+			
+			var status = dataGiid.status;
+			/*
+			if (status == true){
+				//alert('Success, Email Sent');
+				$(".trigun").trigger("click");
+				$(".msgpopupglobal").html(dataGiid.msg);
+			}else{
+				//alert('ups, Email not sent');
+				$(".trigun").trigger("click");
+				$(".msgpopupglobal").html(dataGiid.msg);
+				//return false;
+			}
+			*/
+			
+			window.location.href = basedomain+'register/confirm';
+			//return false;
+		},"JSON");
+	});
+	
+	$(document).on('click','#deletegiid',function(){
+		$(".trigun").trigger("click");
+		$(".msgpopupglobal").html(locale.pleasewait);		
+		$.post(basedomain+"register/ajax" ,{inline_remove:true}, function(data){
+			var status = data.status;
+			if (status == true || status == 'true'){
+					/* s: popup global */
+						$(".trigun").trigger("click");
+						$(".msgpopupglobal").html(locale.succesdeletepoto);
+						$("#filenameContainer").html('');
+					/* e: popup global */
+					//window.location.href = basedomain+'register/giid';
+			}else{
+				/* s: popup global */
+						$(".trigun").trigger("click");
+						$(".msgpopupglobal").html(locale.faileddeletepoto);
+					/* e: popup global */
+			}
+			
+		
+			
+		},"JSON");
+	});
+	
+	/*
+	$(document).on('click','.upload', function(){
+		
+		$.post(basedomain+"register/ajax",{checkGiid:true}, function(data){
+			if (data.status == false){
+				alert('Please choose option to upload GIID');
+				
+				return false;
+			}
+		})
+	})
+	*/
+	
+	
+		$(document).on('click','.uploadmygid', function(){
+						var updateoptions = {
+							dataType:  'json', 	
+							beforeSubmit: function(data) { 
+									$(".trigun").trigger("click");
+									$(".msgpopupglobal").html(locale.pleasewait);		
+									$("#filenameContainer").html('');
+							},
+							success : function(data) {		
+									var notif = locale.faileduploadphoto;
+									if(data){
+										if(data.result==true){
+												notif = locale.successuploadphoto;
+												var html = "";
+												html+='<a class="orange" href="#">file attached : '+data.dataGiid.filename_ori+'</a>|';
+												html+='<a id="deletegiid" href="#">delete</a>';
+												$("#filenameContainer").html(html);
+										}									
+									}
+										/* s: popup global */
+											$(".trigun").trigger("click");
+											$(".msgpopupglobal").html(notif);
+										/* e: popup global */
+							}
+						};					
+					
+					$("#uploadphotogidbypost").ajaxForm(updateoptions);
+			});	
+
+		$(document).on('click','.upload', function(){
+			var giidNumber = $('#giid_number').val();
+			var thisobject = $('#giid_number');
+			if (giidNumber == ''){
+				notif = locale.giidnumberempty;
+				$(".trigun").trigger("click");
+				$(".msgpopupglobal").html(notif);
+				thisobject.addClass("error");
+				return false;
+			}
+			
+		})
+	
+	{/literal}
+</script>
+
+<div id="registration2" class="registration">
+	<div class="head">
+    	<h3>Registration is free. Join us and earn access to exclusive content and special offers.<br />
+To complete the registration process, a copy of a valid government-issued id has to be submitted for age verification. Upon verification, your username and password will be sent to you.
+For accuracy of registered data, please review and confirm the details provided. </h3>
+    </div><!-- END .head -->
+    <div class="section">
+    	<form id="reg3" action="{$basedomain}register/confirm" class="theForm" method="POST">
+        <h3>Please attach a soft copy of your VALID government-issued ID (GIID). <a href="#popup-giidlist" class="showPopup">SEE valid GIID List</a></h3>
+        
+			{if $gidNumber == ""}
+			
+			<ul class="columns-2 clearfix" id="enterGIID">
+				<li class="col2">
+					<div class="row">
+						<label>Select GIID Type</label>
+						<select class="styled required" name="giid_type" id="giid_type">
+							<option value="">-</option>
+							{section name=i loop=$giid_type}
+							<option value="{$giid_type[i].id}">{$giid_type[i].giid_type|upper}</option>
+							<!--<option value="2">passport</option>-->
+							{/section}
+						</select>
+					</div>
+				</li>
+				<li class="col2">
+					<div class="row">
+						<label>Enter GIID Number</label>
+						<input type="text" name="giid_number" class="full-width required" value="" id="giid_number"/>
+					</div>
+
+				</li>
+			</ul>
+			{/if}
+		
+		
+		<div class="row">
+        	<a href="#popup-upload-photo" class="button btnRed showPopup uploadmygid fl">Upload giid now</a><a href="#" class="button btnRed fl" id="later">Upload giid LATER</a>
+			
+            {if $sess_giid !=''}	<h3 id="filenameContainer" class="fotoupload"><a href="#" class="orange">file attached : {$sess_giid}</a> | <a href="#" id="deletegiid">delete</a></h3>{else}
+			<h3 id="filenameContainer" class="fotoupload"></h3>
+			{/if}
+        </div>
+<h3>To continue with registration, please submit a copy of your GIID within seven (7) days. Failure to do so will restart registration process.</h3>
+		<h2>After completing and signing this survey form, I declare that:</h2>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="top">a)</td>
+            <td valign="top">the foregoing information is accurate,</td>
+          </tr>
+          <tr>
+            <td valign="top">b)</td>
+            <td valign="top">I am an adult smoker 18 years or older;</td>
+          </tr>
+          <tr>
+            <td valign="top">c)</td>
+            <td valign="top">the contact number/s and email address stated above are used personally and exclusively by me and cannot be accessed or shared by other persons.</td>
+          </tr>
+        </table>
+        <h2>Toward this end, I hereby grant my consent to PMFTC Inc. to</h2>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td valign="top">a)</td>
+            <td valign="top">store and use this personal information to allow PMFTC Inc. and its affiliates and duly-authorized representatives to verify age and other 
+	     	compliance with internal policies, and/or contact me;</td>
+          </tr>
+          <tr>
+            <td valign="top">b)</td>
+            <td valign="top">to the extent permitted under the applicable laws, provide me, using mail, email, SMS, telephone, etc., with communications related to tobacco 
+		products, including but not limited to information and material on brand launches, packaging changes, events, marketing activities, regulation 
+		of tobacco products and political topics that may be of relevance to tobacco products; to process my information in countries other than the 
+		country in which I live (for example, Locating the database in one country and accessing the database remotely from another), and</td>
+          </tr>
+          <tr>
+            <td valign="top">c)</td>
+            <td valign="top">disclose my personal information to service providers for the above purposes, to PMFTC In. affiliates to do the above for their own purposes, 
+		and (if required by law) to relevant authorities. PMFTC Inc. may not disclose my personal information to third parties for other purposes, 
+		without my prior consent.</td>
+          </tr>
+        </table>
+        <div class="row rowSubmit">
+        	<input type="hidden" value="1" name="token"/>
+        	<input type="hidden" value="{$email_token}" name="email_token"/>
+        	<input type="submit" value="NEXT" class="button btnRed upload" name="submit"/>
+        </div><!-- END .rowSubmit -->
+        </form>
+        <div class="step">
+        	<a class="page1 btnStep fl" >Page 1</a>
+        	<a class="page2 btnStep" >Page 2</a>
+        	<a class="page3 btnStep fr current">Page 3</a>
+        </div><!-- END .step -->
+    </div><!-- END .section -->
+</div><!-- END .registration -->

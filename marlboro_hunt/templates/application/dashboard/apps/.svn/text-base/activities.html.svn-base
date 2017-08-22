@@ -1,0 +1,37 @@
+<div class="section">
+	<ul class="columns-content page-content clearfix">
+    	<div id="tabs">
+					
+    		<ul class="nav">
+                <li class="nav-one"><a href="#userActivities" class="current">User Activities</a></li>
+                <li class="nav-two"><a href="#topUsers">Top Users</a></li>
+                <li class="nav-three"><a href="#topVisited">Top Visited Page</a></li>
+                <li class="nav-four"><a href="#topContent">Top Content</a></li>
+                <li class="nav-five last"><a href="#mostViewed" id="most">Most Viewed Artists</a></li>
+            </ul>
+    		<div class="list-wrap">
+    			<ul id="userActivities">
+    				{include file="application/dashboard/widgets/userActivities.html"}
+    			</ul>
+        		 <ul id="topUsers" class="hide">
+					 {include file="application/dashboard/widgets/topUsers.html"}
+    			
+        		 </ul>
+        		 <ul id="topVisited" class="hide">
+					{include file="application/dashboard/widgets/topVisited.html"}
+    			
+        		 </ul>
+        		 <ul id="topContent" class="hide">
+					 {include file="application/dashboard/widgets/topContent.html"}
+    			
+        		 </ul>
+                 <ul id="mostViewed" class="hide">
+					{include file="application/dashboard/widgets/mostViewArtist.html"}
+    			
+        		 </ul>
+        		 
+    		 </div> <!-- END List Wrap -->
+		 
+		 </div> <!-- END tabs -->
+    </ul><!---end.columns-content page-content clearfix-->
+</div><!--end.section-->

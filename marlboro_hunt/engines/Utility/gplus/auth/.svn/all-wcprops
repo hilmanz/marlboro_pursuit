@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/gplus/auth
+END
+apiOAuth.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/gplus/auth/apiOAuth.php
+END
+apiAuth.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/gplus/auth/apiAuth.php
+END
+apiAuthNone.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/gplus/auth/apiAuthNone.php
+END
+apiOAuth2.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/gplus/auth/apiOAuth2.php
+END
+apiSigner.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/gplus/auth/apiSigner.php
+END
+apiP12Signer.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/gplus/auth/apiP12Signer.php
+END
+apiVerifier.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/gplus/auth/apiVerifier.php
+END
+apiLoginTicket.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/gplus/auth/apiLoginTicket.php
+END
+apiPemVerifier.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/gplus/auth/apiPemVerifier.php
+END

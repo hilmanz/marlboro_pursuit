@@ -1,0 +1,15 @@
+	<div class="popupContainer popup popup-video" id="popup-video-laborday">
+    	<a id="fancybox-close" class="closePopup  video-labor-close" href="javascript:void(0)" onclick="pause()" >&nbsp;</a>
+        <div class="popupContents">
+        	<div class="entry-popup gamepopup">
+                	<div id="video-box">
+						 <video id="video-labor" class="video-js vjs-default-skin" controls="controls" preload="none" width="100%" height="400"
+                              poster="{$basedomain}assets/content/thumb_video_laborday.jpg"
+                              data-setup="" >
+                            <source src="{$basedomain}assets/video/labor-teaser.mp4" type="video/mp4" />
+                          
+                          </video>
+                    </div>
+            </div><!--END .entry-popup-->
+        </div><!-- END .popupContent -->
+    </div><!-- END .popupContainer -->

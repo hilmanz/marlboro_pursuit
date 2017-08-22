@@ -1,0 +1,383 @@
+<script>
+	var htmlnya = "";
+	{literal}
+	
+	$(document).on('change','#province',function(){
+		var provinceid = $(this).val();
+		$.post(basedomain+"register/provinsi" ,{id:provinceid}, function(data){
+			var html ="";
+				html+="<option value='' >-</option>";
+			$.each(data,function(i,e){
+						html+="<option value='"+e.id+"' >"+e.city+"</option>";
+			});
+			$("#city").html(html);
+			
+		},"JSON");
+			 $("#selectcity").attr("style","background-color:WHITE");
+			 $("#selectprovince").attr("style","background-color:WHITE");
+	});
+	
+	$(document).on('click','.btnRed',function(){
+		
+		var nickname = $('#nickname').val();
+		var firstname = $('#firstname').val();
+		var birthday = $('#birthday').val();
+		var last_mobile = $('#last_mobile').val();
+		var pre_mobile = $('.pre_mobile').val();
+		var last_line = $('#last_line').val();
+		var email = $('#email').val();
+		var house = $('#house').val();
+		var barangay = $('#barangay').val();
+		var province = $('#province').val();
+		var city = $('#city').val();
+
+		//var sex = $('#sex').checked();
+	
+		if (nickname == "" || firstname == "" || birthday == "" || last_mobile == "" || last_line == "" ||
+			email == "" || house == "" || barangay == "" || pre_mobile == "" || province == "" || city == ""){
+			
+			$(".trigun").trigger("click");
+			$(".msgpopupglobal").html(locale.fillallthefield);
+				if(pre_mobile=="")  $("#selectpre_mobile").attr("style","background-color:#FFCC00");
+				if(city=="")  $("#selectcity").attr("style","background-color:#FFCC00");
+				if(province=="")  $("#selectprovince").attr("style","background-color:#FFCC00");
+			
+		}
+		//alert(required);
+		
+	});
+	
+	// verifikasi mobile number
+	$(document).on('blur','.last_mobile', function(){
+		
+		var last_mobile_value = $(this).val();
+		if (isNaN(last_mobile_value)){
+			$(".trigun").trigger("click");
+			$(".msgpopupglobal").html(locale.onlynumber);
+			$(this).val('');
+		}
+	})
+	
+	// verifikasi landline number
+	$(document).on('blur','.last_line', function(){
+		
+		var last_line_value = $(this).val();
+		if (isNaN(last_line_value)){
+			$(".trigun").trigger("click");
+			$(".msgpopupglobal").html(locale.onlynumber);
+			$(this).val('');
+		}
+	})
+	
+	// verifikasi zipcode
+	$(document).on('blur','.zipcode', function(){
+		
+		var zipcode_value = $(this).val();
+		if (isNaN(zipcode_value)){
+			$(".trigun").trigger("click");
+			$(".msgpopupglobal").html(locale.onlynumber);
+			$(this).val('');
+		}
+	})
+	
+	// verifikasi email register
+	$(document).on('blur', '#email', function(){
+		var dataemail = $('#email').val();
+		var thisobject = $(this);
+			$(this).siblings(".error").empty();
+		if (dataemail != ""){
+			$.post(basedomain+'register/ajax', {email:dataemail},function(data){
+				
+				validEmail = data.status;
+				if (validEmail == 2){
+					$(".trigun").trigger("click");
+					$(".msgpopupglobal").html(locale.wrongmailformat);
+					
+					thisobject.addClass("error");
+					$('#email').val('');
+					return false;
+				}
+				if (validEmail == 1){
+					$(".trigun").trigger("click");
+					$(".msgpopupglobal").html(locale.emailexists);
+					
+					thisobject.addClass("error");
+					$('#email').val('');
+					return false;
+				}
+			
+			}, "JSON");
+		}
+		
+		
+	})
+	
+	// verifikasi birthday
+	$(document).on('change', '#birthday', function(){
+		
+		var birthdayVerified = $('#birthday').val();
+		var thisobject = $(this);
+		$(this).siblings(".error").html("");
+		if (birthdayVerified != ""){
+			$.post(basedomain+'register/ajax', {birthday:birthdayVerified},function(data){
+				
+				validbirthday = data.status;
+				if (validbirthday == false){
+				
+					/* s: popup global */
+						$(".trigun").trigger("click");
+						$(".msgpopupglobal").html(locale.agemustbe18old);
+					/* e: popup global */
+					
+					thisobject.addClass("error");
+				
+					//$('#birthday').val('');
+					return false;
+				}else{
+					thisobject.removeClass("error");
+				}
+				
+			
+			}, "JSON");
+		}
+		
+		
+	})
+	
+	
+	// verifikasi email referensi
+	$(document).on('blur','.refered_by', function(){
+		var thisobject = $(this);
+		var email = $(this).val();
+		var atpos=email.indexOf("@");
+		var dotpos=email.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
+		{
+			$(".trigun").trigger("click");
+			$(".msgpopupglobal").html(locale.wrongmailformat);
+			thisobject.addClass("error");
+			$('.refered_by').val('');
+			return false;
+		}
+  
+	})
+	
+	$(document).on('change','.pre_mobile', function(){
+		var thisobject = $(this);
+		var pre_mobile_value = $(this).val();
+		if (isNaN(pre_mobile_value)){
+			$(".trigun").trigger("click");
+			$(".msgpopupglobal").html("Only number alowed");
+		
+			$(this).val('');
+		}else{
+			 $("#selectpre_mobile").attr("style","background-color:WHITE");
+		}
+	})
+	
+	{/literal}
+</script>
+	<div class="head">
+    	<h3>Registration is free. Join us and earn access to exclusive content and special offers.<br />
+To complete the registration process, a copy of a valid government-issued id has to be submitted for age verification. Upon verification, your username and password will be sent to you.
+For accuracy of registered data, please review and confirm the details provided.</h3>
+    </div><!-- END .head -->
+    <div class="section">
+    	<form id="reg1" action="{$basedomain}register/questionaire" class="theForm" method="POST">
+        <span class="formInfo">* required field</span>
+        <ul class="columns-2 clearfix">
+            <li class="col2">
+            	<ul>
+                	<li class="fieldset">
+                    	<div class="titleForm">
+                        	<span class="requirefield">* </span>
+                            <h3>what is your name?</h3>
+                            <span class="eg">(To change your name, please contact our hotline)</span>
+                        </div><!-- END .titleForm -->
+                        <div class="entryForm">
+                        	<div class="row">
+                                <label>NICKNAME</label>
+                                <input type="text" name="nickname" class="full-width required" id="nickname"/>
+                            </div><!-- END .row -->
+                        	<div class="row">
+                                <label>FIRST NAME</label>
+                                <input type="text" name="firstname" class="full-width required" id="firstname"/>
+                            </div><!-- END .row -->
+                        	<div class="row">
+                                <label>middle name</label>
+                                <input type="text" name="middlename" class="full-width "/>
+                            </div><!-- END .row -->
+                        	<div class="row">
+                                <label>LAST NAME</label>
+                                <input type="text" name="lastname" class="full-width "/>
+                            </div><!-- END .row -->
+                        </div><!-- END .entryForm -->
+                    </li><!-- END .fieldset -->
+                	<li class="fieldset">
+                    	<div class="titleForm">
+                        	<span class="requirefield">* </span>
+                            <h3>when is your birthday?</h3>
+                        </div><!-- END .titleForm -->
+                        <div class="entryForm">
+                        	<div class="row">
+                                <label>&nbsp;</label>
+                                <input type="text" class="full-width datepicker required" name="birthday" id="birthday"/>
+                            </div><!-- END .row -->
+                        </div><!-- END .entryForm -->
+                    </li><!-- END .fieldset -->
+                	<li class="fieldset">
+                    	<div class="titleForm">
+                        	<span class="requirefield">* </span>
+                            <h3>what is your mobile number?</h3>
+                        </div><!-- END .titleForm -->
+                        <div class="entryForm">
+                        	<div class="row mobilenumber">
+                                <label>&nbsp;</label>
+                                <!--<input type="text" name="pre_mobile" class="small-width " id="pre_mobile"/>-->
+								<select name="pre_mobile" class="styled pre_mobile">
+									<option value="" >-</option>
+									{section name=i loop=$mprefix}
+									<option value="{$mprefix[i].mobile_prefix}">{$mprefix[i].mobile_prefix}</option>
+									{/section}
+								</select>
+                                <input type="text" name="last_mobile" class="half-width last_mobile required" id="last_mobile" maxlength="7" />
+                            </div><!-- END .row -->
+                        </div><!-- END .entryForm -->
+                    </li><!-- END .fieldset -->
+                	<!--<li class="fieldset">
+                    	<div class="titleForm">
+                        	<span class="requirefield">* </span>
+                            <h3>what is your landline number?</h3>
+                        </div> 
+						<!--
+                        <div class="entryForm">
+                        	<div class="row">
+                                <label>&nbsp;</label>
+                                <input type="text" name="pre_line" class="small-width "/>
+                                <input type="text" name="last_line" class="half-width last_line required" id="last_line"/>
+
+                            </div><!-- END .row -->
+                       <!--</div><!-- END .entryForm -->
+                     <!--</li><!-- END .fieldset -->
+
+                	<li class="fieldset">
+                    	<div class="titleForm">
+                        	<span class="requirefield">* </span>
+                            <h3>what is your gender?</h3>
+                            <input type="radio" name="sex" class="radio styled required" value="Male" checked=""/>
+                            <label class="labelCheck">Male</label>
+                            <input type="radio" name="sex" class="radio styled required" value="Female" />
+                            <label class="labelCheck">Female</label>
+                        </div><!-- END .titleForm -->
+                    </li><!-- END .fieldset -->
+                </ul>
+            </li><!-- END .col2 -->
+            <li class="col2">
+            	<ul>
+                	<li class="fieldset">
+                    	<div class="titleForm">
+                        	<span class="requirefield">* </span>
+                            <h3>what is your email address?</h3>
+                        </div><!-- END .titleForm -->
+                        <div class="entryForm">
+                        	<div class="row">
+                                <label>&nbsp;</label>
+                                <input type="text" class="full-width required" name="email" id="email"/>
+                            </div><!-- END .row -->
+                        </div><!-- END .entryForm -->
+                    </li><!-- END .fieldset -->
+                	<!--
+					<li class="fieldset">
+                    	<div class="titleForm">
+                        	<span class="requirefield">* </span>
+                            <h3>WHAT IS YOUR PASSWORD?</h3>
+                        </div><!-- END .titleForm -->
+                        <!--<div class="entryForm">
+                        	<div class="row">
+                                <label>password</label>
+                                <input type="password" name="password" class="full-width required"/>
+                            </div><!-- END .row -->
+                        	<!--<div class="row">
+                                <label>confirm password</label>
+                                <input type="password" name="confirmpassword" class="full-width required"/>
+                            </div><!-- END .row -->
+                       <!-- </div><!-- END .entryForm -->
+                    <!--</li><!-- END .fieldset -->
+					
+                	<li class="fieldset">
+                    	<div class="titleForm">
+                        	<span class="requirefield">* </span>
+                            <h3>what is your mailing address?</h3>
+                        </div><!-- END .titleForm -->
+                        <div class="entryForm">
+                        	<div class="row">
+                                <label>house and street</label>
+                                <input type="text" name="house" class="full-width required" id="house"/>
+                            </div><!-- END .row -->
+                        	<div class="row">
+                                <label>Barangay</label>
+                                <input type="text" name="barangay" class="full-width required" id="barangay"/>
+                            </div><!-- END .row -->
+                        	<div class="row">
+                                <label>province</label>
+                                <select name='province' class="styled" id="province">
+									<option value="">-</option>
+									{section name=i loop=$province}
+									<option value='{$province[i].id}' >{$province[i].province}</option>
+									{/section}
+								</select>
+								
+                            </div><!-- END .row -->
+                        	<div class="row">
+                                <label>city</label>
+                                <select class="styled required" name="city" id="city">
+                                	<option value="">-</option>                                	
+                                </select>
+                            </div><!-- END .row -->
+							<div class="row">
+                                <label>zip code</label>
+                                <input type="text" name="zipcode" class="full-width required zipcode" id="zipcode" maxlength="4"/>
+                            </div><!-- END .row -->
+                        </div><!-- END .entryForm -->
+                    </li><!-- END .fieldset -->
+
+					<!--
+                	<li class="fieldset">
+
+                	<!--<li class="fieldset">
+
+                    	<div class="titleForm">
+                            <h3>referred by:</h3>
+                            <span class="eg">(Enter friend's email)</span>
+                        </div> 
+                        <!--<div class="entryForm">
+                        	<div class="row">
+                                <label>&nbsp;</label>
+                                <input type="text" class="full-width refered_by" name="refered_by"/>
+
+                            </div><!-- END .row -->
+                        <!--</div><!-- END .entryForm -->
+                    <!--</li><!-- END .fieldset -->
+
+                    <!--        </div> 
+                        </div> 
+                    </li>--> 
+
+                </ul>
+            </li><!-- END .col2 -->
+        </ul><!-- END .columns-2 -->
+        <div class="row rowSubmit">
+			<input type="hidden" name="register" value="1"/>
+        	<input type="submit" value="NEXT" class="button btnRed" name="submit"/>
+        </div><!-- END .rowSubmit -->
+        </form>
+        <div class="step">
+        	<a class="page1 btnStep fl current">Page 1</a>
+
+        	<a class="page2 btnStep">Page 2</a>
+        	<a class="page3 btnStep fr">Page 3</a>
+
+        
+        </div><!-- END .step -->
+    </div><!-- END .section -->
+

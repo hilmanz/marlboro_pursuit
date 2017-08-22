@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/tests/Predis/Iterators
+END
+MultiBulkResponseSimpleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/tests/Predis/Iterators/MultiBulkResponseSimpleTest.php
+END
+MultiBulkResponseTupleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/engines/Utility/Predis/tests/Predis/Iterators/MultiBulkResponseTupleTest.php
+END

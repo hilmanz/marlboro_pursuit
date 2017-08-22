@@ -1,0 +1,13 @@
+{$shorter_filter}
+<div class="section">
+    <ul class="columns-content page-content clearfix">
+        <li class="col-sidebar">
+           {$list_categories}
+           {$weekly_popular}
+           {$side_banner}
+        </li> <!-- END .col-sidebar -->
+        <li class="col-main">
+        	{$article_pages_list}
+       </li><!-- END .col-main -->
+    </ul><!-- END .page-content -->
+</div><!-- END .section -->

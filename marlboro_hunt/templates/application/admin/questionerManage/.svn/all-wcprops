@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/marlboro-hunt-2013/!svn/ver/91/trunk/marlboro_hunt/templates/application/admin/questionerManage
+END
+questionerManage_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/marlboro-hunt-2013/!svn/ver/88/trunk/marlboro_hunt/templates/application/admin/questionerManage/questionerManage_edit.html
+END
+questionerManage_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/marlboro-hunt-2013/!svn/ver/91/trunk/marlboro_hunt/templates/application/admin/questionerManage/questionerManage_new.html
+END
+questionerManage_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/marlboro-hunt-2013/!svn/ver/91/trunk/marlboro_hunt/templates/application/admin/questionerManage/questionerManage_list.html
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/marlboro-hunt-2013/!svn/ver/232/trunk/scripts/deploy
+END
+sync_staging.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/marlboro-hunt-2013/!svn/ver/232/trunk/scripts/deploy/sync_staging.sh
+END
+responsetime.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/marlboro-hunt-2013/!svn/ver/232/trunk/scripts/deploy/responsetime.sh
+END
+sync_production.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/marlboro-hunt-2013/!svn/ver/232/trunk/scripts/deploy/sync_production.sh
+END
+sync_reporting.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/marlboro-hunt-2013/!svn/ver/232/trunk/scripts/deploy/sync_reporting.sh
+END

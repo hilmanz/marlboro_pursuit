@@ -1,0 +1,204 @@
+2013-04-04 07:38:58 can not register
+2013-04-04 07:52:18 can not register
+2013-04-04 07:56:05 can not register
+2013-04-04 07:57:05 can not register
+2013-04-04 07:59:14 can not register
+2013-04-04 07:59:35 can not register
+2013-04-04 07:59:48 can not register
+2013-04-04 08:00:20 can not register
+2013-04-04 08:08:32 can not register
+2013-04-04 08:11:57 can not register
+2013-04-04 08:12:15 can not register
+2013-04-04 08:13:09 can not register
+2013-04-04 08:14:30 can not register
+2013-04-04 08:16:10 can not register
+2013-04-04 08:17:07 can not register
+2013-04-04 08:17:39 can not register
+2013-04-04 08:19:09 can not register
+2013-04-04 08:19:14 http://localhost/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/imgd073bb8d0c47f317dd39de9c9f004e9d.
+2013-04-04 08:21:13 http://localhost/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img74d66337fbdf4781f030008356a86771.
+2013-04-04 08:21:50 http://localhost/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/imgeab0141b79354969d1edd234fbc07422.
+2013-04-04 08:22:17 http://localhost/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/imgabdf6bdb7570e8f9d4338f84bd169130.
+2013-04-04 08:23:21 http://localhost/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/imgdb53e24fbc4e5a62aaa6e92f6bd1167f.
+2013-04-04 08:23:24 can not register
+2013-04-04 08:23:41 can not register
+2013-04-04 08:23:45 http://localhost/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img91bc333f6967019ac47b49ca0f2fa757.
+2013-04-04 08:26:25 http://localhost/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img5378d8f253530ac739d058a532d65bbe.jpeg
+2013-04-04 08:26:42 http://localhost/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/1a44a3d07a2685ed44a441572bf70c3d.jpeg
+2013-04-04 08:30:19 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/d2826e732e814b9b9871fe1aaf257ea4.jpeg
+2013-04-04 08:30:56 can not register
+2013-04-04 08:31:02 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/9f574fad69f5a20012e4f9219fe64018.jpeg
+2013-04-04 08:47:55 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/fd2ddb837f083b6313e8af6ab06fa51b.jpeg
+2013-04-04 08:49:34 can not register
+2013-04-04 08:49:40 can not register
+2013-04-04 08:50:10 can not register
+2013-04-04 08:51:21 can not register
+2013-04-04 08:52:25 can not register
+2013-04-04 08:54:23 can not register
+2013-04-04 08:55:22 can not register
+2013-04-04 08:55:46 can not register
+2013-04-04 08:56:42 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/320c4d07baba55ee4c3733760682dcc9.jpeg
+2013-04-04 08:57:44 can not register
+2013-04-04 08:57:50 can not register
+2013-04-04 08:59:43 can not register
+2013-04-04 09:01:18 can not register
+2013-04-04 09:01:50 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/107a4799a87ff85474714d6e0a1e0867.jpeg
+2013-04-04 09:08:49 can not register
+2013-04-04 09:09:03 can not register
+2013-04-04 09:10:17 can not register
+2013-04-04 09:11:24 can not register
+2013-04-04 09:12:49 can not register
+2013-04-04 09:16:54 can not register
+2013-04-04 09:17:00 can not register
+2013-04-04 09:17:06 can not register
+2013-04-04 09:17:23 can not register
+2013-04-04 09:17:56 can not register
+2013-04-04 09:18:03 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/bd3bcf65c896b17b6258fcdd6a1a57e8.jpeg
+2013-04-04 09:18:04 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/7895fc13088ee37f511913bac71fa66f.
+2013-04-04 09:19:37 can not register
+2013-04-04 09:21:15 can not register
+2013-04-04 09:21:37 can not register
+2013-04-04 09:21:44 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/d9a6f618fe4271d7e7894df323342d14.jpeg
+2013-04-04 09:34:23 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 09:34:23 can login
+2013-04-04 09:34:25 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-04 09:34:25 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-04 09:34:25 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-04 09:34:25 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-04 09:34:25 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-04 09:34:25 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-04 09:34:25 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-04 09:34:25 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-04 09:48:17 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 09:48:17 can login
+2013-04-04 10:06:37 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 10:06:37 can login
+2013-04-04 10:13:07 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 10:13:07 can login
+2013-04-04 10:35:27 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 10:35:27 can login
+2013-04-04 10:41:47 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 10:41:47 can login
+2013-04-04 10:42:45 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 10:42:45 can login
+2013-04-04 10:45:19 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 10:45:19 can login
+2013-04-04 10:50:59 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 10:50:59 can login
+2013-04-04 10:52:55 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 10:52:55 can login
+2013-04-04 10:54:46 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 10:54:46 can login
+2013-04-04 10:56:55 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 10:56:55 can login
+2013-04-04 11:01:04 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:01:28 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:02:36 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:07:00 SELECT * FROM social_member WHERE username='' LIMIT 1
+2013-04-04 11:07:11 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:12:17 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:13:03 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:13:37 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:14:39 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:15:23 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:17:17 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:17:17 cannot login, password or username not exists 
+2013-04-04 11:17:34 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:18:35 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 11:19:49 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 13:47:32 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 14:33:56 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 14:39:41 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 14:39:41 can login
+2013-04-04 15:51:51 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 15:53:23 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 15:53:23 can login
+2013-04-04 16:35:44 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 16:35:59 SELECT * FROM social_member WHERE username='csacsfsf' LIMIT 1
+2013-04-04 16:35:59 can login
+2013-04-04 16:36:01 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-04 16:36:01 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-04 16:36:01 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-04 16:36:01 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-04 16:36:01 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-04 16:36:01 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-04 16:36:01 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-04 16:36:01 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-04 16:37:09 can not register
+2013-04-04 16:37:32 can not register
+2013-04-04 16:39:16 D:/xampp/htdocs/marlboro_hunt_2013/trunk/marlboro_hunt/public_html/img/99d6c9589eb24b63f5757668d3ac18f6.jpeg
+2013-04-04 16:39:49 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-04 16:40:03 SELECT * FROM social_member WHERE username='ksvdjv' LIMIT 1
+2013-04-04 16:40:03 can login
+2013-04-04 16:40:05 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-04 16:40:05 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-04 16:40:05 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-04 16:40:05 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-04 16:40:05 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-04 16:40:05 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-04 16:40:05 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-04 16:40:05 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		
+2013-04-04 16:40:36 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='slider_header' AND n_status=1 LIMIT 1 
+2013-04-04 16:40:36 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-04 16:40:36 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (1) AND n_status IN (1) 
+2013-04-04 16:40:36 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1367,1403,1396,1401,1407,1408) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 4
+		
+2013-04-04 16:40:36 SELECT * FROM marlborohunt_news_content_banner_type WHERE type ='medium_banner' AND n_status=1 LIMIT 1 
+2013-04-04 16:40:36 SELECT * FROM marlborohunt_news_content_page WHERE pagename = 'home' AND n_status = 1 LIMIT 1
+2013-04-04 16:40:36 SELECT * FROM marlborohunt_news_content_banner WHERE page LIKE '%1%' AND type IN (2) AND n_status IN (1) 
+2013-04-04 16:40:36 	
+		SELECT anc.id,anc.content,anc.brief,anc.title,anc.image,anc.posted_date ,anc.categoryid,ancc.category,anc.articleType,anc.slider_image,anc.thumbnail_image,anct.content_name,anct.type typeofarticlename,anc.url
+		FROM marlborohunt_news_content anc
+		LEFT JOIN marlborohunt_news_content_category ancc ON ancc.id = anc.categoryid
+		LEFT JOIN marlborohunt_news_content_type anct ON anct.id = anc.articleType
+		WHERE anc.id IN (1413,1414,1415) AND anc.n_status IN (1)
+		ORDER BY posted_date DESC  LIMIT 2
+		

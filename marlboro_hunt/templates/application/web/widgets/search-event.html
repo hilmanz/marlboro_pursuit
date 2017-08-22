@@ -1,0 +1,59 @@
+
+    <div class="widget searchBox-widget">
+    <div class="the-title">
+        <h2 class="icon icon_serachbox"><span>Search Event</span></h2>
+    </div>
+    <div class="widget-content">
+    	<form class="searchBox"  method="POST" action="{$basedomain}{$pages}" id="searchevent" >
+        	<div class="row">
+        	
+				
+				<!-- s:method of blank text default html -->
+				<div class="default-text-search" style="display: block; height: 39px; left: 0px; position: absolute; width: 259px;" onclick="$(this).hide();$('#querySearch').focus();"><span style="position: relative; left: 12px; top: 8px;">Search...</span></div>
+				<input type="text" value="{if $q}{$q}{/if}" name="q" class="querykey" id="querySearch" onBlur="if($(this).val()=='')$('.default-text-search').show()" >
+				<!-- e:method of blank text default html -->			
+				
+            </div>
+        	<div class="row">
+                <select class="styled dateposted" name="dateposted">
+                    <option value="0" {if $dateposted==0}selected{/if}>Pilih Bulan</option>
+                    <option value="1" {if $dateposted==1}selected{/if}>Januari</option>
+                    <option value="2" {if $dateposted==2}selected{/if}>Februari</option>
+                    <option value="3" {if $dateposted==3}selected{/if}>Maret</option>
+                    <option value="4" {if $dateposted==4}selected{/if} >April</option>
+                    <option value="5" {if $dateposted==5}selected{/if}>Mei</option>
+                    <option value="6" {if $dateposted==6}selected{/if}>Juni</option>
+                    <option value="7" {if $dateposted==7}selected{/if}>Juli</option>
+                    <option value="8" {if $dateposted==8}selected{/if}>Agustus</option>
+                    <option value="9" {if $dateposted==9}selected{/if}>September</option>
+                    <option value="10" {if $dateposted==10}selected{/if}>Oktober</option>
+                    <option value="11" {if $dateposted==11}selected{/if}>November</option>
+                    <option value="12" {if $dateposted==12}selected{/if}>Desember</option>
+                </select>
+            </div>
+        	<div class="row">
+                <select class="styled cityid" name="cityid">
+                    <option>Pilih Kota</option>
+                    {section name=i loop=$city}
+						{if $city[i].id==$cityid}<option value="{$city[i].id}" selected>{$city[i].city|upper}</option>
+						{else}<option value="{$city[i].id}">{$city[i].city|upper}</option>
+						{/if}
+					{/section}
+                </select>
+            </div>
+        	<div class="row">
+            	<input type="submit" class="searchGo" value="GO"/>
+            </div>
+        </form>
+    </div><!-- END .widget-content -->
+</div><!-- END .widget -->
+
+{literal}
+	<script>
+		$(document).ready(function(){
+			if($('.querykey').val()) $('.default-text-search').hide();
+			else  $('.default-text-search').show();
+		});
+		$(document).on('change','.dateposted, .cityid',function(){ $('#searchevent').submit(); });
+	</script>
+{/literal}

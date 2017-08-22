@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/marlboro-hunt-2013/!svn/ver/170/trunk/marlboro_hunt/templates/application/admin/merchandiseMonitoring
+END
+merchandiseMonitoring_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/marlboro-hunt-2013/!svn/ver/170/trunk/marlboro_hunt/templates/application/admin/merchandiseMonitoring/merchandiseMonitoring_edit.html
+END
+merchandiseMonitoring_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/marlboro-hunt-2013/!svn/ver/101/trunk/marlboro_hunt/templates/application/admin/merchandiseMonitoring/merchandiseMonitoring_new.html
+END
+merchandiseMonitoring_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/marlboro-hunt-2013/!svn/ver/170/trunk/marlboro_hunt/templates/application/admin/merchandiseMonitoring/merchandiseMonitoring_list.html
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/marlboro-hunt-2013/!svn/ver/131/trunk/marlboro_hunt/templates/application/admin/inBound
+END
+inBound_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/marlboro-hunt-2013/!svn/ver/66/trunk/marlboro_hunt/templates/application/admin/inBound/inBound_edit.html
+END
+inBound_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/marlboro-hunt-2013/!svn/ver/122/trunk/marlboro_hunt/templates/application/admin/inBound/inBound_new.html
+END
+inBound_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/marlboro-hunt-2013/!svn/ver/131/trunk/marlboro_hunt/templates/application/admin/inBound/inBound_list.html
+END

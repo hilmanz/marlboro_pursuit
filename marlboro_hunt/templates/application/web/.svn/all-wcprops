@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/marlboro-hunt-2013/!svn/ver/474/trunk/marlboro_hunt/templates/application/web
+END
+landing.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/marlboro-hunt-2013/!svn/ver/282/trunk/marlboro_hunt/templates/application/web/landing.html
+END
+login_message.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/marlboro-hunt-2013/!svn/ver/441/trunk/marlboro_hunt/templates/application/web/login_message.html
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/427/trunk/marlboro_hunt/templates/application/web/footer.html
+END
+message.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/marlboro-hunt-2013/!svn/ver/3/trunk/marlboro_hunt/templates/application/web/message.html
+END
+register.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/marlboro-hunt-2013/!svn/ver/141/trunk/marlboro_hunt/templates/application/web/register.html
+END
+meta.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/marlboro-hunt-2013/!svn/ver/460/trunk/marlboro_hunt/templates/application/web/meta.html
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/474/trunk/marlboro_hunt/templates/application/web/header.html
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/marlboro-hunt-2013/!svn/ver/399/trunk/marlboro_hunt/templates/application/web/home.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/marlboro-hunt-2013/!svn/ver/342/trunk/marlboro_hunt/templates/application/web/login.html
+END
+master.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/marlboro-hunt-2013/!svn/ver/450/trunk/marlboro_hunt/templates/application/web/master.html
+END

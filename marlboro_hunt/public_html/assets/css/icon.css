@@ -1,0 +1,265 @@
+/*
+Theme Name:  MARLBORO
+Version: 1.0
+Author: Acit Jazz 2013
+*/
+.icon_title .ui-icon{
+	background-repeat:no-repeat;
+	margin:0 10px 0 0;
+	cursor:pointer;
+	display:inline-block;
+	width:20px; height:22px;
+	position:relative;
+	top:6px;
+}
+.icon_tasklist .ui-icon{
+	background-image:url(../images/icon/icon_tasklist.png);
+}
+.icon_message .ui-icon{
+	background-image:url(../images/icon/icon_message.png);
+}
+.icon_request .ui-icon{
+	background-image:url(../images/icon/icon_request.png);
+}
+.icon_task .ui-icon{
+	background-image:url(../images/icon/icon_task.png);
+}
+.icon_update .ui-icon{
+	background-image:url(../images/icon/icon_update.png);
+}
+.icon_player .ui-icon{
+	background-image:url(../images/icon/icon_player.png);
+}
+.ui-state-active .ui-icon{
+	background-position:0 -20px;
+}
+.icon_close{
+	background:url(../images/icon/icon_close.png) no-repeat;
+	display:block;
+	text-decoration:none;
+	width:19px; height:19px;
+	position:absolute;
+	top:-8px; right:-8px;
+}
+.popup-title h3.icon_request{
+	background:url(../images/icon/icon_request.png) no-repeat 0 -12px;
+	padding:0 0 0 25px;
+	font-size:25px;
+}
+.btn-edit{
+	display:block;
+	width:22px; height:22px;
+	background:url(../images/icon/icon_edit.png) no-repeat;
+	text-decoration:none;
+}
+.btn-edit:hover{
+	background:url(../images/icon/icon_edit.png) no-repeat 0 -22px;
+}
+.control-bar{
+	padding:5px 0;
+	clear:both;
+	border-bottom:solid 1px #ccc;
+}
+.control-bottom{
+	border-bottom:none;
+	border-top:solid 1px #ccc;
+}
+.control-bar a{
+	background-repeat:no-repeat;
+	display:block;
+	width:20px;
+	height:20px;
+	margin:0 auto;
+	text-decoration:none;
+}
+.arrow-bottom{
+	background-image:url(../images/icon/arrow_down.png);
+}
+.arrow-top{
+	background-image:url(../images/icon/arrow_up.png);
+}
+.control-bar a:hover{
+	background-position:0 -20px;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../font/icomoon.eot');
+	src:url('../font/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../font/icomoon.woff') format('woff'),
+		url('../font/icomoon.ttf') format('truetype'),
+		url('../font/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.icons{
+	display:block;
+	width:20px; height:20px;
+	font-size:12px;
+	color:#BF1323;
+	text-decoration:none;
+}
+.boxPlayer .icons{
+	position:absolute;
+}
+.boxPlayer .icon_message{
+	top:3px;
+	right:20px;
+}
+.boxPlayer .icon_trade{
+	top:3px;
+	right:1px;
+}
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-user, .icon-user-add, .icon-forward, .icon-reply, .icon-pencil, .icon-phone, .icon-star, .icon-search, .icon-vcard, .icon-cycle, .icon-arrow-right, .icon-arrow-left, .icon-bubble, .icon-bubbles, .icon-arrow-right-2, .icon-bookmark, .icon-loop-alt2, .icon-microphone, .icon-location, .icon-heart, .icon-smiley, .icon-smiley-2, .icon-camera, .icon-key, .icon-arrow-right-3, .icon-arrow-left-2, .icon-arrow-down, .icon-arrow-up, .icon-envelope, .icon-play, .icon-pause, .icon-record, .icon-stop, .icon-next, .icon-previous, .icon-first, .icon-last, .icon-resize-enlarge, .icon-resize-shrink, .icon-volume, .icon-sound, .icon-mute {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-user:before {
+	content: "\e000";
+}
+.icon-user-add:before {
+	content: "\e001";
+}
+.icon-forward:before {
+	content: "\e002";
+}
+.icon-reply:before {
+	content: "\e003";
+}
+.icon-pencil:before {
+	content: "\e004";
+}
+.icon-phone:before {
+	content: "\e005";
+}
+.icon-star:before {
+	content: "\e006";
+}
+.icon-search:before {
+	content: "\e007";
+}
+.icon-vcard:before {
+	content: "\e008";
+}
+.icon-cycle:before {
+	content: "\e009";
+}
+.icon-arrow-right:before {
+	content: "\e00a";
+}
+.icon-arrow-left:before {
+	content: "\e00b";
+}
+.icon-bubble:before {
+	content: "\e00d";
+}
+.icon-bubbles:before {
+	content: "\e00c";
+}
+.icon-arrow-right-2:before {
+	content: "\e00e";
+}
+.icon-bookmark:before {
+	content: "\e00f";
+}
+.icon-loop-alt2:before {
+	content: "\e010";
+}
+.icon-microphone:before {
+	content: "\e011";
+}
+.icon-location:before {
+	content: "\e012";
+}
+.icon-heart:before {
+	content: "\e013";
+}
+.icon-smiley:before {
+	content: "\e014";
+}
+.icon-smiley-2:before {
+	content: "\e015";
+}
+.icon-camera:before {
+	content: "\e016";
+}
+.icon-key:before {
+	content: "\e017";
+}
+.icon-arrow-right-3:before {
+	content: "\e018";
+}
+.icon-arrow-left-2:before {
+	content: "\e019";
+}
+.icon-arrow-down:before {
+	content: "\e01a";
+}
+.icon-arrow-up:before {
+	content: "\e01b";
+}
+.icon-envelope:before {
+	content: "\e01c";
+}
+.icon-play:before {
+	content: "\e01d";
+}
+.icon-pause:before {
+	content: "\e01e";
+}
+.icon-record:before {
+	content: "\e01f";
+}
+.icon-stop:before {
+	content: "\e020";
+}
+.icon-next:before {
+	content: "\e021";
+}
+.icon-previous:before {
+	content: "\e022";
+}
+.icon-first:before {
+	content: "\e023";
+}
+.icon-last:before {
+	content: "\e024";
+}
+.icon-resize-enlarge:before {
+	content: "\e025";
+}
+.icon-resize-shrink:before {
+	content: "\e026";
+}
+.icon-volume:before {
+	content: "\e027";
+}
+.icon-sound:before {
+	content: "\e028";
+}
+.icon-mute:before {
+	content: "\e029";
+}

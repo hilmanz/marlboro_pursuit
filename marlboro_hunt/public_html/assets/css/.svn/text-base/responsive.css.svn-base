@@ -1,0 +1,305 @@
+/* Responsive */
+
+@media only screen and (max-width: 1400px) {
+	.popup-video{
+		width:700px  !important;
+		margin:-250px 0 0 -350px  !important;
+		top:50%  !important;
+	}
+	.popup-video #video-pursuit,.popup-video #video-labor{
+		height:395px !important; 
+	}
+	.popup-video .video-js,.popup-video .vjs-poster{
+		width:700px  !important;
+		height:395px !important; 
+	}
+	.popup-video .vjs-default-skin .vjs-control-bar{
+		width:700px  !important;
+	}
+	.titlePaper h1{
+		font-size:55px;
+		line-height:55px;
+	}
+	#dyoshirtPages .entry{
+		padding:0 0 0 30px;
+	}
+	#dyoshirtPages .entry p{
+		font-size:12px;
+		margin:5px 0;
+	}
+	.be-marlboro{
+		background:url(../images/be-marlboro_small.png) no-repeat;
+		width:191px; height:65px;
+		margin:30px 0;
+	}
+	.gallery-act .colFilter{
+		width:160px;
+	}
+	.gallery-act .colFilter label{
+		font-size:14px;
+		padding:0 5px;
+		width:30px;
+	}
+	.gallery-act select.styled{
+		width:100px !important;
+	}
+	.gallery-act .select{
+		font-size:14px;
+		line-height:22px;
+		height:14px;
+		width:96px;
+	}
+	#dyo-gallery .paging a{
+		font-size:18px;
+		line-height:28px;
+	}
+	.thumb300 img{
+		width:200px; height:200px;
+	}
+	.thumbLanding{
+		width:222px;
+	}
+	.captions h1{
+		font-size:30px;
+	}
+	input[type=text],
+	input[type=password]{
+		background:#fff;
+		padding:4px 10px 2px;
+		height:20px;
+		font-family: 'maybebold';
+		border:none;
+		box-shadow:0 1px 1px rgba(0,0,0,0.8) inset;
+		font-size:20px;
+	}
+	.theForm label{
+		font-size:14px;
+		line-height:18px;
+	}
+	.row{
+		padding:5px 0;
+	}
+	.rowSubmit{
+		padding:10px 0;
+	}
+	.titleForm h3{
+		font-size:14px;
+		line-height:20px;
+		padding:3px 20px 2px;
+	}
+	input[type="submit"]{
+		font-size:18px;
+		height:30px;
+		line-height:30px;
+	}
+	.button{
+		font-size:18px;
+		line-height:35px;
+		height:35px;
+	}
+	#registerPage .section{
+		padding:0;
+	}
+	.head h3{
+		margin:0;
+	}
+	.formInfo,#reg3{
+		font-size:14px;
+	}
+	#landingPage{
+		padding:70px 0 0 0;
+	}
+	.select{
+		padding:2px 10px 7px;
+		font-size:18px;
+	}
+	#enterGIID label{
+		width:100px;
+		line-height:30px;
+	}
+	.columns-content li.col-main{
+		width:65%;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.wrapper{
+		width:90%;
+		min-width:400px;
+	}
+	video{
+		width:100%; height:100%;
+	}
+	.columns-content li.col-main{
+		width:66.6%;
+	}
+	.perspective {
+		/*!*/	width:540px; /* Required - Adapt to your template */
+		/*!*/	height:380px; /* Required - Adapt to your template */
+	}
+	/* Plugin content */
+	.perspective .perspective_diap {
+	/*!*/		width:536px; /* Required - Adapt to your template (Add padding if needed) */
+	/*!*/		height:280px; /* Required - Adapt to your template (Add padding if needed) */
+	}
+	/* Plugin content image */
+	.perspective_diap img {
+	/*!*/			width:520px; /* Required - Adapt to your template */
+	/*!*/			height:280px; /* Required - Adapt to your template */
+	}
+	#dyo-gallery,.gallery-act{
+		width:540px;
+	}
+	.titlePaper h1{
+		font-size:40px;
+	}
+	#dyo-gallery{
+		height:455px;
+		padding:35px 0 0 0;
+	}
+
+}
+@media only screen and (max-width: 900px) {
+	.wrapper{
+		width:90%;
+		min-width:400px;
+	}
+	
+	.columns-2 li.col2 {
+		width: 100%;
+		margin: 0;
+	}
+	#footer .fl,#footer .fr{
+		float:none;
+	}
+	#reg2 label{
+		width:auto;
+		font-size:18px;
+	}
+	#reg2 label.labelCheck{
+		width:75%;
+		float:left;
+		text-align:left;
+	}
+	#reg2 .checkbox,#reg2 .radio{
+		float:left;
+		margin:3px 5px 0 0;
+	}
+	#reg2 .full-width{
+		width:99%;
+	}
+	#reg2 .titleForm h3{
+		width:70%;
+		display:block;
+		float:left;
+	}
+	#reg2 .requirefield{
+		display:block;
+		float:left;
+		width:3%;
+	}
+	.popupContainer{
+		width:300px;
+	}
+	#popup-giidlist .popupContent{
+		padding:15px;
+	}
+	#popup-upload-photo-webcam img{
+		width:100%;
+	}
+	.landingPage .columns-3 li.col3{
+		width:100%;
+		clear:both;
+	}
+	.thumbLanding{
+		width:48%;
+		float:left;
+	}
+	.thumb300 img{
+		width:90%;
+		height:auto;
+	}
+	.captions{
+		float:left;
+		width:45%;
+		margin:15% 0 0 4%;
+	}
+	.full-width{
+		width:64%;
+	}
+	.half-width{
+		width:50%;
+	}
+	#container{
+		width:100%;
+	}
+	.myaccount-entry{
+		max-width:none;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.columns-2 li.col2 {
+		width: 100%;
+		margin: 0;
+	}
+	.columns-content li.col-sidebar,.columns-content li.col-main{
+		float:none;
+		width:100%;
+		margin:0;
+	}
+	#dyo-gallery{
+		margin:0 auto;
+	}
+	.titlePaper{
+		width:90%;
+		padding:8px 5%;
+	}
+}
+
+@media only screen and (max-width: 667px) {
+	.columns-4 li.col4 {
+		width: 48.5%;
+		margin: 0 3% 0 0;
+	}
+	
+	.columns-4 li.col4:nth-child(2n) {
+		margin: 0;
+	}
+	
+	.columns-2 li.col2 {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.columns-3 li.col3 {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	.theForm label{
+		width:100px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	
+	.columns-2 li.col2 {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.columns-3 li.col3 {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	a.readmore{
+		font-size:12px;
+	}
+	#footer,#footer p{
+		font-size:10px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	
+}

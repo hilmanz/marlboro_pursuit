@@ -1,0 +1,31 @@
+  {if $user}
+<div id="main-menu-wrapper" class="clearfix">
+    <ul id="main-menu" class="fl">
+        <li><a href="{$basedomain}home">Home</a></li>
+        <!--<li><a href="{$basedomain}hunt">The Hunt</a></li>
+        <li><a href="{$basedomain}event">News/Event</a></li>	
+        <li><a href="{$basedomain}decision">Weekly Decisions</a></li>-->	
+        <!--<li><a href="{$basedomain}dyo">Dyo Shirt</a></li>-->	
+        <!--<li><a href="{$basedomain}games">Web Games</a></li>	-->
+        <li><a href="{$basedomain}account">My Account</a></li>	
+
+      {*}  <li class="welcome"><a href="{$basedomain}account">Hello, {$user->name} {$user->last_name} </a></li>	{/*}
+
+        <li class="logout"><a href="{$basedomain}logout.php">Log Out</a></li>	
+    </ul>
+</div><!-- END .main-menu-wrapper -->
+{else}
+
+	{if $acts != 'trackingcode' && $pages != 'forgotpassword' }
+	<div class="rowBtn">
+			<div class="chooseBtn">
+				<a class="loginBtn {if $pages=='login'}active{/if}" href="{$basedomain}">LOG IN</a>
+				<a class="registerBtn {if $pages=='register'}active{/if}" href="{$basedomain}register">Register</a>
+			</div>
+			<p>click to choose</p>
+	</div><!-- END .rowBtn -->
+	<!--Header, Navigasi page-->
+	
+	
+	{/if}
+{/if}
